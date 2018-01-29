@@ -1,0 +1,17 @@
+body{
+  /*element*/
+  background: #afe567;
+}
+
+.webring{
+  /*class*/
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  /*one body font size unit =1em*/
+  background: white;
+}
+hr{
+  width:1000px;
+  margin: 1em 0;
+}
