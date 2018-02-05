@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Aladdin";
+  src: url("fonts/aladdin.ttf");
+}
+
 body{
   /*element*/
   background: #afe567;
