@@ -1,0 +1,111 @@
+/*FRAME*/
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: brown;
+	position: relative;
+	z-index: -4;
+}
+
+/*STILL LIFE*/
+.object{
+	position: absolute;
+}
+
+#orange{
+	height: 8em;
+	width: 8em;
+	border-radius: 50%;
+	background: #6d4712;
+	top: 300px;
+	left: 550px;
+	z-index: 2;
+}
+
+
+#light{
+	height: 9em;
+	width: 11em;
+	border-radius: 50%;
+	background: #fefdcc;
+	top: 250px;
+	left: 490px;
+	z-index: -1;
+}
+
+#light #base{
+  height: .5em;
+  width: 7em;
+  background: rgb(130, 130, 130);
+  top: 95%;
+  left: 30%;
+}
+
+#flower {
+	width: 5em;
+	height: 1em;
+	border-top: 25px solid transparent;
+	border-left: 300px solid rgba(230, 230, 230, 0.2);
+	border-bottom: 25px solid transparent;
+	top: 22em;
+	left: 14em;
+	transform: rotate(16deg);
+	z-index: -3;
+}
+
+#flower #stem{
+	width: 13em;
+	height: .5em;
+	background: #2a5b1b;
+	top: 30%;
+	right: 60%;
+}
+
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid yellow;
+	position: absolute;
+	top: 160px;
+	left: 100px;
+}
+
+#square {
+	width: 200px;
+	height: 200px;
+	background: red;
+	top: 160px;
+	left: 350px;
+	position: absolute;
+}
+
+#circle {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 200px;
+	top: 160px;
+	left: 600px;
+	position: absolute;
+}
+
+@-webkit-keyframes flicker{
+	from{
+		transform: rotate(3deg);
+		opacity: 1;
+		padding-top: .125em;
+	}
+	to{
+		transform: rotate(-3deg);
+		opacity: .85;
+		padding-top: 0em;
+	}
+}
