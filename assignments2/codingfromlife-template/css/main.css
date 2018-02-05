@@ -1,0 +1,201 @@
+/*FRAME*/
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: green;
+	position: relative;
+	z-index: -4;
+}
+
+/*STILL LIFE*/
+.object{
+	position: absolute;
+}
+
+#orange{
+	height: 8em;
+	width: 8em;
+	border-radius: 50%;
+	background: orange;
+	top: 300px;
+	left: 550px;
+	z-index: -1;
+}
+
+#orange #sticker{
+	height: 15px;
+	width: 25px;
+	border-radius: 50%;
+	border: 2px solid blue;
+	background:white;
+	top: 55%;
+	left: 30%;
+}
+
+#orange #nub{
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #4e4a10;
+	top: 25%;
+	left: 25%;
+}
+
+#kiwi{
+	height: 3em;
+	width: 4.5em;
+	border-radius: 50%;
+	background: #5c3d29;
+	top: 390px;
+	left: 610px;
+	z-index: 2;
+}
+
+#vase{
+	border: 1px solid transparent;
+	bottom: 9em;
+	left: 12em;
+	width: 11em;
+	height: 12em;
+}
+
+#vase #opening{
+	background: rgb(80, 80, 80);
+	width: 75%;
+	height: 1em;
+	border-radius: 50%;
+	top: 1.2em;
+	left: .5em;
+}
+
+#vase #top{
+	border-bottom: 5em solid white;
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	height: 0;
+	width: 6em;
+	/* background: white; */
+}
+
+#vase #middle{
+	width: 193px;
+	height: 20px;
+	background: rgb(240, 240, 240);
+}
+
+#vase #bottom{
+	border-top: 5em solid rgb(230, 230, 230);
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	height: 0;
+	width: 6em;
+}
+
+#flower {
+	width: 5em;
+	height: 1em;
+	border-top: 25px solid transparent;
+	border-left: 300px solid rgba(230, 230, 230, 0.2);
+	border-bottom: 25px solid transparent;
+	top: 22em;
+	left: 14em;
+	transform: rotate(16deg);
+	z-index: -3;
+}
+
+#flower #stem{
+	width: 13em;
+	height: .5em;
+	background: #2a5b1b;
+	top: 30%;
+	right: 60%;
+}
+
+#candle{
+	width: 4em;
+	height: 6em;
+	border: 5px solid rgba(255, 255, 255, 0.2);
+	bottom: 7em;
+	left: 20em;
+	background: rgba(255, 255, 255, 0.2);
+	z-index: 5;
+}
+
+#candle #wax{
+	background: red;
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	bottom: 0;
+}
+
+#candle #wax-top{
+	background: #55121f;
+	width: 100%;
+	height: 20%;
+	border-radius: 50%;
+	top: 1.2em;
+}
+
+#candle #flame{
+	background: yellow;
+	width: 10%;
+	height: 25%;
+	border-radius: 50%;
+	top:.4em;
+	left: 44%;
+	-webkit-animation-duration: 0.33s;
+	-webkit-animation-name: flicker;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function:ease-in-out;
+
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid yellow;
+	position: absolute;
+	top: 160px;
+	left: 100px;
+}
+
+#square {
+	width: 200px;
+	height: 200px;
+	background: red;
+	top: 160px;
+	left: 350px;
+	position: absolute;
+}
+
+#circle {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 200px;
+	top: 160px;
+	left: 600px;
+	position: absolute;
+}
+
+@-webkit-keyframes flicker{
+	from{
+		transform: rotate(3deg);
+		opacity: 1;
+		padding-top: .125em;
+	}
+	to{
+		transform: rotate(-3deg);
+		opacity: .85;
+		padding-top: 0em;
+	}
+}
