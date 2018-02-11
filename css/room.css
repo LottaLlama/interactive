@@ -1,0 +1,357 @@
+body{
+  background: black;
+  font-family: sans-serif;
+}
+
+h1{
+  position: absolute;
+  font-size: 12pt;
+  color: white;
+  top: .2em;
+  left: 1em;
+}
+
+.canvas {
+	width: 55em;
+	height: 35em;
+	margin: 4em auto;
+	background: white;
+	position: relative;
+	z-index: -100;
+}
+
+.object{
+	position: absolute;
+  opacity: 50%;
+}
+
+.dark{
+  width: 55em;
+  height: 35em;
+  margin: 4em auto;
+  background: rgba(0, 0, 0, .5);
+}
+
+#wall{
+	width: 55em;
+	height: 35em;
+  z-index: -50;
+}
+
+#wall #left{
+	border-left: 7em solid beige;
+	border-top: 7em solid transparent;
+	border-bottom: 9.5em solid transparent;
+	height: calc(100% - 16.5em);
+	width: 0;
+}
+
+#wall #right{
+	border-right: 7em solid beige;
+	border-top: 7em solid transparent;
+	border-bottom: 9.5em solid transparent;
+	height: calc(100% - 16.5em) ;
+	width: 0;
+  right: 0;
+}
+
+#wall #ceiling{
+	border-top: 7em solid #f9f9eb;
+	border-left: 7em solid transparent;
+	border-right: 7em solid transparent;
+  width: calc(100% - 14em);
+	height: 0;
+}
+
+#wall #floor{
+	border-bottom: 9.5em solid saddlebrown;
+	border-left: 7em solid transparent;
+	border-right: 7em solid transparent;
+  width: calc(100% - 14em);
+	height: 0;
+  bottom: 0;
+}
+
+#carpet{
+  border-bottom: 7em solid darkolivegreen;
+	border-left: 5em solid transparent;
+	border-right: 5em solid transparent;
+  width: 35em;
+	height: 20em;
+  z-index: -25;
+  left: calc((55em - 45em)/2);
+  bottom: 2em;
+}
+
+/*window stuff*/
+
+#window{
+  width: 7em;
+  height: 10em;
+  background: powderblue;
+  left: 32em;
+  top: 10em;
+  z-index: -25;
+}
+
+#window #frame{
+  width: 6.5em;
+  height: 9.5em;
+  border: .5em solid #f5f5f5;
+}
+
+#window #frame #closed{
+	width: 6.5em;
+	height: .5em;
+	background: #f5f5f5;
+	top: 50%;
+}
+
+#window #frame #open{
+	width: 6.5em;
+	height: 4.75em;
+  border-bottom: .5em solid #f5f5f5;
+	bottom: 70%;
+}
+
+#window #curtainleft {
+  width: 0em;
+  height: 0px;
+  border-right: 7em solid transparent;
+  border-top: 7em solid transparent;
+  border-left: 7em solid transparent;
+  border-bottom: 7em solid blue;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 2.5em;
+  border-bottom-right-radius: 7em;
+  transform: rotate(315deg);
+  top:-6.5em;
+  left:-7em;
+}
+
+#window #curtainleftdrawn {
+  width: 0em;
+  height: 0px;
+  border-right: 5em solid transparent;
+  border-top: 1.7em solid transparent;
+  border-left: 5em solid transparent;
+  border-bottom: 1.7em solid blue;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 6em;
+  border-bottom-right-radius: 2em;
+  transform: rotate(270deg);
+  top:3.3em;
+  left:-5em;
+}
+
+#window #curtainright {
+  width: 0em;
+  height: 0px;
+  border-right: 7em solid transparent;
+  border-top: 7em solid transparent;
+  border-left: 7em solid transparent;
+  border-bottom: 7em solid mediumblue;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 7em ;
+  border-bottom-right-radius: 2.5em;
+  transform: rotate(45deg);
+  top:-6.5em;
+  right:-7.5em;
+}
+
+#window #curtainrightdrawn {
+  width: 0em;
+  height: 0px;
+  border-right: 5em solid transparent;
+  border-top: 1.7em solid transparent;
+  border-left: 5em solid transparent;
+  border-bottom: 1.7em solid blue;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 2em ;
+  border-bottom-right-radius: 6em;
+  transform: rotate(90deg);
+  top:3.3em;
+  right:-5.5em;
+}
+
+/*lamp stuff*/
+
+#lamp{
+  width: .5em;
+  height: 14em;
+  top: 13em;
+  right: 9em;
+  background: yellow;
+  z-index: -20;
+}
+
+#lamp #base{
+  height: 1em;
+	width: 4.5em;
+	border-radius: 50%;
+	background: yellow;
+	bottom: 0em;
+  right: -2em;
+}
+
+#lamp #darkshade{
+  border-bottom: 4.5em solid darkolivegreen;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+  width: 4em;
+	height: 4em;
+  right:calc(-2em - 1.8em);
+  z-index: -18;
+  top: -5em;
+}
+
+#lamp #lightshade{
+  border-bottom: 4.5em solid greenyellow;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+  width: 4em;
+	height: 4em;
+  right:calc(-2em - 1.8em);
+  z-index: -18;
+  top: -5em;
+}
+
+#lamp #lamplight{
+  border-bottom: 4.5em solid rgba(255, 255, 179, .5);
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+  width: 8em;
+	height: 4em;
+  right:calc(-2em - 3.8em);
+  z-index: -18;
+  top: -.5em;
+}
+
+/*bee code modified from https://codepen.io/ksksoft/pen/lsqEo */
+
+#bee {
+	margin: 4em auto;
+	background: transparent;
+	width: 8em;
+	height: 4em;
+  left: 30em;
+	position: absolute;
+	-webkit-transform-origin: center center 0;
+	-webkit-animation: flip 1.5s infinite step-end;
+  z-index: 0;
+}
+#bee:before {
+	content: "";
+	position: absolute;
+	top:12em;
+	left:3.5em;
+	width: 1em;
+	height: 4em;
+	background: transparent;
+	box-shadow:0 -0.3em 0 0 yellow,0 0.3em 0 0 yellow inset;
+	-webkit-transform-origin: center bottom 0;
+	-webkit-animation: roll 1.5s infinite linear;
+  z-index:0;
+}
+
+@-webkit-keyframes roll {
+	100% { -webkit-transform: rotateZ(-2turn); }
+}
+
+@-webkit-keyframes flip {
+  12.5%{-webkit-transform: rotateY(0.5turn) translate(8em,0);}
+  62.5%{transform: rotateY(0turn);}
+}
+
+/*table stuffis*/
+
+#table{
+  height: 3em;
+	width: 11em;
+	border-radius: 50%;
+	background: #331100;
+	top: 23em;
+  right: 11em;
+  z-index: -20;
+}
+
+#table #legleft{
+  width: .5em;
+  height: 6em;
+  top: 1em;
+  right: 9em;
+  background: #331100;
+}
+
+#table #legright{
+  width: .5em;
+  height: 6em;
+  top: 1em;
+  right: 1.5em;
+  background: #331100;
+}
+
+#table #legbackleft{
+  width: .5em;
+  height: 4em;
+  top: 1em;
+  right: 7em;
+  background: #331100;
+}
+
+#table #legbackright{
+  width: .5em;
+  height: 4em;
+  top: 1em;
+  right: 3.5em;
+  background: #331100;
+}
+
+/*flowerpot et al.*/
+
+#flowerpot{
+  border-top: 2.5em solid peachpuff;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  width: 2.5em;
+	height: 0;
+  top: 22em;
+  right: 13em;
+  z-index: 15;
+}
+
+#flowerpot #dirt{
+  height: .8em;
+	width: 3.5em;
+	border-radius: 50%;
+	background: #4d3319;
+	top: -2.5em;
+  right: -.5em;
+}
+
+/*water in glass*/
+
+#glass{
+  width: 1em;
+	height: 3em;
+	border: .1em solid rgba(255, 255, 255, 0.2);
+	top: 22.1em;
+	right: 18.6em;
+	background: rgba(255, 255, 255, 0.2);
+  z-index: 15;
+}
+
+#glass #water{
+  width: .95em;
+  height: 1.7em;
+  background: #3366ff;
+  top: 1.3em;
+}
+
+/*fireplace*/
