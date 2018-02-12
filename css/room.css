@@ -14,7 +14,7 @@ h1{
 .canvas {
 	width: 55em;
 	height: 35em;
-	margin: 4em auto;
+	margin: 2em auto;
 	background: white;
 	position: relative;
 	z-index: -100;
@@ -27,7 +27,7 @@ h1{
 
 .dark{
   width: 55em;
-  height: 35em;
+  height: 45em;
   margin: 4em auto;
   background: rgba(0, 0, 0, .7);
 }
@@ -184,9 +184,9 @@ h1{
   width: .5em;
   height: 14em;
   top: 13em;
-  right: 9em;
+  right: 10em;
   background: #ffd633;
-  z-index: -20;
+  z-index: -15;
 }
 
 #lamp #base{
@@ -200,33 +200,35 @@ h1{
 
 #lamp #darkshade{
   border-bottom: 4.5em solid darkolivegreen;
-	border-left: 2em solid transparent;
-	border-right: 2em solid transparent;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
   width: 4em;
 	height: 4em;
-  right:calc(-2em - 1.8em);
+  right:calc(-1em - 1.8em);
   z-index: -18;
   top: -5em;
 }
 
 #lamp #lightshade{
   border-bottom: 4.5em solid greenyellow;
-	border-left: 2em solid transparent;
-	border-right: 2em solid transparent;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
   width: 4em;
 	height: 4em;
-  right:calc(-2em - 1.8em);
+  right:calc(-1em - 1.8em);
   z-index: -18;
   top: -5em;
 }
 
 #lamp #lamplight{
   border-bottom: 4.5em solid rgba(255, 255, 179, .5);
-	border-left: 2em solid transparent;
-	border-right: 2em solid transparent;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
   width: 8em;
 	height: 4em;
-  right:calc(-2em - 3.8em);
+  right:calc(-1em - 3.8em);
   z-index: -18;
   top: -.5em;
 }
@@ -242,7 +244,7 @@ h1{
 	position: absolute;
 	-webkit-transform-origin: center center 0;
 	-webkit-animation: flip 1.5s infinite step-end;
-  z-index: 0;
+  z-index: 10;
 }
 #bee:before {
 	content: "";
@@ -276,7 +278,7 @@ h1{
 	background: #331100;
 	top: 23em;
   right: 11em;
-  z-index: -20;
+  z-index: -10;
 }
 
 #table #legleft{
@@ -323,7 +325,7 @@ h1{
 	height: 0;
   top: 22em;
   right: 13em;
-  z-index: 15;
+  z-index: 0;
 }
 
 #flowerpot #dirt{
@@ -344,7 +346,7 @@ h1{
 	top: 22.1em;
 	right: 18.6em;
 	background: rgba(255, 255, 255, 0.2);
-  z-index: 15;
+  z-index: 0;
 }
 
 #glass #water{
@@ -364,7 +366,7 @@ h1{
  	width: 0;
   top: 17em;
   left:3em;
-  z-index: 20;
+  z-index: -5;
  }
 
  #fireplace #edge{
@@ -436,9 +438,10 @@ h1{
 #closet{
   width: 8em;
   height: 16em;
-  background: #262626;
+  background: #363636;
   left: 20%;
   top: 9.5em;
+  z-index: -5;
 }
 
 #closet #door{
@@ -457,14 +460,14 @@ h1{
 }
 
 #closet #ajar{
-	width: 8em;
+	width: 6.5em;
 	height: 16em;
 	-webkit-transform: skewY(20deg);
 	   -moz-transform: skewY(20deg);
 	     -o-transform: skewY(20deg);
 	background: #4d1b00;
   left: 8em;
-  top: 1.5em;
+  top: 1.2em;
 }
 
 #closet #shelf{
@@ -474,17 +477,287 @@ h1{
   top: 30%;
 }
 
+/*chimenysweep*/
+
 #chimenysweep{
   width: .5em;
   height: 9em;
   background: #1a1a1a;
   transform: rotate(-30deg);
+  top: 7.5em;
+  left: 4em;
 }
 
-#chimenysweep .bristle{
+#chimenysweep #bristle{
   width: .2em;
   height: 4em;
   background: #1a1a1a;
   transform: rotate(-90deg);
   top: -2em;
+}
+
+#chimenysweep #bristle2{
+  width: .2em;
+  height: 4em;
+  background: #1a1a1a;
+  transform: rotate(-82deg);
+  top: -2em;
+}
+#chimenysweep #bristle3{
+  width: .2em;
+  height: 4em;
+  background: #1a1a1a;
+  transform: rotate(-104deg);
+  top: -2em;
+}
+#chimenysweep #bristle4{
+  width: .2em;
+  height: 4em;
+  background: #1a1a1a;
+  transform: rotate(-96deg);
+  top: -2em;
+}
+
+/*bookshelf*/
+
+#bookshelf{
+ border-right: 5em solid #735426;
+ border-top: 3em solid transparent;
+ border-bottom: 6.79em solid transparent;
+ height: 19em;
+ width: 0;
+ top: 6em;
+ right:1.5em;
+ z-index: -20;
+}
+
+#bookshelf #edge{
+  height: 29em;
+  width: 1.5em;
+  top:-3em;
+  left: 5em;
+  background: #604620;
+}
+
+#bookshelf #inneredge{
+  height: 19em;
+  width: 1.5em;
+  top:0.2em;
+  left: 0.2em;
+  background: #604620;
+}
+
+/*code modified from https://css-tricks.com/stripes-css/*/
+
+#bookshelf #book1{
+  height: 2.5em;
+  width: 4.5em;
+  left: .2em;
+  top: -1em;
+  background: repeating-linear-gradient(
+    to right,
+    #f6ba52,
+    #f6ba52 10px,
+    #ffd180 10px,
+    #ffd180 20px
+    );
+    -webkit-transform: skewY(-30deg);
+}
+
+#bookshelf #book2{
+  height: 3em;
+  width: 4.5em;
+  left: .2em;
+  top: 1em;
+  background: repeating-linear-gradient(
+    to right,
+    #82ba67,
+    #82ba67 10px,
+    #82dd89 10px,
+    #82dd89 20px
+    );
+    -webkit-transform: skewY(-20deg);
+}
+
+#bookshelf #book3{
+  height: 3em;
+  width: 4.5em;
+  left: .2em;
+  top: 3.6em;
+  background: repeating-linear-gradient(
+    to right,
+    #fb267a,
+    #fb267a 10px,
+    #f81f40 10px,
+    #f81f40 20px
+    );
+    -webkit-transform: skewY(-10deg);
+}
+
+#bookshelf #book4{
+  height: 3em;
+  width: 4.5em;
+  left: .2em;
+  top: 6.3em;
+  background: repeating-linear-gradient(
+    to right,
+    #90b271,
+    #90b271 10px,
+    #b0d2a0 10px,
+    #b0d2a0 20px
+    );
+    -webkit-transform: skewY(-2deg);
+}
+
+#bookshelf #book5{
+  height: 3.2em;
+  width: 4.5em;
+  left: .2em;
+  top: 9.1em;
+  background: repeating-linear-gradient(
+    to right,
+    #2b1af9,
+    #2b1af9 10px,
+    #220ae0 10px,
+    #220ae0 20px
+    );
+    -webkit-transform: skewY(4deg);
+}
+
+#bookshelf #book6{
+  height: 3.2em;
+  width: 4.5em;
+  left: .2em;
+  top: 12em;
+  background: repeating-linear-gradient(
+    to right,
+    #c330fb,
+    #c330fb 10px,
+    #b028e0 10px,
+    #b028e0 20px
+    );
+    -webkit-transform: skewY(12deg);
+}
+
+#bookshelf #book7{
+  height: 3.5em;
+  width: 4.5em;
+  left: .2em;
+  top: 14.6em;
+  background: repeating-linear-gradient(
+    to right,
+    #938699,
+    #938699 10px,
+    #b3b6ab 10px,
+    #b3b6ab 20px
+    );
+    -webkit-transform: skewY(24deg);
+}
+
+#bookshelf #book8{
+  height: 3.7em;
+  width: 4.5em;
+  left: .2em;
+  top: 17em;
+  background: repeating-linear-gradient(
+    to right,
+    #f34630,
+    #f34630 10px,
+    #fa6a62 10px,
+    #fa6a62 20px
+    );
+    -webkit-transform: skewY(34deg);
+}
+#bookshelf #bookbottom{
+  height: 1.5em;
+  width: 4.5em;
+  left: .2em;
+  top: 20em;
+  background: #735426;
+  -webkit-transform: skewY(42deg);
+}
+
+/*ladder*/
+
+#ladder{
+  height: 19em;
+  width: .5em;
+  background: #d5c490;
+  transform: rotate(10deg);
+  z-index: 10;
+  top: 13em;
+  right: 3.5em;
+}
+
+#ladder #left{
+  height: 17em;
+  width: .5em;
+  background: #d5c490;
+  top: 0em;
+  right: 3em;
+}
+
+#ladder #rung1{
+  height: .5em;
+  width: 3.5em;
+  background: #d5c490;
+  top: 3em;
+  right: 0em;
+  transform: rotate(-6deg);
+}
+#ladder #rung2{
+  height: .5em;
+  width: 3.5em;
+  background: #d5c490;
+  top: 6em;
+  right: 0em;
+  transform: rotate(0deg);
+}
+#ladder #rung3{
+  height: .5em;
+  width: 3.5em;
+  background: #d5c490;
+  top: 9em;
+  right: 0em;
+  transform: rotate(6deg);
+}
+#ladder #rung4{
+  height: .5em;
+  width: 3.5em;
+  background: #d5c490;
+  top: 12em;
+  right: 0em;
+  transform: rotate(12deg);
+}
+#ladder #rung5{
+  height: .5em;
+  width: 3.5em;
+  background: #d5c490;
+  top: 15em;
+  right: 0em;
+  transform: rotate(20deg);
+}
+
+#pianobox{
+  width: 250px;
+  height: 300px;
+  top: 18em;
+  left: 11em;
+  z-index: 0;
+}
+
+#vampirebox{
+  width: 450px;
+  height: 300px;
+  top: 15em;
+  left: 8em;
+  z-index: 5;
+}
+
+#sinkbox{
+  width: 200px;
+  height: 250px;
+  top: 16em;
+  left: 24.5em;
+  z-index: -2;
 }
