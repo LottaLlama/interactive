@@ -11,13 +11,22 @@ h1{
   left: 1em;
 }
 
+.dark{
+  width: 100%;
+  height: 45em;
+  margin-top: 0em;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  z-index: 100;
+}
+
 .canvas {
 	width: 55em;
 	height: 35em;
-	margin: 2em auto;
+	margin: 4em auto;
 	background: white;
 	position: relative;
-	z-index: -100;
+	z-index: 1;
 }
 
 .object{
@@ -25,17 +34,10 @@ h1{
   opacity: 50%;
 }
 
-.dark{
-  width: 55em;
-  height: 45em;
-  margin: 4em auto;
-  background: rgba(0, 0, 0, .7);
-}
-
 #wall{
 	width: 55em;
 	height: 35em;
-  z-index: -50;
+  z-index: 5;
 }
 
 #wall #left{
@@ -77,10 +79,36 @@ h1{
 	border-left: 5em solid transparent;
 	border-right: 5em solid transparent;
   width: 35em;
-	height: 20em;
-  z-index: -25;
+	height: 0em;
+  z-index: 10;
   left: calc((55em - 45em)/2);
   bottom: 2em;
+}
+
+#flood{
+  border-bottom: 9.5em solid rgba(0, 102, 255, .8);
+	border-left: 7em solid transparent;
+	border-right: 7em solid transparent;
+  width: calc(100% - 14em);
+	height: 0;
+  bottom: 5em;
+  z-index: 70;
+}
+
+#flood #wall{
+  background: rgba(0, 102, 255, .8);
+	width: calc(100% + 14em);
+	height: 5em;
+  bottom: calc(-9.5em - 5em);
+  right: -7em;
+}
+
+#floodtall{
+  background: rgba(0, 102, 255, .8);
+	width: 100%;
+	height: 95%;
+  bottom: 0;
+  z-index: 70;
 }
 
 /*window stuff*/
@@ -91,13 +119,13 @@ h1{
   background: powderblue;
   left: 32em;
   top: 10em;
-  z-index: -25;
+  z-index: 10;
 }
 
 #window #frame{
   width: 6.5em;
   height: 9.5em;
-  border: .5em solid #f5f5f5;
+  border: .5em solid #e5e5e5;
 }
 
 #window #frame #closed{
@@ -186,7 +214,7 @@ h1{
   top: 13em;
   right: 10em;
   background: #ffd633;
-  z-index: -15;
+  z-index: 15;
 }
 
 #lamp #base{
@@ -205,10 +233,10 @@ h1{
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
   width: 4em;
-	height: 4em;
+	height: 0em;
   right:calc(-1em - 1.8em);
   z-index: -18;
-  top: -5em;
+  top: 0em;
 }
 
 #lamp #lightshade{
@@ -216,10 +244,10 @@ h1{
 	border-left: 1em solid transparent;
 	border-right: 1em solid transparent;
   width: 4em;
-	height: 4em;
+	height: 0em;
   right:calc(-1em - 1.8em);
   z-index: -18;
-  top: -5em;
+  top: 0em;
 }
 
 #lamp #lamplight{
@@ -244,7 +272,7 @@ h1{
 	position: absolute;
 	-webkit-transform-origin: center center 0;
 	-webkit-animation: flip 1.5s infinite step-end;
-  z-index: 10;
+  z-index: 70;
 }
 #bee:before {
 	content: "";
@@ -277,8 +305,8 @@ h1{
 	border-radius: 50%;
 	background: #331100;
 	top: 23em;
-  right: 11em;
-  z-index: -10;
+  right: 10.5em;
+  z-index: 20;
 }
 
 #table #legleft{
@@ -324,8 +352,8 @@ h1{
   width: 2.5em;
 	height: 0;
   top: 22em;
-  right: 13em;
-  z-index: 0;
+  right: 12.5em;
+  z-index: 40;
 }
 
 #flowerpot #dirt{
@@ -337,25 +365,47 @@ h1{
   right: -.5em;
 }
 
+#flowerpot #flowerbox{
+  width: 50px;
+  height: 75px;
+  top: -2em;
+  right: -.5em;
+}
+
 /*water in glass*/
 
 #glass{
-  width: 1em;
+  width: 1.5em;
 	height: 3em;
 	border: .1em solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 	top: 22.1em;
-	right: 18.6em;
-	background: rgba(255, 255, 255, 0.2);
-  z-index: 0;
+	right: 18em;
+	background: rgba(255, 255, 255, 0.3);
+  z-index: 40;
 }
 
 #glass #water{
-  width: .95em;
+  width: 1.5em;
   height: 1.7em;
   background: #3366ff;
   top: 1.3em;
 }
 
+
+#epipen{
+  height: .7em;
+  width: 1.7em;
+  background:#ffcc00;
+  border-left: .2em solid blue;
+  border-right: .4em solid orange;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  top: 24.8em;
+  right: 14.5em;
+  z-index: 40;
+}
 /*fireplace*/
 
  #fireplace{
@@ -366,7 +416,7 @@ h1{
  	width: 0;
   top: 17em;
   left:3em;
-  z-index: -5;
+  z-index: 50;
  }
 
  #fireplace #edge{
@@ -407,12 +457,37 @@ h1{
  	-webkit-animation: 0.33s flicker infinite alternate ease-in-out;
  }
 
+ #fireplace #firebig{
+  background: rgba(225, 225, 102, .8);
+ 	width: 5em;
+ 	height: 8em;
+  top: 4em;
+  right: -2em;
+ 	border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+ 	-webkit-animation: 0.33s flicker infinite alternate ease-in-out;
+ }
+
  #fireplace #fire #innards{
   background: rgba(225, 140, 26, .8);
  	width: .8em;
  	height: 1em;
   top: 1em;
   left: .4em;
+ 	border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+ 	-webkit-animation: 0.33s flicker infinite alternate ease-in-out;
+ }
+ #fireplace #firebig #innards{
+  background: rgba(225, 140, 26, .8);
+ 	width: 3em;
+ 	height: 5em;
+  top: 3em;
+  left: 1em;
  	border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 30%;
@@ -441,7 +516,7 @@ h1{
   background: #363636;
   left: 20%;
   top: 9.5em;
-  z-index: -5;
+  z-index: 30;
 }
 
 #closet #door{
@@ -457,6 +532,17 @@ h1{
   background: yellow;
   left: 10%;
   top: 55%;
+}
+
+#closet #slight{
+  width: 7.5em;
+  height: 16em;
+  -webkit-transform: skewY(-5deg);
+     -moz-transform: skewY(-5deg);
+       -o-transform: skewY(-5deg);
+  background: #4d1b00;
+  left: .5em;
+  top: .3em;
 }
 
 #closet #ajar{
@@ -475,6 +561,28 @@ h1{
   width: 8em;
   background: #999999;
   top: 30%;
+}
+
+#closet #jar1{
+  width: 2em;
+	height: 2.5em;
+	border: .1em solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+	top: calc(30% - 2.6em);
+	right: 3.5em;
+	background: black;
+}
+
+#closet #jar2{
+  width: 2em;
+	height: 2.5em;
+	border: .1em solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+	top: calc(30% - 2.6em);
+	right: 1em;
+	background: #ffbf80;
 }
 
 /*chimenysweep*/
@@ -528,7 +636,7 @@ h1{
  width: 0;
  top: 6em;
  right:1.5em;
- z-index: -20;
+ z-index: 10;
 }
 
 #bookshelf #edge{
@@ -684,16 +792,16 @@ h1{
   width: .5em;
   background: #d5c490;
   transform: rotate(10deg);
-  z-index: 10;
+  z-index: 40;
   top: 13em;
   right: 3.5em;
 }
 
 #ladder #left{
-  height: 17em;
+  height: 16em;
   width: .5em;
   background: #d5c490;
-  top: 0em;
+  top: 1em;
   right: 3em;
 }
 
@@ -739,25 +847,107 @@ h1{
 }
 
 #pianobox{
-  width: 250px;
-  height: 300px;
-  top: 18em;
+  width: 240px;
+  height: 250px;
+  top: 19em;
   left: 11em;
-  z-index: 0;
+  z-index: 50;
 }
+
+#pianobox #sheetmusic{
+  width: 1.5em;
+  height: 2.5em;
+  background: white;
+  top: 4.5em;
+  left: 4.7em;
+  transform: skewY(15deg);
+  z-index: 60;
+}
+
 
 #vampirebox{
   width: 450px;
   height: 300px;
-  top: 15em;
+  top: 13em;
   left: 8em;
-  z-index: 5;
+  z-index: 70;
 }
 
 #sinkbox{
-  width: 200px;
-  height: 250px;
-  top: 16em;
+  width: 100px;
+  height: 150px;
+  top: 16.5em;
   left: 24.5em;
-  z-index: -2;
+  z-index: 40;
+}
+
+#sinkbox #water{
+  border-bottom: 1.6em solid rgba(0, 102, 255, .8);
+	border-left: .9em solid transparent;
+	border-right: .9em solid transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+  width: 3.8em;
+	height: 0;
+  top: 1.6em;
+}
+
+#sinkbox #drip1{
+  width: .4em;
+  height: 3em;
+  background:rgba(0, 102, 255, .8);
+  top: 3em;
+  left: 1em;
+}
+
+#sinkbox #drip2{
+  width: .4em;
+  height: 4.5em;
+  background:rgba(0, 102, 255, .8);
+  top: 3em;
+  left: 3em;
+}
+#sinkbox #drip3{
+  width: .4em;
+  height: 2em;
+  background:rgba(0, 102, 255, .8);
+  top: 3em;
+  left: 4em;
+}
+
+#sinkbox #puddle{
+  width: 4em;
+  height: 1em;
+  background:rgba(0, 102, 255, .8);
+  border-radius: 50%;
+  bottom: -1em;
+  left: 1em;
+}
+
+#sootvampire{
+  width: 0;
+	height: 0;
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	border-bottom: 1.5em solid #b3b3b3;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  left: 7em;
+  top: 25em;
+  z-index: 40;
+}
+
+#sootfire{
+  width: 0;
+	height: 0;
+	border-left: 1.1em solid transparent;
+	border-right: 1.4em solid transparent;
+	border-bottom: .7em solid #b3b3b3;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  left: 4.9em;
+  top: 28.5em;
+  z-index: 55;
 }
