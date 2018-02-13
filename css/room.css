@@ -244,6 +244,8 @@ h1{
   border-bottom: 4.5em solid greenyellow;
 	border-left: 1em solid transparent;
 	border-right: 1em solid transparent;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
   width: 4em;
 	height: 0em;
   right:calc(-1em - 1.8em);
@@ -586,7 +588,7 @@ h1{
 	background: #ffbf80;
 }
 
-/*chimenysweep*/
+/*chimenysweep... yes i realized i spelled it wrong get over it*/
 
 #chimenysweep{
   width: .5em;
@@ -595,6 +597,13 @@ h1{
   transform: rotate(-30deg);
   top: 7.5em;
   left: 4em;
+  z-index: 35;
+}
+
+#fireplace #chimenysweep{
+  top: 5.5em;
+  left: -1.5em;
+  transform: rotate(-15deg);
 }
 
 #chimenysweep #bristle{
@@ -865,7 +874,6 @@ h1{
   z-index: 60;
 }
 
-
 #vampirebox{
   width: 450px;
   height: 300px;
@@ -879,7 +887,7 @@ h1{
   height: 150px;
   top: 16.5em;
   left: 24.5em;
-  z-index: 40;
+  z-index: 25;
 }
 
 #sinkbox #water{
@@ -948,7 +956,6 @@ h1{
 	border-bottom: .7em solid #b3b3b3;
   border-bottom-left-radius: 35%;
   border-bottom-right-radius: 35%;
-  left: 4.9em;
-  top: 28.5em;
-  z-index: 55;
+  right: .6em;
+  top: 10.5em;
 }
