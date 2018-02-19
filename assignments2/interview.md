@@ -1,5 +1,5 @@
 # Interview with Michael Wang
-##Co-Founder and CFO of Bowtie.ai
+## Co-Founder and CFO of Bowtie.ai
 
 We’ll talk
 
@@ -81,7 +81,7 @@ Yeah, but it did say interview so I'm guessing that I should probably ask you qu
 
 **Ok.**
 
-##Interview
+## Interview
 
 Um... Tell me a fun fact about yourself. Something that I don’t know.
 
@@ -156,9 +156,9 @@ Green people?
 
 What is it in Chinese?
 
-**Hong shao rou.**
+**Hong sao ruo.**
 
-*tries to pronounce* Hong shao rou.
+*tries to pronounce* Hong sao ruo.
 
 **And then we eat a lot of bok choy sometimes. Usually just stir fry. But she also makes other cuisines too, so we have frittatas in the morning, which is really good.**
 
