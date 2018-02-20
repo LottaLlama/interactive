@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slot Machine></title>
+  <style>
+  #column-one{
+    position: fixed;
+    top: 0;
+    right: 66%;
+    bottom: 0;
+    width: 33.333%;
+    background: red;
+  }
+  #column-two{
+    position: fixed;
+    top: 0;
+    right: 33%;
+    bottom: 0;
+    width: 33.333%;
+    background: blue;
+  }
+  #column-three{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 33.333%;
+    background: purple;
+  }
+
+  button{
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 30;
+  }
+  </style>
+</head>
+
+<body>
+  <button>Again</button>
+
+  <div id="column-one"></div>
+  <div id="column-two"></div>
+  <div id="column-three"></div>
+
+
+
+  <script src="../js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      var colors=['red', 'lime','pink','red', 'snow', 'purple', 'burlywood','peachpuff'];
+
+      function generateRandomColors(){
+        var color_one=colors[Math.floor(Math.random()*colors.length)];
+        var color_two=colors[Math.floor(Math.random()*colors.length)];
+        var color_three=colors[Math.floor(Math.random()*colors.length)];
+
+        console.log(colors[color_one]);
+
+
+        $("#column-one").css("background-color", color_one);
+        $("#column-two").css("background-color", color_two);
+        $("#column-three").css("background-color", color_three);
+      }
+
+      generateRandomColors();
+
+      $('button').click(function(){
+        generateRandomColors();
+
+        // if (color_one==color_two==color_three){
+        //   <p>You won!</p>
+        // }
+      })
+    })
+  </script>
+
+</body>
+
+</html>

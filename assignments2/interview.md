@@ -1,5 +1,5 @@
 # Interview with Michael Wang
-## Co-Founder and CFO of Bowtie.ai
+## Co-Founder and CFO of Bowtie, an AI messaging startup
 
 We’ll talk
 
@@ -165,3 +165,5 @@ What is it in Chinese?
 Really? And bacon?
 
 **And bacon. In the microwave.**
+
+Did you always want to do either music or entrepreneurship or computer stuff? Because you said before that you played video games but you didn't know what you wanted to do

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>JavaScript Exercise</title>
+    <meta charset="utf-8">
+    <style>
+
+      h2{
+        font-family: cursive;
+        padding: 30px;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body style="background-color: #581038">
+    <h2>content content hihihihi</h2>
+    <script src="../js/jquery.min.js"></script>
+    <!-- //put this before the code -->
+    <script type="text/javascript">
+    // script src="js/javascript"
+    // so the rest of the doc can load first
+    $(document).ready(function(){
+      //all jQuery goes inside here
+      // console.log("Hello jQuery");
+      // $('body').css('background', 'yellow'); //overwrites other css; $ acts as selector in css
+      // $('.special').css('font-size', '60px'); //example
+
+      var size=Math.floor(Math.random()*12)+1; //never zero, less than or equal to 12
+      var units = "em";
+      var fontSize = size+units;
+
+      console.log("font-size: "+fontSize);
+      $("body").css("font-size", fontSize); //single or double quotes, but be consistent in each line
+
+      $("body").click(function(){
+        alert("hello");
+      });
+
+      .mouseenter(function);
+      .mouseleave(function);
+      .hover(function{}function{});
+
+    });
+    //making sure that the document is ready for JavaScript to execute
+    //alert("Hello World");
+    // console.log("Hello World");
+    // var name = "Danielle";
+    // var year = "2018";
+    // var introduction = "Hi, I'm " + name + " and I'm taking ART 369 in " + year + ".";
+    // console.log(introduction);
+    //
+    // function hello(){
+    //   var greeting = "Hello it's ";
+    //   var date = new Date();
+    //   alert(greeting + date);
+    // }
+    //
+    // hello();
+    // console.log("Wazzup");
+    //
+    // function hellop(person){
+    //   var greeting = "Hello, " +person+ "! It's ";
+    //   var date = new Date();
+    //   alert(greeting+date);
+    // }
+    //
+    // hellop(name);
+
+    </script>
+  </body>
+</html>
