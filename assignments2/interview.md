@@ -136,7 +136,7 @@ But have you always been into music? Because you played the ukulele and the trom
 
 Describe that one day when you decided to stop playing.
 
-** When I discarded my identity as an Asian-American? Um, that didn’t happen. I like Pikachu. I like Pokémon. I think I still maintain that side of me.**
+**When I discarded my identity as an Asian-American? Um, that didn’t happen. I like Pikachu. I like Pokémon. I think I still maintain that side of me.**
 
 White rice versus brown rice?
 
