@@ -67,5 +67,5 @@ li{
   text-align: center;
   cursor: pointer;
   z-index: 80;
-  /* flex box? */
+  font-family: 'DINPro';
 }

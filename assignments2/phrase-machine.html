@@ -9,22 +9,24 @@
 
 <body>
   <button>Again</button>
+  <div id="canvas"></div>
 
   <div id="line-one">content content content</div>
   <div id="line-two">content content content</div>
 
   <script src="../js/jquery.min.js"></script>
-  <script>
+  <script type="text/javascript">
     $(document).ready(function(){
 
       var word1=['the ', 'my ', 'four ', 'when ', 'if ', 'how ', 'their ', 'eighty ', 'for ','and ', 'or ','but ','however '];
       var word2=['funny ','funky ','creative ','sinister ','awful ','unruly ','curly ','purple ','sparkly ', 'ephemeral ','miniscule ','ubiquitous ','misunderstood ','controlling ', 'reincarnated ','strong '];
-      var word3=['colors', 'potatoes','harmonies','puppies','shoes','crises','hamburgers','politics','eyes', 'whales', 'molecules', 'papers', 'words', 'pennies','storms','people','computers','civilizations','planets','bunnies','keys','radios'];
-      var word4=['fly, ', 'run, ', 'speak, ', 'elaborate, ', 'think, ','contemplate, ','stress, ','fell, ','recreated, ','hurt, ','played, ','understand, ','created, ', 'meandered, ','opened, ','end, ','remember, ', 'learned, ','were, ', 'bowed, ']
+      var word3=['colors ', 'potatoes ','harmonies ','puppies ','shoes  ','crises ','hamburgers ','politics ','eyes ', 'whales ', 'molecules ', 'papers ', 'words ', 'pennies ','storms ','people ','computers ','civilizations ','planets ','bunnies ','keys ','radios '];
+      var word4=['fly, ', 'run, ', 'speak, ', 'elaborate, ', 'think, ','contemplate, ','stress, ','fell, ','recreated, ','hurt, ','played, ','understand, ','created, ', 'meandered, ','opened, ','end, ','remember, ', 'learned, ','were, ', 'bowed, '];
       var word5=['ignorantly ','playfully ','woefully ','drastically ','very ','skillfully ', 'intermittently ', 'fully ', 'overwhelmingly ','quietly ','jokingly ','sparingly ', 'completely '];
-      var word6=['aware','alive','free','surrounded','monotone','colorful','playful','tall','short', 'sad','quick','putrid','livid','humid','glossy','artistic','beige','sick','reimagined', 'hungry','fuzzy,''ignorant'];
+      var word6=['aware','alive','free','surrounded','monotone','colorful','playful','caged', 'weird', 'sad','quick','putrid','livid','humid','glossy','artistic','beige','sick','reimagined', 'hungry','fuzzy','ignorant'];
 
-      var font=['American Typewriter','Anime Ace', 'Arial Rounded','Baskerville','Didot','DINPro','Documenta Sans', 'Eurostile','Gabriola','Montserrat','Noteworthy','Snell Roundhand'];
+      var font=['American Typewriter','Anime Ace', 'Arial Rounded','Baskerville','Didot','DINPro','Gabriola','Montserrat','Noteworthy','Snell Roundhand'];
+
 
       function generatePhrase(){
         var Rword1=word1[Math.floor(Math.random()*word1.length)];
@@ -34,8 +36,8 @@
         var Rword5=word5[Math.floor(Math.random()*word5.length)];
         var Rword6=word6[Math.floor(Math.random()*word6.length)];
 
-        var row1=Rword1+Rword2+Rword3;
-        var row2=Rword4+Rword5+Rword6;
+        var row1=Rword1+Rword2+Rword3+Rword4;
+        var row2=Rword5+Rword6;
 
         document.getElementById("line-one").innerHTML = row1;
         document.getElementById("line-two").innerHTML = row2;
@@ -51,7 +53,7 @@
       $('button').click(function(){
          generatePhrase();
       })
-    })
+    });
   </script>
 
 </body>

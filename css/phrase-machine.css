@@ -64,8 +64,8 @@ body{
 
 button{
   position: fixed;
-  bottom: 25px;
-  left: 25px;
+  bottom: 35px;
+  left: 35px;
   z-index: 30;
   font-family: "DinPro",sans-serif;
   color: white;
@@ -75,16 +75,25 @@ button{
   border-radius: 20%;
 }
 
+#canvas{
+  position: fixed;
+  height: 95%;
+  width: 97%;
+  margin-left: .5%;
+  margin-top: .5%;
+  border: solid navy 3px;
+}
+
 #line-one{
   position: absolute;
-  left: 30%;
+  left: 20%;
   font-size: 36pt;
   top: 20%;
 }
 
 #line-two{
   position: absolute;
-  left: 30%;
+  left: 20%;
   font-size: 36pt;
   top: 40%;
 }
