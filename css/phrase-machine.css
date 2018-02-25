@@ -1,0 +1,90 @@
+body{
+  background-color: #eff2f6;
+}
+
+@font-face{
+  font-family: "American Typewriter";
+  src: url("fonts/AmericanTypewriter.ttc");
+}
+
+@font-face{
+  font-family: "Anime Ace";
+  src: url("fonts/animeace2_reg.otf");
+}
+
+@font-face{
+  font-family: "Arial Rounded";
+  src: url("fonts/ArialRoundedBold.ttf");
+}
+
+@font-face{
+  font-family: "Baskerville";
+  src: url("fonts/Baskerville.ttc");
+}
+
+@font-face{
+  font-family: "Didot";
+  src: url("fonts/Didot.ttc");
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("fonts/DINPro-Regular.otf");
+}
+
+@font-face{
+  font-family: "Documenta Sans";
+  src: url("fonts/DTLDocSanST");
+}
+
+@font-face{
+  font-family: "Eurostile";
+  src: url("fonts/Eurostile");
+}
+
+@font-face{
+  font-family: "Gabriola";
+  src: url("fonts/Gabriola.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Medium.ttf");
+}
+
+@font-face{
+  font-family: "Noteworthy";
+  src: url("fonts/Noteworthy.ttc");
+}
+
+@font-face{
+  font-family: "Snell Roundhand";
+  src: url("fonts/SnellRoundhand.ttc");
+}
+
+button{
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 30;
+  font-family: "DinPro",sans-serif;
+  color: white;
+  background-color: blue;
+  width: 60px;
+  height: 30px;
+  border-radius: 20%;
+}
+
+#line-one{
+  position: absolute;
+  left: 30%;
+  font-size: 36pt;
+  top: 20%;
+}
+
+#line-two{
+  position: absolute;
+  left: 30%;
+  font-size: 36pt;
+  top: 40%;
+}
