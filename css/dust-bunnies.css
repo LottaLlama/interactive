@@ -80,11 +80,20 @@ a:visited{
   color: black;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px ;
+  justify-content:space-around;
+  padding: 20px;
+  /* margin-left: 20%;
+  padding-top: 5%; */
+}
+
 .box {
-  width: 30%;
+  width: 95%;
   height: 400px;
   background: #dddddd;
-  border: 2px darkblue solid;
+  /* border: 2px darkblue solid; */
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   border-top-left-radius: 10%;
@@ -98,10 +107,11 @@ a:visited{
 }
 
 .box .text{
-  padding: 20%;
-  font-size: 20pt;
-  top: 40%;
-  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  font-family: 'Montserrat';
+  font-size: 46pt;
 }
 
 pre{
@@ -132,4 +142,14 @@ li{
 
 cursor{
   url: (img)
+}
+
+img{
+  opacity: 0.0;
+  padding: 30%;
+  position: relative;
+}
+
+img:hover{
+  opacity: 0.6;
 }
