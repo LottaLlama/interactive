@@ -8,11 +8,18 @@ h1{
   font-family: 'DINPro';
 }
 
-i{
+#rc i{
   font-family: 'DINPro';
   font-size: 11pt;
   color: #3b8ae4;
   max-width: 1000px;
+}
+
+#rd {
+  font-family: 'DINPro';
+  font-size: 11pt;
+  color: #e9fda2;
+  margin-left: 10px;
 }
 
 p{
