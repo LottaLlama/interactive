@@ -34,6 +34,11 @@
     left: 25px;
     z-index: 30;
   }
+
+  #win{
+    font-size: 48;
+    z-index: 30;
+  }
   </style>
 </head>
 
@@ -43,6 +48,7 @@
   <div id="column-one"></div>
   <div id="column-two"></div>
   <div id="column-three"></div>
+  <div id="win">YOU WON!</div>
 
 
 
@@ -50,15 +56,19 @@
   <script>
     $(document).ready(function(){
 
-      var colors=['red', 'lime','pink','red', 'snow', 'purple', 'burlywood','peachpuff'];
+      var colors=['red', 'lime'];
 
       function generateRandomColors(){
         var color_one=colors[Math.floor(Math.random()*colors.length)];
         var color_two=colors[Math.floor(Math.random()*colors.length)];
         var color_three=colors[Math.floor(Math.random()*colors.length)];
 
-        console.log(colors[color_one]);
+        console.log(color_one);
 
+        if (color_one==color_two&&color_two==color_three){
+          $('#win').fadeIn(4000);
+          console.log("you won!");
+        }
 
         $("#column-one").css("background-color", color_one);
         $("#column-two").css("background-color", color_two);
@@ -69,11 +79,9 @@
 
       $('button').click(function(){
         generateRandomColors();
-
-        // if (color_one==color_two==color_three){
-        //   <p>You won!</p>
-        // }
       })
+
+
     })
   </script>
 
