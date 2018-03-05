@@ -384,6 +384,45 @@ body{
   text-decoration: none;
 }
 
+#poopbase{
+  height: 1.5em;
+  width: 3em;
+  background: lavender;
+  border: purple dashed 1px;
+  border-radius: 50%;
+  left: 52%;
+  top: 80vh;
+  position: absolute;
+  display: none;
+
+}
+
+#poopbase #poopmedium{
+  height: .8em;
+  width: 2em;
+  background: lavender;
+  border: purple dashed 1px;
+  border-radius: 50%;
+  left: .45em;
+  top: -.4em;
+  position: absolute;
+  display: none;
+
+}
+
+#poopbase #pooptop{
+  height: .5em;
+  width: .8em;
+  background: lavender;
+  border: purple dashed 1px;
+  border-radius: 50%;
+  left: 1em;
+  top: -.8em;
+  position: absolute;
+
+  display: none;
+}
+
 @-webkit-keyframes breathe{
  from{
    transform: scaleX(1);

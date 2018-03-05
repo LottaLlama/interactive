@@ -58,6 +58,11 @@
     <div id="yuck">*pleh*</div>
     <div id="yum">*nomnomnom*<br>*buuuuurp*</div>
 
+    <div id="poopbase">
+      <div id="poopmedium"></div>
+      <div id="pooptop"></div>
+    </div>
+
     <div id="back"><a href=../index.html>Back</a></div>
 
 
@@ -162,6 +167,15 @@
         $('#yum').show();
         $("#text").html("Wow. I guess he really likes these grape-flavored carrots... Grarrots.")
         $('#carrot3').hide();
+      });
+
+      $('.bunnybody').click(function(){
+        $('#yum').hide();
+        $("#text").html("Aww, bye bye jackalope! But look! He gave us a present.")
+        $('.bunnybody').fadeOut(1000);
+        $('#poopbase').fadeIn(2000);
+        $('#poopmedium').fadeIn(2000);
+        $('#pooptop').fadeIn(2000);
       });
       // $('.hiddenFormMouseover').mouseenter(function() {
       //   $(this).children('.hiddenFormMouseoverButton').stop();
