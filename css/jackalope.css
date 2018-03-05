@@ -1,0 +1,218 @@
+body{
+  background: black;
+}
+
+.object{
+  position: absolute;
+}
+
+.bunnybody{
+  width: 7em;
+  height: 10em;
+  background: burlywood;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  top: 14em;
+  left: 14em;
+  z-index: -5;
+}
+
+.bunnybody .bunnypaw{
+  width: 1.3em;
+  height: 1.5em;
+  display: inline-block;
+  margin: .9em;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom: darkgoldenrod solid 2px;
+  border-left: darkgoldenrod solid 2px;
+  border-right: darkgoldenrod solid 2px;
+  background: burlywood;
+  z-index: 15;
+}
+
+.bunnybody .bunnypaw .finger1{
+  width: 1px;
+  height: .7em;
+  background: black;
+  margin-left: .4em;
+  margin-right: .23em;
+  margin-top: .7em;
+  z-index: 15;
+}
+
+.bunnybody .bunnypaw .finger2{
+  width: 1px;
+  height: .7em;
+  background: black;
+  margin-top: .3em;
+  position: relative;
+  left: .9em;
+  top: -1em;
+  z-index: 15;
+}
+
+.bunnybody .eye{
+  background: black;
+  width: .7em;
+  height: .7em;
+  display: inline-block;
+  margin: 1.26em;
+  border-radius: 50%;
+}
+
+.bunnybody #teeth{
+  width: 2em;
+  height: 1em;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: white;
+  position: relative;
+  top: -4.8em;
+  left: 2.35em;
+}
+
+.bunnybody #teeth #toothline{
+  width: 3px;
+  height: .9em;
+  background: black;
+  position: relative;
+  left: .9em;
+  top: .1em;
+}
+
+.bunnybody .foot{
+  width: 2.5em;
+  height: 1.5em;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: darkgoldenrod solid 2px;
+  border-left: darkgoldenrod solid 2px;
+  border-right: darkgoldenrod solid 2px;
+  background: burlywood;
+  position: relative;
+  top: .22em;
+  left: .6em;
+  display: inline-block;
+  z-index: 10;
+}
+
+.bunnybody .foot .finger1{
+  width: 1px;
+  height: .7em;
+  background: black;
+  margin-left: .4em;
+  margin-right: .23em;
+  margin-top: .7em
+}
+
+.bunnybody .foot .toe2{
+  width: 1px;
+  height: .7em;
+  background: black;
+  margin-left: .4em;
+  margin-right: .23em;
+  margin-top: .7em;
+  position: relative;
+  left: .8em;
+  top: -1.4em;
+}
+
+.bunnybody .foot .toe3{
+  width: 1px;
+  height: .7em;
+  background: black;
+  margin-left: .4em;
+  margin-right: .23em;
+  margin-top: .7em;
+  position: relative;
+  left: 1.6em;
+  top: -2.8em;
+}
+
+.bunnybody #nose{
+  width: 1em;
+  height: .5em;
+  border-radius: 50%;
+  background: rgb(255,153,163);
+  position: relative;
+  top: -8em;
+  left: 2.8em;
+}
+
+.bunnybody #belly{
+  width: 4em;
+  height: 6.5em;
+  background: white;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 3.5em;
+  left: 1.4em;
+  z-index: -3;
+}
+
+.bunnybody #antlermainR{
+  /* width: 3em;
+  height: 6em;
+  transform: rotate(40deg);
+  border-radius: 50%;
+  border-bottom: #86592d solid 3px;
+  border-right: #86592d solid 3px;
+  position: absolute;
+  top: -4.5em;
+  left: 5.7em; */
+
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  top: -3.8em;
+  left: -4.8em;
+  transform: rotate(-17deg);
+}
+
+.bunnybody #antlermainR #antler1R{
+  width: 1.5em;
+  height: 2.5em;
+  transform: rotate(50deg);
+  border-radius: 50%;
+  border-bottom: #86592d solid 3px;
+  border-right: #86592d solid 3px;
+  position: absolute;
+  top: 2.5em;
+  left: 2em;
+}
+
+.bunnybody #antlermainL{
+  /* width: 3em;
+  height: 6em;
+  transform: rotate(-40deg);
+  border-radius: 50%;
+  border-bottom: #86592d solid 3px;
+  border-left: #86592d solid 3px;
+  position: absolute;
+  top: -4.3em;
+  left: -2.1em; */
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  top: -6.8em;
+  left: -3.7em;
+  transform: rotate(17deg);
+}
+
+.bunnybody #antlermainL #antler1L{
+  width: 1.5em;
+  height: 2.5em;
+  transform: rotate(-50deg);
+  border-radius: 50%;
+  border-bottom: #86592d solid 3px;
+  border-left: #86592d solid 3px;
+  position: absolute;
+  top: 3.5em;
+  left: 2.2em;
+}

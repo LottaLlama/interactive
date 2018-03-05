@@ -34,16 +34,17 @@ body .night #organism .eye{
   height: 20vh;
   border-radius: 50%;
   position: fixed;
-  bottom: 5em;
+  bottom: 20vh;
+  left: 30vh;
   text-align: center;
   padding: 2em;
 }
 
 #organism .eye{
   background: black;
-  width: 2vw;
-  height: 2vw;
-  padding 1em;
+  width: 1vw;
+  height: 1vw;
+  margin: 1em;
   border-radius: 50%;
   display: inline-block;
 }
@@ -54,4 +55,5 @@ body .night #organism .eye{
   right: 1em;
   background: white;
   border: 1px solid gray;
+  padding: 1em;
 }
