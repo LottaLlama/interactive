@@ -317,6 +317,71 @@ body{
 	left: 16em;
 	transform: rotate(16deg);
 	z-index: -3;
+  display: none;
+}
+
+#carrot2 {
+	width: 3em;
+	height: 1em;
+	border-top: .5em solid transparent;
+	border-left: 4em solid #ff8533;
+	border-bottom: .5em solid transparent;
+  border-top-right-radius: 50%;
+  position: absolute;
+	top: 80%;
+	left: 17em;
+	transform: rotate(-20deg);
+	z-index: -3;
+  display: none;
+}
+
+#carrot3 {
+	width: 3em;
+	height: 1em;
+	border-top: .5em solid transparent;
+	border-left: 4em solid purple;
+	border-bottom: .5em solid transparent;
+  border-top-right-radius: 50%;
+  position: absolute;
+	top: 80%;
+	left: 14.5em;
+	transform: rotate(-5deg);
+	z-index: -4;
+  display: none;
+}
+
+#yuck{
+  font-family: 'Gabriola',sans-serif;
+  font-style: italic;
+  font-size: 16pt;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 63vh;
+  left: 60%;
+  color: white;
+  display: none;
+}
+
+#yum{
+  font-family: 'Gabriola',sans-serif;
+  font-style: italic;
+  line-height: 13pt;
+  font-size: 16pt;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 63vh;
+  left: 60%;
+  color: white;
+  display: none;
+}
+
+#back a{
+  font-family: sans-serif;
+  color: forestgreen;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  text-decoration: none;
 }
 
 @-webkit-keyframes breathe{

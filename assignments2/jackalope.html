@@ -46,6 +46,8 @@
     </div>
 
     <div id="carrot"></div>
+    <div id="carrot2"></div>
+    <div id="carrot3"></div>
 
     <div id="bush1"></div>
     <div id="bush2"></div>
@@ -53,12 +55,18 @@
     <div id="bush4"></div>
     <div id="bush5"></div>
 
+    <div id="yuck">*pleh*</div>
+    <div id="yum">*nomnomnom*<br>*buuuuurp*</div>
+
+    <div id="back"><a href=../index.html>Back</a></div>
+
 
 
   <script src="../js/jquery.min.js"></script>
   <script type="text/javascript">
 
   $(document).ready(function(){
+
 
     var greens=[ 'forestgreen', 'darkgreen','darkolivegreen','limegreen', 'mediumseagreen','olivedrab'];
     var c= 38;
@@ -127,15 +135,43 @@
     function changeText(){
       if (x == 1){
         $("#text").html("Hmm... I wonder what we'll find.");
-        console.log("yes");
       }else if (x == 2){
         $("#text").html("Wait, I think I see something!");
       }else if ((x == 3)||(x == 4)){
         $("#text").html("Let's clear the rest of the bushes.");
       }else if (x == 5){
         $("#text").html("OH MY GOSH ISN'T IT THE CUTEST THING!!!! Do we have anything to give it?");
+         $('#carrot').fadeIn(5000);
+         $('#carrot2').fadeIn(5000);
+         $('#carrot3').fadeIn(5000);
       }
     }
+
+      $('#carrot').click(function(){
+        $('#yuck').show();
+        $("#text").html("I don't think he likes lemon-flavored carrots...")
+        $('#carrot').hide();
+      });
+      $('#carrot2').click(function(){
+        $('#yuck').show();
+        $("#text").html("I don't think he likes orange-flavored carrots...")
+        $('#carrot2').hide();
+      });
+      $('#carrot3').click(function(){
+        $('#yuck').hide();
+        $('#yum').show();
+        $("#text").html("Wow. I guess he really likes these grape-flavored carrots... Grarrots.")
+        $('#carrot3').hide();
+      });
+      // $('.hiddenFormMouseover').mouseenter(function() {
+      //   $(this).children('.hiddenFormMouseoverButton').stop();
+      //   $(this).children('.hiddenFormMouseoverButton').fadeOut(0);
+      //   $(this).children('.hiddenFormMouseoverButton').fadeIn();
+      // });
+      // $('#carrot').mouseover(function(){
+      //   $('#carrot').fadeIn(3000);
+      // });
+
 
 
 
