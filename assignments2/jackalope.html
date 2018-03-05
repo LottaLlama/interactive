@@ -9,6 +9,8 @@
 
   <body>
 
+    <div id="text">We're off on an adventure! My, there are a lot of bushes in the way.</div>
+
     <div class="object bunnybody">
       <div class="eye"></div>
       <div class="eye"></div>
@@ -43,10 +45,98 @@
       </div>
     </div>
 
-  <script src="js/jquery.min.js"></script>
+    <div id="carrot"></div>
+
+    <div id="bush1"></div>
+    <div id="bush2"></div>
+    <div id="bush3"></div>
+    <div id="bush4"></div>
+    <div id="bush5"></div>
+
+
+
+  <script src="../js/jquery.min.js"></script>
   <script type="text/javascript">
 
   $(document).ready(function(){
+
+    var greens=[ 'forestgreen', 'darkgreen','darkolivegreen','limegreen', 'mediumseagreen','olivedrab'];
+    var c= 38;
+    var d= 42;
+    var e= 20;
+    var f= 30;
+    var x=0;
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getRandomInt2(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getRandomIndex(min, max){
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    for (i=1; i<6; i++){
+      var Rgreens=greens[Math.floor(Math.random()*greens.length)];
+      var bushy='#bush'+i;
+
+      var a=20*(i-1)-20;
+      var b=20*i-20;
+
+      var thing= getRandomInt(a,b);
+      var percent = thing+'%';
+      var thing2= getRandomInt2(c,d);
+      var percent2 = thing2+'%';
+      var thing3= getRandomIndex(e,f);
+
+      $(bushy).css('background',Rgreens);
+      $(bushy).css('left', percent);
+      $(bushy).css('top', percent2);
+      $(bushy).css('z-index',thing3);
+    }
+
+    $("#bush1").click(function(){
+      $("#bush1").fadeOut('slow');
+      x++;
+      changeText();
+    });
+    $("#bush2").click(function(){
+      $("#bush2").fadeOut('slow');
+      x++;
+      changeText();
+    });
+    $("#bush3").click(function(){
+      $("#bush3").fadeOut('slow');
+      x++;
+      changeText();
+    });
+    $("#bush4").click(function(){
+      $("#bush4").fadeOut('slow');
+      x++;
+      changeText();
+    });
+    $("#bush5").click(function(){
+      $("#bush5").fadeOut('slow');
+      x++;
+      changeText();
+    });
+
+    function changeText(){
+      if (x == 1){
+        $("#text").html("Hmm... I wonder what we'll find.");
+        console.log("yes");
+      }else if (x == 2){
+        $("#text").html("Wait, I think I see something!");
+      }else if ((x == 3)||(x == 4)){
+        $("#text").html("Let's clear the rest of the bushes.");
+      }else if (x == 5){
+        $("#text").html("OH MY GOSH ISN'T IT THE CUTEST THING!!!! Do we have anything to give it?");
+      }
+    }
+
 
 
   });

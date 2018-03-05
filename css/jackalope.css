@@ -1,5 +1,10 @@
+@font-face{
+  font-family: "Gabriola";
+  src: url("fonts/Gabriola.ttf");
+}
+
 body{
-  background: black;
+  background: #001100;
 }
 
 .object{
@@ -14,8 +19,8 @@ body{
   border-top-left-radius: 45%;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
-  top: 14em;
-  left: 14em;
+  top: 60vh;
+  left: 50%;
   z-index: -5;
 }
 
@@ -31,6 +36,7 @@ body{
   border-right: darkgoldenrod solid 2px;
   background: burlywood;
   z-index: 15;
+  -webkit-animation: 2s breathe infinite alternate ease-in-out;
 }
 
 .bunnybody .bunnypaw .finger1{
@@ -59,8 +65,10 @@ body{
   width: .7em;
   height: .7em;
   display: inline-block;
-  margin: 1.26em;
+  margin: 1.26em 1.26em;
   border-radius: 50%;
+  top: 0em;
+  -webkit-animation: 2s breatheeyes infinite alternate ease-in-out;
 }
 
 .bunnybody #teeth{
@@ -97,6 +105,7 @@ body{
   left: .6em;
   display: inline-block;
   z-index: 10;
+  -webkit-animation: 2s breathefeet infinite alternate ease-in-out;
 }
 
 .bunnybody .foot .finger1{
@@ -140,6 +149,7 @@ body{
   position: relative;
   top: -8em;
   left: 2.8em;
+  -webkit-animation: 2s breathenose infinite alternate ease-in-out;
 }
 
 .bunnybody #belly{
@@ -154,6 +164,7 @@ body{
   top: 3.5em;
   left: 1.4em;
   z-index: -3;
+  -webkit-animation: 2s breathe infinite alternate ease-in-out;
 }
 
 .bunnybody #antlermainR{
@@ -215,4 +226,131 @@ body{
   position: absolute;
   top: 3.5em;
   left: 2.2em;
+}
+
+#bush1{
+  width: 30em;
+  height: 22em;
+  background: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 40%;
+  left: 14em;
+  border: green solid 2px;
+}
+
+#bush2{
+  width: 30em;
+  height: 22em;
+  background: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 40%;
+  left: 14em;
+  border: green solid 2px;
+}
+
+#bush3{
+  width: 30em;
+  height: 22em;
+  background: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 40%;
+  left: 14em;
+  border: green solid 2px;
+}
+
+#bush4{
+  width: 30em;
+  height: 22em;
+  background: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 40%;
+  left: 14em;
+  border: green solid 2px;
+}
+
+#bush5{
+  width: 30em;
+  height: 22em;
+  background: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: absolute;
+  top: 40%;
+  left: 14em;
+  border: green solid 2px;
+}
+
+#text{
+  font-size: 22pt;
+  font-family: 'Gabriola',sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+#carrot {
+	width: 3em;
+	height: 1em;
+	border-top: .5em solid transparent;
+	border-left: 4em solid orange;
+	border-bottom: .5em solid transparent;
+  border-top-right-radius: 50%;
+  position: absolute;
+	top: 80%;
+	left: 16em;
+	transform: rotate(16deg);
+	z-index: -3;
+}
+
+@-webkit-keyframes breathe{
+ from{
+   transform: scaleX(1);
+ }
+ to{
+   transform: scaleX(1.1);
+ }
+}
+
+@-webkit-keyframes breathenose{
+ from{
+   top: -8em;
+ }
+ to{
+   top: -8.3em;
+ }
+}
+
+@-webkit-keyframes breathefeet{
+ from{
+   top: .22em;
+ }
+ to{
+   top: .55em;
+ }
+}
+
+@-webkit-keyframes breatheeyes{
+ from{
+   margin: 1.26em 1.26em;
+ }
+ to{
+   margin: 1.1em 1.26em;
+ }
 }
