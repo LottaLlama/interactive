@@ -2,9 +2,17 @@ body{
   background: powderblue;
 }
 
-.A{
+.A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V{
   width: 45px;
-  height: 45px;
+  height: 55px;
+  position: relative;
+  display: inline-block;
+}
+
+.W, .X, .Y, .Z, .ques, .exclam, .peri, .comma, .semi, .rightquo, .leftquo, .ndash, .mdash{
+  width: 45px;
+  height: 55px;
+  position: relative;
   display: inline-block;
 }
 
