@@ -2,6 +2,12 @@ body{
   background: powderblue;
 }
 
+.A{
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
 .container{
   width: 45px;
   height: 45px;
@@ -354,7 +360,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.F #dot22, .M #dot22, .N #dot22, .T #dot22, .U #dot22, .V #dot22, .W #dot22, .seven #dot22{
+.M #dot22, .N #dot22, .T #dot22, .U #dot22, .V #dot22, .W #dot22, .seven #dot22{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -374,7 +380,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot23, .C #dot23, .D #dot23, .E #dot23, .G #dot23, .H #dot23, .K #dot23, .M #dot23, .N #dot23, .O #dot23, .P #dot23{
+.B #dot23, .C #dot23, .D #dot23, .E #dot23, .F #dot23, .G #dot23, .H #dot23, .K #dot23, .M #dot23, .N #dot23, .O #dot23, .P #dot23{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -385,7 +391,7 @@ body{
   position: absolute;
 }
 
-.Q #dot23, .S #dot23, .X #dot23, .Y #dot23, .Z #dot23, .zero #dot23, .two #dot23, .three #dot23{
+.Q #dot23, .R #dot23, .S #dot23, .X #dot23, .Y #dot23, .Z #dot23, .zero #dot23, .two #dot23, .three #dot23{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -395,7 +401,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.five, .eight, .nine, .ques, .rightquo, .leftquo  #dot23{
+.five #dot23, .eight #dot23, .nine #dot23, .ques #dot23, .rightquo #dot23, .leftquo  #dot23{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -565,7 +571,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.C #dot32, .F #dot32, .G #dot32, .M #dot32, .N #dot32, .O #dot32, .Q #dot32, .T #dot32, .U #dot32, .V #dot32, .W #dot32{
+.C #dot32, .G #dot32, .M #dot32, .N #dot32, .O #dot32, .Q #dot32, .T #dot32, .U #dot32, .V #dot32, .W #dot32{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -585,7 +591,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot33, .D #dot33, .E #dot33, .H #dot33, .K #dot33, .M #dot33, .P #dot33, .R #dot33, .S #dot33, .X #dot33, .Y #dot33, .Z #dot33{
+.B #dot33, .D #dot33, .E #dot33, .F #dot33, .H #dot33, .K #dot33, .M #dot33, .P #dot33, .R #dot33, .S #dot33, .X #dot33, .Y #dot33, .Z #dot33{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -678,7 +684,7 @@ body{
 .H #dot37, .J #dot37, .M #dot37, .X #dot37, .Y #dot37, .Z #dot37, .two #dot37, .three #dot37, .four #dot37, .seven #dot37, .eight #dot37, .leftquo #dot37{
   width: 5px;
   height: 5px;
-  background-color: .black;
+  background-color: black;
   border-radius: 50%;
   top: 12.5px;
   left: 32.5px;
@@ -776,7 +782,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot43, .E #dot43, .F #dot43, .H #dot43, .K #dot43, .P #dot43, .R #dot43, .S #dot43, .V #dot43{
+.B #dot43, .D #dot43, .E #dot43, .F #dot43, .H #dot43, .K #dot43, .P #dot43, .R #dot43, .S #dot43, .V #dot43{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -806,7 +812,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A #dot44, .D #dot44, .L #dot44, .M #dot44, .N #dot44, .X #dot44, .Y #dot44, .four #dot44, .five #dot44, .semi #dot44, .leftquo #dot44{
+.A #dot44, .L #dot44, .M #dot44, .N #dot44, .X #dot44, .Y #dot44, .four #dot44, .five #dot44, .semi #dot44, .leftquo #dot44{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -887,7 +893,17 @@ body{
   display: inline-block;
   position: absolute;
 }
- .B #dot48, .D #dot48, .M #dot48, .N #dot48, .O #dot48, .P #dot48, .Q #dot48, .R #dot48, .T #dot48, .U #dot48, .W #dot48, .zero #dot48, .ques #dot48, .leftquo #dot48{
+ .B #dot48, .D #dot48, .M #dot48, .N #dot48, .O #dot48, .P #dot48, .Q #dot48, .R #dot48, .T #dot48, .U #dot48, .W #dot48{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot48, .nine #dot48, .ques #dot48, .leftquo #dot48{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -957,7 +973,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A #dot53, .B #dot53, .E #dot53, .F #dot53, .H #dot53, .K #dot53, .P #dot53, .R #dot53, .V #dot53{
+.A #dot53, .B #dot53, .D #dot53, .E #dot53, .F #dot53, .H #dot53, .K #dot53, .P #dot53, .R #dot53, .V #dot53{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -987,7 +1003,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot54, .D #dot54, .E #dot54, .F #dot54, .H #dot54, .K #dot54, .L #dot54, .M #dot54, .R #dot54, .S #dot54, .W #dot54{
+.B #dot54, .E #dot54, .F #dot54, .H #dot54, .K #dot54, .L #dot54, .M #dot54, .R #dot54, .S #dot54, .W #dot54{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1167,7 +1183,7 @@ body{
   display: inline-block;
   position: absolute;
 }
- .A #dot63, .B #dot63, .E #dot63, .F #dot63, .H #dot63, .K #dot63, .P #dot63, .R #dot63, .zero #dot63, .four #dot63, .six #dot63, .eight #dot63{
+ .A #dot63, .B #dot63, .D #dot63, .E #dot63, .F #dot63, .H #dot63, .K #dot63, .P #dot63, .R #dot63, .zero #dot63, .four #dot63, .six #dot63, .eight #dot63{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1187,7 +1203,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.D #dot64, .L #dot64, .M #dot64, .P #dot64, .V #dot64, .W #dot64, .X #dot64, .nine #dot64{
+.L #dot64, .M #dot64, .P #dot64, .V #dot64, .W #dot64, .X #dot64, .nine #dot64{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1337,7 +1353,7 @@ body{
   display: inline-block;
   position: absolute;
 }
- .A #dot73, .B #dot73, .E #dot73, .F #dot73, .H #dot73, .K #dot73, .P #dot73, .R #dot73, .zero #dot73, .four #dot73, .six #dot73, .eight #dot73{
+ .A #dot73, .B #dot73, .D #dot73, .E #dot73, .F #dot73, .H #dot73, .K #dot73, .P #dot73, .R #dot73, .zero #dot73, .four #dot73, .six #dot73, .eight #dot73{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1357,7 +1373,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A #dot74, .D #dot74, .L #dot74, .V #dot74, .W #dot74, .X #dot74, .Z #dot74, .two #dot74, .four #dot74{
+.A #dot74, .L #dot74, .V #dot74, .W #dot74, .X #dot74, .Z #dot74, .two #dot74, .four #dot74{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1400,7 +1416,7 @@ body{
 .A #dot76, .N #dot76, .V #dot76, .W #dot76, .X #dot76, .four #dot76, .seven #dot76{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 32.5px;
   left: 27.5px;
@@ -1417,7 +1433,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A, .H, .J, .K, .R, .four #dot77{
+.A #dot77, .H #dot77, .J #dot77, .K #dot77, .R #dot77, .four #dot77{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1437,7 +1453,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot78, .D #dot78, .E #dot78, .L #dot78, .M #dot78, .N #dot78, .O #dot78, .Q #dot78, .S #dot78, .U #dot78, .W #dot78, .Z #dot78{
+.B #dot78, .D #dot78, .E #dot78, .G #dot78, .L #dot78, .M #dot78, .N #dot78, .O #dot78, .Q #dot78, .S #dot78, .U #dot78, .W #dot78, .Z #dot78{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1507,7 +1523,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.B #dot83, .E #dot83, .F #dot83, .H #dot83, .K #dot83, .P #dot83, .R #dot83, .U #dot83, .W #dot83, .X #dot83, .Z #dot83{
+.B #dot83, .D #dot83, .E #dot83, .F #dot83, .H #dot83, .K #dot83, .P #dot83, .R #dot83, .U #dot83, .W #dot83, .X #dot83, .Z #dot83{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1537,7 +1553,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.D #dot84, .L #dot84, .V #dot84, .comma #dot84, .semi #dot84{
+.L #dot84, .V #dot84, .comma #dot84, .semi #dot84{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1627,7 +1643,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.R #dot88, .S #dot88, .U #dot88, .W #dot88, .Z #dot88, .three #dot88, .five #dot88{
+.R #dot88, .S #dot88, .U #dot88, .W #dot88, .Z #dot88, .three #dot88, .five #dot88, .six #dot88{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1677,7 +1693,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A #dot92, .B #dot92, .F #dot92, .H #dot92, .J #dot92, .K #dot92, .L #dot92, .M #dot92, .N #dot92, .P #dot92{
+.A #dot92, .B #dot92, .D #dot92, .F #dot92, .H #dot92, .J #dot92, .K #dot92, .L #dot92, .M #dot92, .N #dot92, .P #dot92{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1687,7 +1703,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.R, #dot92 .S #dot92, .X #dot92, .two #dot92, .three #dot92{
+.R #dot92, .S #dot92, .X #dot92, .two #dot92, .three #dot92{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1707,7 +1723,7 @@ body{
   display: inline-block;
   position: absolute;
 }
-.A #dot93, .B #dot93, .C #dot93, .E #dot93, .F #dot93, .G #dot93, .H #dot93, .I #dot93, .J #dot93, .K #dot93, .L #dot93, .M #dot93{
+.A #dot93, .B #dot93, .C #dot93, .D #dot93, .E #dot93, .F #dot93, .G #dot93, .H #dot93, .I #dot93, .J #dot93, .K #dot93, .L #dot93, .M #dot93{
   width: 5px;
   height: 5px;
   background-color: black;
@@ -1747,10 +1763,60 @@ body{
   display: inline-block;
   position: absolute;
 }
+.B #dot94, .C #dot94, .D #dot94, .E #dot94, .F #dot94, .G #dot94, .H #dot94, .I #dot94, .K #dot94, .L #dot94{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.N #dot94, .O #dot94, .P #dot94, .Q #dot94, .R #dot94, .S #dot94, .T #dot94, .U #dot94, .Y #dot94, .Z #dot94{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot94, .one #dot94, .two #dot94, .three #dot94, .five #dot94, .six #dot94, .eight #dot94, .ques #dot94, .peri #dot94, .comma #dot94, .semi #dot94{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
 .container #dot95{
   width: 5px;
   height: 5px;
   background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot95, .D #dot95, .E #dot95, .F #dot95, .I #dot95, .L #dot95, .P #dot95, .T #dot95, .V #dot95, .Y #dot95, .Z #dot95{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.one #dot95, .two #dot95, .four #dot95, .five #dot95, .six #dot95, .seven #dot95, .nine #dot95, .ques #dot95, .exclam #dot95, .peri #dot95{
+  width: 5px;
+  height: 5px;
+  background-color: black;
   border-radius: 50%;
   top: 42.5px;
   left: 22.5px;
@@ -1767,10 +1833,70 @@ body{
   display: inline-block;
   position: absolute;
 }
+.B #dot96, .D #dot96, .E #dot96, .F #dot96, .H #dot96, .I #dot96, .J #dot96, .L #dot96, .O #dot96, .P #dot96, .Q #dot96, .T #dot96, .U #dot96{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.Y #dot96, .Z #dot96, .zero #dot96, .one #dot96, .two #dot96, .three #dot96, .four #dot96, .five #dot96, .six #dot96, .eight #dot96, .nine #dot96{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.ques #dot96, .exclam #dot96, .peri #dot96{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
 .container #dot97{
   width: 5px;
   height: 5px;
   background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot97, .B #dot97, .C #dot97, .D #dot97, .E #dot97, .G #dot97, .H #dot97, .I #dot97, .L #dot97, .M #dot97, .N #dot97, .O #dot97{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.Q #dot97, .S #dot97, .T #dot97, .U #dot97, .W #dot97, .X #dot97, .Y #dot97, .Z #dot97{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot97, .one #dot97, .two #dot97, .three #dot97, .four #dot97, .five #dot97, .six #dot97, .eight #dot97{
+  width: 5px;
+  height: 5px;
+  background-color: black;
   border-radius: 50%;
   top: 42.5px;
   left: 32.5px;
@@ -1787,6 +1913,16 @@ body{
   display: inline-block;
   position: absolute;
 }
+.A #dot98, .E #dot98, .G #dot98, .H #dot98, .K #dot98, .L #dot98, .M #dot98, .N #dot98, .R #dot98, .W #dot98, .X #dot98, .Z #dot98, .one #dot98{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
 .container #dot99{
   width: 5px;
   height: 5px;
@@ -1797,90 +1933,112 @@ body{
   display: inline-block;
   position: absolute;
 }
-.container #dot104{
+.A #dot99, .K #dot99, .M #dot99, .R #dot99{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.J .container #dot104, .Q .container #dot104, .nine .container #dot104, .comma .container #dot104, .semi .container #dot104{
+  width: 5px;
+  height: 5px;
+  background-color: black;
   border-radius: 50%;
   top: 47.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot105{
+
+.C .container #dot105, .G .container #dot105, .J .container #dot105, .O .container #dot105, .Q .container #dot105, .S .container #dot105, .U .container #dot105{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 47.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot106{
+.zero .container #dot105, .three .container #dot105, .eight .container #dot105{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
+  border-radius: 50%;
+  top: 47.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C .container #dot106, .G .container #dot106, .S .container #dot106{
+  width: 5px;
+  height: 5px;
+  background-color: black;
   border-radius: 50%;
   top: 47.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot113{
+.Q .container #dot113, .comma .container #dot113, .semi .container #dot113{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot114{
+.Q .container #dot114{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot115{
+.Q .container #dot115{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot116{
+.Q .container #dot116{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot117{
+.Q .container #dot117{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot118{
+.Q .container #dot118{
   width: 5px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   top: 52.5px;
   left: 37.5px;
