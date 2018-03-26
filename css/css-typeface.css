@@ -1,0 +1,1889 @@
+body{
+  background: powderblue;
+}
+
+.container{
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.container #dot11{
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.M #dot11, .N #dot11, .V #dot11, .W #dot11{
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.container #dot12{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.A  #dot12, .B  #dot12, .D #dot12, .E  #dot12, .F  #dot12, .H  #dot12{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.K #dot12, .L  #dot12, .M  #dot12, .N  #dot12, .P  #dot12, .R #dot12{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.T  #dot12, .U  #dot12, .V  #dot12, .W  #dot12, .X  #dot12, .Y  #dot12{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A  #dot13, .B  #dot13, .D  #dot13, .E  #dot13, .F  #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  /* display: inline-block; */
+  position: absolute;
+}
+
+.H  #dot13, .I  #dot13, .K  #dot13, .L  #dot13, .P  #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  /* display: inline-block; */
+  position: absolute;
+}
+.R  #dot13, .T  #dot13, .U  #dot13, .V  #dot13, .W  #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  /* display: inline-block; */
+  position: absolute;
+}
+.X  #dot13, .Y  #dot13, .Z  #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  /* display: inline-block; */
+  position: absolute;
+}
+
+.one #dot13, .two #dot13, .three #dot13, .five #dot13, .seven #dot13, .leftquo #dot13{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot14{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot14, .B #dot14, .C #dot14, .D #dot14, .E #dot14, .F #dot14, .G #dot14, .H #dot14, .I #dot14, .J #dot14{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.K #dot14, .L #dot14, .O #dot14, .P #dot14, .Q #dot14, .R #dot14, .S #dot14, .T #dot14, .U #dot14, .W #dot14, .Z #dot14{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot14, .one #dot14, .two #dot14, .three #dot14, .five #dot14, .seven #dot14, .eight #dot14, .nine #dot14, .ques #dot14, .rightquo #dot14{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot15{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot15, .B #dot15, .C #dot15, .D #dot15, .E #dot15, .F #dot15, .G #dot15, .I #dot15, .J #dot15, .L #dot15, .O #dot15{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.P #dot15, .Q #dot15, .R #dot15, .S #dot15, .T #dot15, .Z #dot15, .zero #dot15, .one #dot15, .two #dot15, .three #dot15{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.five #dot15, .six #dot15, .seven #dot15, .eight #dot15, .nine #dot15, .ques #dot15, .exclam #dot15{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot16{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot16, .C #dot16, .D #dot16, .E #dot16, .F #dot16, .G #dot16, .H #dot16, .I #dot16, .J #dot16, .N #dot16{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.O #dot16, .P #dot16, .Q #dot16, .R #dot16, .S #dot16, .T #dot16, .U #dot16, .Z  #dot16, .zero #dot16, .two #dot16{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.three #dot16, .four #dot16, .five #dot16, .six #dot16, .seven #dot16, .eight #dot16, .nine #dot16, .ques #dot16, .leftquo #dot16{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot17{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.E #dot17, .F #dot17, .H #dot17, .I #dot17, .J #dot17, .K #dot17, .N #dot17, .T #dot17, .U #dot17, .V #dot17, .W #dot17, .X #dot17, .Y #dot17, .Z #dot17{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot17, .two #dot17, .three #dot17, .five #dot17, .six #dot17, .seven #dot17, .eight #dot17, .nine #dot17, .rightquo #dot17{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot18{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.E #dot18, .F #dot18, .H #dot18, .J #dot18, .K #dot18, .M #dot18, .N #dot18, .S #dot18, .T #dot18, .U #dot18{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.V #dot18, .W #dot18, .X #dot18, .Y #dot18, .six #dot18{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot19{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.J #dot19, .M #dot19, .N #dot19, .U #dot19, .V #dot19, .W #dot19{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot21{ /*wow the one w/o black*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot22{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.F #dot22, .M #dot22, .N #dot22, .T #dot22, .U #dot22, .V #dot22, .W #dot22, .seven #dot22{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot23{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot23, .C #dot23, .D #dot23, .E #dot23, .G #dot23, .H #dot23, .K #dot23, .M #dot23, .N #dot23, .O #dot23, .P #dot23{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.Q #dot23, .S #dot23, .X #dot23, .Y #dot23, .Z #dot23, .zero #dot23, .two #dot23, .three #dot23{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.five, .eight, .nine, .ques, .rightquo, .leftquo  #dot23{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot24{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot24, .L #dot24, .six #dot24, .leftquo #dot24{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot25{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.I #dot25, .T #dot25, .one #dot25, .four #dot25, .exclam #dot25{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot26{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A .container #dot26{ /*almost another!*/
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot27{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot27, .C #dot27, .D #dot27, .G #dot27, .H #dot27, .J #dot27, .K #dot27, .M #dot27, .O #dot27, .P #dot27{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.Q #dot27, .R #dot27, .S #dot27, .Z #dot27, .zero #dot27, .two #dot27, .three #dot27, .four #dot27, .seven #dot27{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.eight #dot27, .nine #dot27, .ques #dot27, .rightquo #dot27, .leftquo #dot27{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot28{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C #dot28, .E #dot28, .G #dot28, .M #dot28, .N #dot28, .P #dot28, .S #dot28, .T #dot28, .U #dot28, .V #dot28, .W #dot28, .X #dot28, .Y #dot28{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot29{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.F .container #dot29{ /*again almost another!*/
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot31{ /*always white v2*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot32{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C #dot32, .F #dot32, .G #dot32, .M #dot32, .N #dot32, .O #dot32, .Q #dot32, .T #dot32, .U #dot32, .V #dot32, .W #dot32{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot33{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot33, .D #dot33, .E #dot33, .H #dot33, .K #dot33, .M #dot33, .P #dot33, .R #dot33, .S #dot33, .X #dot33, .Y #dot33, .Z #dot33{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot33, .five #dot33, .six #dot33, .eight #dot33, .nine #dot33, .ques #dot33, .rightquo #dot33{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot34{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot34, .L #dot34, .N #dot34, .four #dot34, .leftquo #dot34{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot35{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.I #dot35, .T #dot35, .W #dot35, .one #dot35, .exclam #dot35{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot36{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot36, .K #dot36, .rightquo #dot36{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot37{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.H #dot37, .J #dot37, .M #dot37, .X #dot37, .Y #dot37, .Z #dot37, .two #dot37, .three #dot37, .four #dot37, .seven #dot37, .eight #dot37, .leftquo #dot37{
+  width: 5px;
+  height: 5px;
+  background-color: .black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot38{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot38, .C #dot38, .D #dot38, .E #dot38, .G #dot38, .M #dot38, .N #dot38, .O #dot38, .P #dot38, .Q #dot38, .R #dot38, .S #dot38{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.T #dot38, .U #dot38, .V #dot38, .W  #dot38, .zero #dot38, .nine #dot38, .ques #dot38{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot39{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.F .container #dot39{ /*almost again!*/
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 12.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot41{ /*tighty whities*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot42{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.C #dot42, .G #dot42, .M #dot42, .N #dot42, .O #dot42, .Q #dot42, .T #dot42, .U #dot42, .W #dot42{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot43{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot43, .E #dot43, .F #dot43, .H #dot43, .K #dot43, .P #dot43, .R #dot43, .S #dot43, .V #dot43{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot43, .five #dot43, .six #dot43, .eight #dot43, .nine #dot43, .rightquo #dot43{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot44{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot44, .D #dot44, .L #dot44, .M #dot44, .N #dot44, .X #dot44, .Y #dot44, .four #dot44, .five #dot44, .semi #dot44, .leftquo #dot44{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot45{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.I #dot45, .K #dot45, .T #dot45, .W #dot45, .one #dot45, .five #dot45, .exclam #dot45, .semi #dot45{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot46{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot46, .E #dot46, .F #dot46, .M #dot46, .X #dot46, .Y #dot46, .Z #dot46, .three #dot46, .five #dot46, .six #dot46, .semi #dot46, .rightquo #dot46{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot47{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.H #dot47, .J #dot47, .V #dot47, .two #dot47, .three #dot47, .four #dot47, .seven #dot47, .eight #dot47, .ques #dot47{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot48{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+ .B #dot48, .D #dot48, .M #dot48, .N #dot48, .O #dot48, .P #dot48, .Q #dot48, .R #dot48, .T #dot48, .U #dot48, .W #dot48, .zero #dot48, .ques #dot48, .leftquo #dot48{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot49{ /*bone-dry empty*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 17.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot51{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.mdash #dot51{ /*almost...so close*/
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot52{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C #dot52, .G #dot52, .M #dot52, .N #dot52, .O #dot52, .Q #dot52, .U #dot52, .W #dot52, .ndash #dot52, .mdash #dot52{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot53{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot53, .B #dot53, .E #dot53, .F #dot53, .H #dot53, .K #dot53, .P #dot53, .R #dot53, .V #dot53{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot53, .four #dot53, .six #dot53, .nine #dot53, .ndash #dot53, .mdash #dot53{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot54{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot54, .D #dot54, .E #dot54, .F #dot54, .H #dot54, .K #dot54, .L #dot54, .M #dot54, .R #dot54, .S #dot54, .W #dot54{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.six #dot54, .eight #dot54, .ndash #dot54, .mdash #dot54{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot55{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot55, .E #dot55, .F #dot55, .H #dot55, .I #dot55, .K #dot55, .N #dot55, .R #dot55, .S #dot55, .T #dot55, .X #dot55, .Y #dot55, .Z #dot55{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.one #dot55, .three #dot55, .six #dot55, .eight #dot55, .exclam #dot55, .semi #dot55, .ndash #dot55, .mdash #dot55{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot56{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+ .B #dot56, .E #dot56, .F #dot56, .H #dot56, .M #dot56, .R #dot56, .S #dot56, .W #dot56, .Y #dot56{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.two #dot56, .three #dot56, .seven #dot56, .eight #dot56, .ques #dot56, .ndash #dot56, .mdash #dot56{
+ width: 5px;
+ height: 5px;
+ background-color: black;
+ border-radius: 50%;
+ top: 22.5px;
+ left: 27.5px;
+ display: inline-block;
+ position: absolute;
+}
+.container #dot57{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot57, .B #dot57, .H #dot57, .J #dot57, .R #dot57, .V #dot57, .four #dot57, .five #dot57, .six #dot57, .nine #dot57, .ques #dot57, .ndash #dot57, .mdash #dot57{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot58{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.M #dot58, .N #dot58, .P #dot58, .U #dot58, .W #dot58, .zero #dot58, .nine #dot58, .ndash #dot58, .mdash #dot58{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot59{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.D #dot59, .O #dot59, .Q #dot59, .mdash #dot59{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 22.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot61{ /*nobodyyyyy*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot62{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C #dot62, .G #dot62, .J #dot62, .M #dot62, .N #dot62, .O #dot62, .Q #dot62, .U #dot62, .W #dot62{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot63{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+ .A #dot63, .B #dot63, .E #dot63, .F #dot63, .H #dot63, .K #dot63, .P #dot63, .R #dot63, .zero #dot63, .four #dot63, .six #dot63, .eight #dot63{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot64{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.D #dot64, .L #dot64, .M #dot64, .P #dot64, .V #dot64, .W #dot64, .X #dot64, .nine #dot64{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot65{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.I #dot65, .N #dot65, .P #dot65, .T #dot65, .Y #dot65, .Z #dot65, .one #dot65, .two #dot65, .nine #dot65, .ques #dot65, .exclam #dot65{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot66{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.E #dot66, .F #dot66, .G #dot66, .K #dot66, .M #dot66, .P #dot66, .R #dot66, .W #dot66, .X #dot66, .seven #dot66, .nine #dot66{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot67{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot67, .G #dot67, .H #dot67, .J #dot67, .P #dot67, .S #dot67, .V #dot67, .three #dot67, .four #dot67, .eight #dot67{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot68{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot68, .G #dot68, .M #dot68, .N #dot68, .O #dot68, .Q #dot68, .U #dot68, .W #dot68, .zero #dot68, .five #dot68, .six #dot68, .nine #dot68{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot69{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.D #dot69, .G #dot69{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 27.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot71{ /*all by myself*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot72{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.C #dot72, .G #dot72, .J #dot72, .M #dot72, .N #dot72, .O #dot72, .Q #dot72, .U #dot72, .W #dot72, .four #dot72{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot73{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+ .A #dot73, .B #dot73, .E #dot73, .F #dot73, .H #dot73, .K #dot73, .P #dot73, .R #dot73, .zero #dot73, .four #dot73, .six #dot73, .eight #dot73{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot74{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot74, .D #dot74, .L #dot74, .V #dot74, .W #dot74, .X #dot74, .Z #dot74, .two #dot74, .four #dot74{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot75{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot75, .I #dot75, .M #dot75, .T #dot75, .Y #dot75, .one #dot75, .four #dot75, .ques #dot75{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot76{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot76, .N #dot76, .V #dot76, .W #dot76, .X #dot76, .four #dot76, .seven #dot76{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot77{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A, .H, .J, .K, .R, .four #dot77{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot78{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot78, .D #dot78, .E #dot78, .L #dot78, .M #dot78, .N #dot78, .O #dot78, .Q #dot78, .S #dot78, .U #dot78, .W #dot78, .Z #dot78{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot78, .three #dot78, .five #dot78, .six #dot78, .eight #dot78, .nine #dot78{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot79{ /*lone pony one*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 32.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot81{ /*lone pony two*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot82{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot82, .C #dot82, .G #dot82, .J #dot82, .M #dot82, .N #dot82, .O #dot82, .Q #dot82, .S #dot82, .five #dot82{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot83{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.B #dot83, .E #dot83, .F #dot83, .H #dot83, .K #dot83, .P #dot83, .R #dot83, .U #dot83, .W #dot83, .X #dot83, .Z #dot83{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.zero #dot83, .two #dot83, .six #dot83, .eight #dot83{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot84{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.D #dot84, .L #dot84, .V #dot84, .comma #dot84, .semi #dot84{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot85{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.I #dot85, .T #dot85, .Y #dot85, .one #dot85, .seven #dot85, .comma #dot85, .semi #dot85{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot86{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.N #dot86, .V #dot86{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot87{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.H #dot87, .J #dot87, .K #dot87, .W #dot87, .X #dot87, .zero #dot87, .four #dot87, .five #dot87, .eight #dot87, .nine #dot87{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot88{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot88, .B #dot88, .C #dot88, .D #dot88, .E #dot88, .G #dot88, .L #dot88, .M #dot88, .N #dot88, .O #dot88, .Q #dot88{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.R #dot88, .S #dot88, .U #dot88, .W #dot88, .Z #dot88, .three #dot88, .five #dot88{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot89{ /*sgt pepper's lonely hearts club band*/
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 37.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot91{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot91, .M #dot91{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 2.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot92{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot92, .B #dot92, .F #dot92, .H #dot92, .J #dot92, .K #dot92, .L #dot92, .M #dot92, .N #dot92, .P #dot92{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.R, #dot92 .S #dot92, .X #dot92, .two #dot92, .three #dot92{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 7.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot93{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.A #dot93, .B #dot93, .C #dot93, .E #dot93, .F #dot93, .G #dot93, .H #dot93, .I #dot93, .J #dot93, .K #dot93, .L #dot93, .M #dot93{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+ .N #dot93, .O #dot93, .P #dot93, .Q #dot93, .R #dot93, .S #dot93, .T #dot93, .U #dot93, .W #dot93, .X #dot93, .Y #dot93, .Z #dot93{
+   width: 5px;
+   height: 5px;
+   background-color: black;
+   border-radius: 50%;
+   top: 42.5px;
+   left: 12.5px;
+   display: inline-block;
+   position: absolute;
+ }
+ .one #dot93, .two #dot93, .three #dot93, .five #dot93, .eight #dot93, .nine #dot93{
+   width: 5px;
+   height: 5px;
+   background-color: black;
+   border-radius: 50%;
+   top: 42.5px;
+   left: 12.5px;
+   display: inline-block;
+   position: absolute;
+ }
+.container #dot94{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot95{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot96{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot97{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot98{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot99{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 42.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot104{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 47.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot105{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 47.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot106{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 47.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot113{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 12.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot114{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 17.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot115{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 22.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot116{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 27.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot117{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 32.5px;
+  display: inline-block;
+  position: absolute;
+}
+.container #dot118{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  top: 52.5px;
+  left: 37.5px;
+  display: inline-block;
+  position: absolute;
+}
