@@ -1,5 +1,6 @@
 body{
-  background: powderblue;
+  background: white;
+  height: 1500px;
 }
 
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V{
@@ -9,11 +10,27 @@ body{
   display: inline-block;
 }
 
-.W, .X, .Y, .Z, .ques, .exclam, .peri, .comma, .semi, .rightquo, .leftquo, .ndash, .mdash{
+.W, .X, .Y, .Z, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ques, .exclam, .peri, .comma, .semi, .rightquo, .leftquo, .ndash, .mdash, .space{
   width: 45px;
   height: 55px;
   position: relative;
   display: inline-block;
+}
+
+#outer{
+  width: 1300px;
+  height: 150px;
+  position: fixed;
+}
+
+#center{
+  margin-left: 500px;
+  margin-top: 165px;
+  position: absolute;
+}
+
+#center:hover{
+  background-color: powderblue;
 }
 
 .container{
