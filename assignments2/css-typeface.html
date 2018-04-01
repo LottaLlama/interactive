@@ -5466,5 +5466,28 @@
       </div>
     </div>
 
+    <div id="button">Toggle Mode</div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      var status = 'classy';
+
+      $("#button").click(function(){
+        if (status=='classy'){
+          $("body").css("background", "var(--gamergray)");
+          status='hardcore';
+        }else if (status=='hardcore'){
+          $("body").css("background", "var(--startupblue)");
+          status='classy';
+        }
+
+      })
+    });
+
+    </script>
+
   </body>
 </html>

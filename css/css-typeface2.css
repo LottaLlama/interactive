@@ -2,7 +2,18 @@
   --startupblue: #389cfa;
   --gamergray: #1e2127;
   --cleanwhite: #f4f8fd;
-  --techorange: #b1673c;
+  --techorange: #d77033;
+
+  --letterback: var(--startupblue);
+  --lettercol: var(--cleanwhite);
+}
+
+.letter-definition {
+	display: none;
+}
+
+.letter{
+  display: inline-block;
 }
 
 body{
@@ -57,10 +68,10 @@ body{
   display: inline-block;
 }
 
-.container #dot11{
+.container .dot11{
   width: 5px;
   height: 5px;
-  background: var(--startupblue);
+  background: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 2.5px;
@@ -68,10 +79,10 @@ body{
   position: absolute;
 }
 
-.M #dot11, .N #dot11, .V #dot11, .W #dot11{
+.M .dot11, .N .dot11, .V .dot11, .W .dot11{
   width: 5px;
   height: 5px;
-  background: var(--cleanwhite);
+  background: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 2.5px;
@@ -79,10 +90,10 @@ body{
   position: absolute;
 }
 
-.container #dot12{
+.container .dot12{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 7.5px;
@@ -90,10 +101,10 @@ body{
   position: absolute;
 }
 
-.A  #dot12, .B  #dot12, .D #dot12, .E  #dot12, .F  #dot12, .H  #dot12{
+.A  .dot12, .B  .dot12, .D .dot12, .E  .dot12, .F  .dot12, .H  .dot12{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 7.5px;
@@ -101,40 +112,40 @@ body{
   position: absolute;
 }
 
-.K #dot12, .L  #dot12, .M  #dot12, .N  #dot12, .P  #dot12, .R #dot12{
+.K .dot12, .L  .dot12, .M  .dot12, .N  .dot12, .P  .dot12, .R .dot12{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.T  #dot12, .U  #dot12, .V  #dot12, .W  #dot12, .X  #dot12, .Y  #dot12{
+.T  .dot12, .U  .dot12, .V  .dot12, .W  .dot12, .X  .dot12, .Y  .dot12{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot13{
+.container .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.A  #dot13, .B  #dot13, .D  #dot13, .E  #dot13, .F  #dot13{
+.A  .dot13, .B  .dot13, .D  .dot13, .E  .dot13, .F  .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
@@ -142,30 +153,30 @@ body{
   position: absolute;
 }
 
-.H  #dot13, .I  #dot13, .K  #dot13, .L  #dot13, .P  #dot13{
+.H  .dot13, .I  .dot13, .K  .dot13, .L  .dot13, .P  .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
   /* display: inline-block; */
   position: absolute;
 }
-.R  #dot13, .T  #dot13, .U  #dot13, .V  #dot13, .W  #dot13{
+.R  .dot13, .T  .dot13, .U  .dot13, .V  .dot13, .W  .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
   /* display: inline-block; */
   position: absolute;
 }
-.X  #dot13, .Y  #dot13, .Z  #dot13{
+.X  .dot13, .Y  .dot13, .Z  .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
@@ -173,260 +184,260 @@ body{
   position: absolute;
 }
 
-.one #dot13, .two #dot13, .three #dot13, .five #dot13, .seven #dot13, .leftquo #dot13{
+.one .dot13, .two .dot13, .three .dot13, .five .dot13, .seven .dot13, .leftquo .dot13{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot14{
+.container .dot14{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot14, .B #dot14, .C #dot14, .D #dot14, .E #dot14, .F #dot14, .G #dot14, .H #dot14, .I #dot14, .J #dot14{
+.A .dot14, .B .dot14, .C .dot14, .D .dot14, .E .dot14, .F .dot14, .G .dot14, .H .dot14, .I .dot14, .J .dot14{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.K #dot14, .L #dot14, .O #dot14, .P #dot14, .Q #dot14, .R #dot14, .S #dot14, .T #dot14, .U #dot14, .W #dot14, .Z #dot14{
+.K .dot14, .L .dot14, .O .dot14, .P .dot14, .Q .dot14, .R .dot14, .S .dot14, .T .dot14, .U .dot14, .W .dot14, .Z .dot14{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot14, .one #dot14, .two #dot14, .three #dot14, .five #dot14, .seven #dot14, .eight #dot14, .nine #dot14, .ques #dot14, .rightquo #dot14{
+.zero .dot14, .one .dot14, .two .dot14, .three .dot14, .five .dot14, .seven .dot14, .eight .dot14, .nine .dot14, .ques .dot14, .rightquo .dot14{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot15{
+.container .dot15{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot15, .B #dot15, .C #dot15, .D #dot15, .E #dot15, .F #dot15, .G #dot15, .I #dot15, .J #dot15, .L #dot15, .O #dot15{
+.A .dot15, .B .dot15, .C .dot15, .D .dot15, .E .dot15, .F .dot15, .G .dot15, .I .dot15, .J .dot15, .L .dot15, .O .dot15{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.P #dot15, .Q #dot15, .R #dot15, .S #dot15, .T #dot15, .Z #dot15, .zero #dot15, .one #dot15, .two #dot15, .three #dot15{
+.P .dot15, .Q .dot15, .R .dot15, .S .dot15, .T .dot15, .Z .dot15, .zero .dot15, .one .dot15, .two .dot15, .three .dot15{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.five #dot15, .six #dot15, .seven #dot15, .eight #dot15, .nine #dot15, .ques #dot15, .exclam #dot15{
+.five .dot15, .six .dot15, .seven .dot15, .eight .dot15, .nine .dot15, .ques .dot15, .exclam .dot15{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot16{
+.container .dot16{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot16, .C #dot16, .D #dot16, .E #dot16, .F #dot16, .G #dot16, .H #dot16, .I #dot16, .J #dot16, .N #dot16{
+.B .dot16, .C .dot16, .D .dot16, .E .dot16, .F .dot16, .G .dot16, .H .dot16, .I .dot16, .J .dot16, .N .dot16{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.O #dot16, .P #dot16, .Q #dot16, .R #dot16, .S #dot16, .T #dot16, .U #dot16, .Z  #dot16, .zero #dot16, .two #dot16{
+.O .dot16, .P .dot16, .Q .dot16, .R .dot16, .S .dot16, .T .dot16, .U .dot16, .Z  .dot16, .zero .dot16, .two .dot16{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.three #dot16, .four #dot16, .five #dot16, .six #dot16, .seven #dot16, .eight #dot16, .nine #dot16, .ques #dot16, .leftquo #dot16{
+.three .dot16, .four .dot16, .five .dot16, .six .dot16, .seven .dot16, .eight .dot16, .nine .dot16, .ques .dot16, .leftquo .dot16{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot17{
+.container .dot17{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.E #dot17, .F #dot17, .H #dot17, .I #dot17, .J #dot17, .K #dot17, .N #dot17, .T #dot17, .U #dot17, .V #dot17, .W #dot17, .X #dot17, .Y #dot17, .Z #dot17{
+.E .dot17, .F .dot17, .H .dot17, .I .dot17, .J .dot17, .K .dot17, .N .dot17, .T .dot17, .U .dot17, .V .dot17, .W .dot17, .X .dot17, .Y .dot17, .Z .dot17{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot17, .two #dot17, .three #dot17, .five #dot17, .six #dot17, .seven #dot17, .eight #dot17, .nine #dot17, .rightquo #dot17{
+.zero .dot17, .two .dot17, .three .dot17, .five .dot17, .six .dot17, .seven .dot17, .eight .dot17, .nine .dot17, .rightquo .dot17{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot18{
+.container .dot18{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.E #dot18, .F #dot18, .H #dot18, .J #dot18, .K #dot18, .M #dot18, .N #dot18, .S #dot18, .T #dot18, .U #dot18{
+.E .dot18, .F .dot18, .H .dot18, .J .dot18, .K .dot18, .M .dot18, .N .dot18, .S .dot18, .T .dot18, .U .dot18{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.V #dot18, .W #dot18, .X #dot18, .Y #dot18, .six #dot18{
+.V .dot18, .W .dot18, .X .dot18, .Y .dot18, .six .dot18{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot19{
+.container .dot19{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 2.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.J #dot19, .M #dot19, .N #dot19, .U #dot19, .V #dot19, .W #dot19{
+.J .dot19, .M .dot19, .N .dot19, .U .dot19, .V .dot19, .W .dot19{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 2.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot21{ /*wow the one w/o var(--cleanwhite)*/
+.container .dot21{ /*wow the one w/o var(--cleanwhite)*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot22{
+.container .dot22{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.M #dot22, .N #dot22, .T #dot22, .U #dot22, .V #dot22, .W #dot22, .seven #dot22{
+.M .dot22, .N .dot22, .T .dot22, .U .dot22, .V .dot22, .W .dot22, .seven .dot22{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot23{
+.container .dot23{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot23, .C #dot23, .D #dot23, .E #dot23, .F #dot23, .G #dot23, .H #dot23, .K #dot23, .M #dot23, .N #dot23, .O #dot23, .P #dot23{
+.B .dot23, .C .dot23, .D .dot23, .E .dot23, .F .dot23, .G .dot23, .H .dot23, .K .dot23, .M .dot23, .N .dot23, .O .dot23, .P .dot23{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 12.5px;
@@ -434,370 +445,370 @@ body{
   position: absolute;
 }
 
-.Q #dot23, .R #dot23, .S #dot23, .X #dot23, .Y #dot23, .Z #dot23, .zero #dot23, .two #dot23, .three #dot23{
+.Q .dot23, .R .dot23, .S .dot23, .X .dot23, .Y .dot23, .Z .dot23, .zero .dot23, .two .dot23, .three .dot23{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.five #dot23, .eight #dot23, .nine #dot23, .ques #dot23, .rightquo #dot23, .leftquo  #dot23{
+.five .dot23, .eight .dot23, .nine .dot23, .ques .dot23, .rightquo .dot23, .leftquo  .dot23{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot24{
+.container .dot24{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot24, .L #dot24, .six #dot24, .leftquo #dot24{
+.A .dot24, .L .dot24, .six .dot24, .leftquo .dot24{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot25{
+.container .dot25{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.I #dot25, .T #dot25, .one #dot25, .four #dot25, .exclam #dot25{
+.I .dot25, .T .dot25, .one .dot25, .four .dot25, .exclam .dot25{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot26{
+.container .dot26{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.A .container #dot26{ /*almost another!*/
+.A .container .dot26{ /*almost another!*/
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot27{
+.container .dot27{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot27, .C #dot27, .D #dot27, .G #dot27, .H #dot27, .J #dot27, .K #dot27, .M #dot27, .O #dot27, .P #dot27{
+.B .dot27, .C .dot27, .D .dot27, .G .dot27, .H .dot27, .J .dot27, .K .dot27, .M .dot27, .O .dot27, .P .dot27{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.Q #dot27, .R #dot27, .S #dot27, .Z #dot27, .zero #dot27, .two #dot27, .three #dot27, .four #dot27, .seven #dot27{
+.Q .dot27, .R .dot27, .S .dot27, .Z .dot27, .zero .dot27, .two .dot27, .three .dot27, .four .dot27, .seven .dot27{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.eight #dot27, .nine #dot27, .ques #dot27, .rightquo #dot27, .leftquo #dot27{
+.eight .dot27, .nine .dot27, .ques .dot27, .rightquo .dot27, .leftquo .dot27{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot28{
+.container .dot28{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.C #dot28, .E #dot28, .G #dot28, .M #dot28, .N #dot28, .P #dot28, .S #dot28, .T #dot28, .U #dot28, .V #dot28, .W #dot28, .X #dot28, .Y #dot28{
+.C .dot28, .E .dot28, .G .dot28, .M .dot28, .N .dot28, .P .dot28, .S .dot28, .T .dot28, .U .dot28, .V .dot28, .W .dot28, .X .dot28, .Y .dot28{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot29{
+.container .dot29{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 7.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.F .container #dot29{ /*again almost another!*/
+.F .container .dot29{ /*again almost another!*/
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 7.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot31{ /*always var(--startupblue) v2*/
+.container .dot31{ /*always var(--startupblue) v2*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot32{
+.container .dot32{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.C #dot32, .G #dot32, .M #dot32, .N #dot32, .O #dot32, .Q #dot32, .T #dot32, .U #dot32, .V #dot32, .W #dot32{
+.C .dot32, .G .dot32, .M .dot32, .N .dot32, .O .dot32, .Q .dot32, .T .dot32, .U .dot32, .V .dot32, .W .dot32{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot33{
+.container .dot33{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot33, .D #dot33, .E #dot33, .F #dot33, .H #dot33, .K #dot33, .M #dot33, .P #dot33, .R #dot33, .S #dot33, .X #dot33, .Y #dot33, .Z #dot33{
+.B .dot33, .D .dot33, .E .dot33, .F .dot33, .H .dot33, .K .dot33, .M .dot33, .P .dot33, .R .dot33, .S .dot33, .X .dot33, .Y .dot33, .Z .dot33{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot33, .five #dot33, .six #dot33, .eight #dot33, .nine #dot33, .ques #dot33, .rightquo #dot33{
+.zero .dot33, .five .dot33, .six .dot33, .eight .dot33, .nine .dot33, .ques .dot33, .rightquo .dot33{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot34{
+.container .dot34{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot34, .L #dot34, .N #dot34, .four #dot34, .leftquo #dot34{
+.A .dot34, .L .dot34, .N .dot34, .four .dot34, .leftquo .dot34{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot35{
+.container .dot35{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.I #dot35, .T #dot35, .W #dot35, .one #dot35, .exclam #dot35{
+.I .dot35, .T .dot35, .W .dot35, .one .dot35, .exclam .dot35{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot36{
+.container .dot36{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot36, .K #dot36, .rightquo #dot36{
+.A .dot36, .K .dot36, .rightquo .dot36{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot37{
+.container .dot37{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.H #dot37, .J #dot37, .M #dot37, .X #dot37, .Y #dot37, .Z #dot37, .two #dot37, .three #dot37, .four #dot37, .seven #dot37, .eight #dot37, .leftquo #dot37{
+.H .dot37, .J .dot37, .M .dot37, .X .dot37, .Y .dot37, .Z .dot37, .two .dot37, .three .dot37, .four .dot37, .seven .dot37, .eight .dot37, .leftquo .dot37{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot38{
+.container .dot38{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot38, .C #dot38, .D #dot38, .E #dot38, .G #dot38, .M #dot38, .N #dot38, .O #dot38, .P #dot38, .Q #dot38, .R #dot38, .S #dot38{
+.B .dot38, .C .dot38, .D .dot38, .E .dot38, .G .dot38, .M .dot38, .N .dot38, .O .dot38, .P .dot38, .Q .dot38, .R .dot38, .S .dot38{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.T #dot38, .U #dot38, .V #dot38, .W  #dot38, .zero #dot38, .nine #dot38, .ques #dot38{
+.T .dot38, .U .dot38, .V .dot38, .W  .dot38, .zero .dot38, .nine .dot38, .ques .dot38{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot39{
+.container .dot39{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 12.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.F .container #dot39{ /*almost again!*/
+.F .container .dot39{ /*almost again!*/
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 12.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot41{ /*tighty whities*/
+.container .dot41{ /*tighty whities*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot42{
+.container .dot42{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 7.5px;
@@ -805,70 +816,70 @@ body{
   position: absolute;
 }
 
-.C #dot42, .G #dot42, .M #dot42, .N #dot42, .O #dot42, .Q #dot42, .T #dot42, .U #dot42, .W #dot42{
+.C .dot42, .G .dot42, .M .dot42, .N .dot42, .O .dot42, .Q .dot42, .T .dot42, .U .dot42, .W .dot42{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot43{
+.container .dot43{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot43, .D #dot43, .E #dot43, .F #dot43, .H #dot43, .K #dot43, .P #dot43, .R #dot43, .S #dot43, .V #dot43{
+.B .dot43, .D .dot43, .E .dot43, .F .dot43, .H .dot43, .K .dot43, .P .dot43, .R .dot43, .S .dot43, .V .dot43{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot43, .five #dot43, .six #dot43, .eight #dot43, .nine #dot43, .rightquo #dot43{
+.zero .dot43, .five .dot43, .six .dot43, .eight .dot43, .nine .dot43, .rightquo .dot43{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot44{
+.container .dot44{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot44, .L #dot44, .M #dot44, .N #dot44, .X #dot44, .Y #dot44, .four #dot44, .five #dot44, .semi #dot44, .leftquo #dot44{
+.A .dot44, .L .dot44, .M .dot44, .N .dot44, .X .dot44, .Y .dot44, .four .dot44, .five .dot44, .semi .dot44, .leftquo .dot44{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot45{
+.container .dot45{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 22.5px;
@@ -876,1110 +887,1110 @@ body{
   position: absolute;
 }
 
-.I #dot45, .K #dot45, .T #dot45, .W #dot45, .one #dot45, .five #dot45, .exclam #dot45, .semi #dot45{
+.I .dot45, .K .dot45, .T .dot45, .W .dot45, .one .dot45, .five .dot45, .exclam .dot45, .semi .dot45{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot46{
+.container .dot46{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot46, .E #dot46, .F #dot46, .M #dot46, .X #dot46, .Y #dot46, .Z #dot46, .three #dot46, .five #dot46, .six #dot46, .semi #dot46, .rightquo #dot46{
+.A .dot46, .E .dot46, .F .dot46, .M .dot46, .X .dot46, .Y .dot46, .Z .dot46, .three .dot46, .five .dot46, .six .dot46, .semi .dot46, .rightquo .dot46{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot47{
+.container .dot47{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.H #dot47, .J #dot47, .V #dot47, .two #dot47, .three #dot47, .four #dot47, .seven #dot47, .eight #dot47, .ques #dot47{
+.H .dot47, .J .dot47, .V .dot47, .two .dot47, .three .dot47, .four .dot47, .seven .dot47, .eight .dot47, .ques .dot47{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot48{
+.container .dot48{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
- .B #dot48, .D #dot48, .M #dot48, .N #dot48, .O #dot48, .P #dot48, .Q #dot48, .R #dot48, .T #dot48, .U #dot48, .W #dot48{
+ .B .dot48, .D .dot48, .M .dot48, .N .dot48, .O .dot48, .P .dot48, .Q .dot48, .R .dot48, .T .dot48, .U .dot48, .W .dot48{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot48, .nine #dot48, .ques #dot48, .leftquo #dot48{
+.zero .dot48, .nine .dot48, .ques .dot48, .leftquo .dot48{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 17.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot49{ /*bone-dry empty*/
+.container .dot49{ /*bone-dry empty*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 17.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot51{
+.container .dot51{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.mdash #dot51{ /*almost...so close*/
+.mdash .dot51{ /*almost...so close*/
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot52{
+.container .dot52{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.C #dot52, .G #dot52, .M #dot52, .N #dot52, .O #dot52, .Q #dot52, .U #dot52, .W #dot52, .ndash #dot52, .mdash #dot52{
+.C .dot52, .G .dot52, .M .dot52, .N .dot52, .O .dot52, .Q .dot52, .U .dot52, .W .dot52, .ndash .dot52, .mdash .dot52{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot53{
+.container .dot53{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot53, .B #dot53, .D #dot53, .E #dot53, .F #dot53, .H #dot53, .K #dot53, .P #dot53, .R #dot53, .V #dot53{
+.A .dot53, .B .dot53, .D .dot53, .E .dot53, .F .dot53, .H .dot53, .K .dot53, .P .dot53, .R .dot53, .V .dot53{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot53, .four #dot53, .six #dot53, .nine #dot53, .ndash #dot53, .mdash #dot53{
+.zero .dot53, .four .dot53, .six .dot53, .nine .dot53, .ndash .dot53, .mdash .dot53{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot54{
+.container .dot54{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot54, .E #dot54, .F #dot54, .H #dot54, .K #dot54, .L #dot54, .M #dot54, .R #dot54, .S #dot54, .W #dot54{
+.B .dot54, .E .dot54, .F .dot54, .H .dot54, .K .dot54, .L .dot54, .M .dot54, .R .dot54, .S .dot54, .W .dot54{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.six #dot54, .eight #dot54, .ndash #dot54, .mdash #dot54{
+.six .dot54, .eight .dot54, .ndash .dot54, .mdash .dot54{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot55{
+.container .dot55{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot55, .E #dot55, .F #dot55, .H #dot55, .I #dot55, .K #dot55, .N #dot55, .R #dot55, .S #dot55, .T #dot55, .X #dot55, .Y #dot55, .Z #dot55{
+.B .dot55, .E .dot55, .F .dot55, .H .dot55, .I .dot55, .K .dot55, .N .dot55, .R .dot55, .S .dot55, .T .dot55, .X .dot55, .Y .dot55, .Z .dot55{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.one #dot55, .three #dot55, .six #dot55, .eight #dot55, .exclam #dot55, .semi #dot55, .ndash #dot55, .mdash #dot55{
+.one .dot55, .three .dot55, .six .dot55, .eight .dot55, .exclam .dot55, .semi .dot55, .ndash .dot55, .mdash .dot55{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot56{
+.container .dot56{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
- .B #dot56, .E #dot56, .F #dot56, .H #dot56, .M #dot56, .R #dot56, .S #dot56, .W #dot56, .Y #dot56{
+ .B .dot56, .E .dot56, .F .dot56, .H .dot56, .M .dot56, .R .dot56, .S .dot56, .W .dot56, .Y .dot56{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.two #dot56, .three #dot56, .seven #dot56, .eight #dot56, .ques #dot56, .ndash #dot56, .mdash #dot56{
+.two .dot56, .three .dot56, .seven .dot56, .eight .dot56, .ques .dot56, .ndash .dot56, .mdash .dot56{
  width: 5px;
  height: 5px;
- background-color: var(--cleanwhite);
+ background-color: var(--lettercol);
  border-radius: 50%;
  top: 22.5px;
  left: 27.5px;
  display: inline-block;
  position: absolute;
 }
-.container #dot57{
+.container .dot57{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot57, .B #dot57, .H #dot57, .J #dot57, .R #dot57, .V #dot57, .four #dot57, .five #dot57, .six #dot57, .nine #dot57, .ques #dot57, .ndash #dot57, .mdash #dot57{
+.A .dot57, .B .dot57, .H .dot57, .J .dot57, .R .dot57, .V .dot57, .four .dot57, .five .dot57, .six .dot57, .nine .dot57, .ques .dot57, .ndash .dot57, .mdash .dot57{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot58{
+.container .dot58{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.M #dot58, .N #dot58, .P #dot58, .U #dot58, .W #dot58, .zero #dot58, .nine #dot58, .ndash #dot58, .mdash #dot58{
+.M .dot58, .N .dot58, .P .dot58, .U .dot58, .W .dot58, .zero .dot58, .nine .dot58, .ndash .dot58, .mdash .dot58{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot59{
+.container .dot59{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 22.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.D #dot59, .O #dot59, .Q #dot59, .mdash #dot59{
+.D .dot59, .O .dot59, .Q .dot59, .mdash .dot59{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 22.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot61{ /*nobodyyyyy*/
+.container .dot61{ /*nobodyyyyy*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot62{
+.container .dot62{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.C #dot62, .G #dot62, .J #dot62, .M #dot62, .N #dot62, .O #dot62, .Q #dot62, .U #dot62, .W #dot62{
+.C .dot62, .G .dot62, .J .dot62, .M .dot62, .N .dot62, .O .dot62, .Q .dot62, .U .dot62, .W .dot62{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot63{
+.container .dot63{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
- .A #dot63, .B #dot63, .D #dot63, .E #dot63, .F #dot63, .H #dot63, .K #dot63, .P #dot63, .R #dot63, .zero #dot63, .four #dot63, .six #dot63, .eight #dot63{
+ .A .dot63, .B .dot63, .D .dot63, .E .dot63, .F .dot63, .H .dot63, .K .dot63, .P .dot63, .R .dot63, .zero .dot63, .four .dot63, .six .dot63, .eight .dot63{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot64{
+.container .dot64{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.L #dot64, .M #dot64, .P #dot64, .V #dot64, .W #dot64, .X #dot64, .nine #dot64{
+.L .dot64, .M .dot64, .P .dot64, .V .dot64, .W .dot64, .X .dot64, .nine .dot64{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot65{
+.container .dot65{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.I #dot65, .N #dot65, .P #dot65, .T #dot65, .Y #dot65, .Z #dot65, .one #dot65, .two #dot65, .nine #dot65, .ques #dot65, .exclam #dot65{
+.I .dot65, .N .dot65, .P .dot65, .T .dot65, .Y .dot65, .Z .dot65, .one .dot65, .two .dot65, .nine .dot65, .ques .dot65, .exclam .dot65{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot66{
+.container .dot66{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.E #dot66, .F #dot66, .G #dot66, .K #dot66, .M #dot66, .P #dot66, .R #dot66, .W #dot66, .X #dot66, .seven #dot66, .nine #dot66{
+.E .dot66, .F .dot66, .G .dot66, .K .dot66, .M .dot66, .P .dot66, .R .dot66, .W .dot66, .X .dot66, .seven .dot66, .nine .dot66{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot67{
+.container .dot67{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot67, .G #dot67, .H #dot67, .J #dot67, .P #dot67, .S #dot67, .V #dot67, .three #dot67, .four #dot67, .eight #dot67{
+.A .dot67, .G .dot67, .H .dot67, .J .dot67, .P .dot67, .S .dot67, .V .dot67, .three .dot67, .four .dot67, .eight .dot67{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot68{
+.container .dot68{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot68, .G #dot68, .M #dot68, .N #dot68, .O #dot68, .Q #dot68, .U #dot68, .W #dot68, .zero #dot68, .five #dot68, .six #dot68, .nine #dot68{
+.B .dot68, .G .dot68, .M .dot68, .N .dot68, .O .dot68, .Q .dot68, .U .dot68, .W .dot68, .zero .dot68, .five .dot68, .six .dot68, .nine .dot68{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot69{
+.container .dot69{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 27.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.D #dot69, .G #dot69{
+.D .dot69, .G .dot69{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 27.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot71{ /*all by myself*/
+.container .dot71{ /*all by myself*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot72{
+.container .dot72{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.C #dot72, .G #dot72, .J #dot72, .M #dot72, .N #dot72, .O #dot72, .Q #dot72, .U #dot72, .W #dot72, .four #dot72{
+.C .dot72, .G .dot72, .J .dot72, .M .dot72, .N .dot72, .O .dot72, .Q .dot72, .U .dot72, .W .dot72, .four .dot72{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot73{
+.container .dot73{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
- .A #dot73, .B #dot73, .D #dot73, .E #dot73, .F #dot73, .H #dot73, .K #dot73, .P #dot73, .R #dot73, .zero #dot73, .four #dot73, .six #dot73, .eight #dot73{
+ .A .dot73, .B .dot73, .D .dot73, .E .dot73, .F .dot73, .H .dot73, .K .dot73, .P .dot73, .R .dot73, .zero .dot73, .four .dot73, .six .dot73, .eight .dot73{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot74{
+.container .dot74{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot74, .L #dot74, .V #dot74, .W #dot74, .X #dot74, .Z #dot74, .two #dot74, .four #dot74{
+.A .dot74, .L .dot74, .V .dot74, .W .dot74, .X .dot74, .Z .dot74, .two .dot74, .four .dot74{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot75{
+.container .dot75{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot75, .I #dot75, .M #dot75, .T #dot75, .Y #dot75, .one #dot75, .four #dot75, .ques #dot75{
+.A .dot75, .I .dot75, .M .dot75, .T .dot75, .Y .dot75, .one .dot75, .four .dot75, .ques .dot75{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot76{
+.container .dot76{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot76, .N #dot76, .V #dot76, .W #dot76, .X #dot76, .four #dot76, .seven #dot76{
+.A .dot76, .N .dot76, .V .dot76, .W .dot76, .X .dot76, .four .dot76, .seven .dot76{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot77{
+.container .dot77{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot77, .H #dot77, .J #dot77, .K #dot77, .R #dot77, .four #dot77{
+.A .dot77, .H .dot77, .J .dot77, .K .dot77, .R .dot77, .four .dot77{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot78{
+.container .dot78{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot78, .D #dot78, .E #dot78, .G #dot78, .L #dot78, .M #dot78, .N #dot78, .O #dot78, .Q #dot78, .S #dot78, .U #dot78, .W #dot78, .Z #dot78{
+.B .dot78, .D .dot78, .E .dot78, .G .dot78, .L .dot78, .M .dot78, .N .dot78, .O .dot78, .Q .dot78, .S .dot78, .U .dot78, .W .dot78, .Z .dot78{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot78, .three #dot78, .five #dot78, .six #dot78, .eight #dot78, .nine #dot78{
+.zero .dot78, .three .dot78, .five .dot78, .six .dot78, .eight .dot78, .nine .dot78{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 32.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot79{ /*lone pony one*/
+.container .dot79{ /*lone pony one*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 32.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot81{ /*lone pony two*/
+.container .dot81{ /*lone pony two*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot82{
+.container .dot82{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot82, .C #dot82, .G #dot82, .J #dot82, .M #dot82, .N #dot82, .O #dot82, .Q #dot82, .S #dot82, .five #dot82{
+.A .dot82, .C .dot82, .G .dot82, .J .dot82, .M .dot82, .N .dot82, .O .dot82, .Q .dot82, .S .dot82, .five .dot82{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot83{
+.container .dot83{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot83, .D #dot83, .E #dot83, .F #dot83, .H #dot83, .K #dot83, .P #dot83, .R #dot83, .U #dot83, .W #dot83, .X #dot83, .Z #dot83{
+.B .dot83, .D .dot83, .E .dot83, .F .dot83, .H .dot83, .K .dot83, .P .dot83, .R .dot83, .U .dot83, .W .dot83, .X .dot83, .Z .dot83{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot83, .two #dot83, .six #dot83, .eight #dot83{
+.zero .dot83, .two .dot83, .six .dot83, .eight .dot83{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot84{
+.container .dot84{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.L #dot84, .V #dot84, .comma #dot84, .semi #dot84{
+.L .dot84, .V .dot84, .comma .dot84, .semi .dot84{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot85{
+.container .dot85{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.I #dot85, .T #dot85, .Y #dot85, .one #dot85, .seven #dot85, .comma #dot85, .semi #dot85{
+.I .dot85, .T .dot85, .Y .dot85, .one .dot85, .seven .dot85, .comma .dot85, .semi .dot85{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot86{
+.container .dot86{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.N #dot86, .V #dot86{
+.N .dot86, .V .dot86{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot87{
+.container .dot87{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.H #dot87, .J #dot87, .K #dot87, .W #dot87, .X #dot87, .zero #dot87, .four #dot87, .five #dot87, .eight #dot87, .nine #dot87{
+.H .dot87, .J .dot87, .K .dot87, .W .dot87, .X .dot87, .zero .dot87, .four .dot87, .five .dot87, .eight .dot87, .nine .dot87{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot88{
+.container .dot88{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot88, .B #dot88, .C #dot88, .D #dot88, .E #dot88, .G #dot88, .L #dot88, .M #dot88, .N #dot88, .O #dot88, .Q #dot88{
+.A .dot88, .B .dot88, .C .dot88, .D .dot88, .E .dot88, .G .dot88, .L .dot88, .M .dot88, .N .dot88, .O .dot88, .Q .dot88{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.R #dot88, .S #dot88, .U #dot88, .W #dot88, .Z #dot88, .three #dot88, .five #dot88, .six #dot88{
+.R .dot88, .S .dot88, .U .dot88, .W .dot88, .Z .dot88, .three .dot88, .five .dot88, .six .dot88{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 37.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot89{ /*sgt pepper's lonely hearts club band*/
+.container .dot89{ /*sgt pepper's lonely hearts club band*/
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 37.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot91{
+.container .dot91{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot91, .M #dot91{
+.A .dot91, .M .dot91{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 2.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot92{
+.container .dot92{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot92, .B #dot92, .D #dot92, .F #dot92, .H #dot92, .J #dot92, .K #dot92, .L #dot92, .M #dot92, .N #dot92, .P #dot92{
+.A .dot92, .B .dot92, .D .dot92, .F .dot92, .H .dot92, .J .dot92, .K .dot92, .L .dot92, .M .dot92, .N .dot92, .P .dot92{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.R #dot92, .S #dot92, .X #dot92, .two #dot92, .three #dot92{
+.R .dot92, .S .dot92, .X .dot92, .two .dot92, .three .dot92{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 7.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot93{
+.container .dot93{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot93, .B #dot93, .C #dot93, .D #dot93, .E #dot93, .F #dot93, .G #dot93, .H #dot93, .I #dot93, .J #dot93, .K #dot93, .L #dot93, .M #dot93{
+.A .dot93, .B .dot93, .C .dot93, .D .dot93, .E .dot93, .F .dot93, .G .dot93, .H .dot93, .I .dot93, .J .dot93, .K .dot93, .L .dot93, .M .dot93{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
- .N #dot93, .O #dot93, .P #dot93, .Q #dot93, .R #dot93, .S #dot93, .T #dot93, .U #dot93, .W #dot93, .X #dot93, .Y #dot93, .Z #dot93{
+ .N .dot93, .O .dot93, .P .dot93, .Q .dot93, .R .dot93, .S .dot93, .T .dot93, .U .dot93, .W .dot93, .X .dot93, .Y .dot93, .Z .dot93{
    width: 5px;
    height: 5px;
-   background-color: var(--cleanwhite);
+   background-color: var(--lettercol);
    border-radius: 50%;
    top: 42.5px;
    left: 12.5px;
    display: inline-block;
    position: absolute;
  }
- .one #dot93, .two #dot93, .three #dot93, .five #dot93, .eight #dot93, .nine #dot93{
+ .one .dot93, .two .dot93, .three .dot93, .five .dot93, .eight .dot93, .nine .dot93{
    width: 5px;
    height: 5px;
-   background-color: var(--cleanwhite);
+   background-color: var(--lettercol);
    border-radius: 50%;
    top: 42.5px;
    left: 12.5px;
    display: inline-block;
    position: absolute;
  }
-.container #dot94{
+.container .dot94{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot94, .C #dot94, .D #dot94, .E #dot94, .F #dot94, .G #dot94, .H #dot94, .I #dot94, .K #dot94, .L #dot94{
+.B .dot94, .C .dot94, .D .dot94, .E .dot94, .F .dot94, .G .dot94, .H .dot94, .I .dot94, .K .dot94, .L .dot94{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.N #dot94, .O #dot94, .P #dot94, .Q #dot94, .R #dot94, .S #dot94, .T #dot94, .U #dot94, .Y #dot94, .Z #dot94{
+.N .dot94, .O .dot94, .P .dot94, .Q .dot94, .R .dot94, .S .dot94, .T .dot94, .U .dot94, .Y .dot94, .Z .dot94{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot94, .one #dot94, .two #dot94, .three #dot94, .five #dot94, .six #dot94, .eight #dot94, .ques #dot94, .peri #dot94, .comma #dot94, .semi #dot94{
+.zero .dot94, .one .dot94, .two .dot94, .three .dot94, .five .dot94, .six .dot94, .eight .dot94, .ques .dot94, .peri .dot94, .comma .dot94, .semi .dot94{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot95{
+.container .dot95{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot95, .D #dot95, .E #dot95, .F #dot95, .I #dot95, .L #dot95, .P #dot95, .T #dot95, .V #dot95, .Y #dot95, .Z #dot95{
+.B .dot95, .D .dot95, .E .dot95, .F .dot95, .I .dot95, .L .dot95, .P .dot95, .T .dot95, .V .dot95, .Y .dot95, .Z .dot95{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.one #dot95, .two #dot95, .four #dot95, .five #dot95, .six #dot95, .seven #dot95, .nine #dot95, .ques #dot95, .exclam #dot95, .peri #dot95{
+.one .dot95, .two .dot95, .four .dot95, .five .dot95, .six .dot95, .seven .dot95, .nine .dot95, .ques .dot95, .exclam .dot95, .peri .dot95{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot96{
+.container .dot96{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.B #dot96, .D #dot96, .E #dot96, .F #dot96, .H #dot96, .I #dot96, .J #dot96, .L #dot96, .O #dot96, .P #dot96, .Q #dot96, .T #dot96, .U #dot96{
+.B .dot96, .D .dot96, .E .dot96, .F .dot96, .H .dot96, .I .dot96, .J .dot96, .L .dot96, .O .dot96, .P .dot96, .Q .dot96, .T .dot96, .U .dot96{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.Y #dot96, .Z #dot96, .zero #dot96, .one #dot96, .two #dot96, .three #dot96, .four #dot96, .five #dot96, .six #dot96, .eight #dot96, .nine #dot96{
+.Y .dot96, .Z .dot96, .zero .dot96, .one .dot96, .two .dot96, .three .dot96, .four .dot96, .five .dot96, .six .dot96, .eight .dot96, .nine .dot96{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.ques #dot96, .exclam #dot96, .peri #dot96{
+.ques .dot96, .exclam .dot96, .peri .dot96{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot97{
+.container .dot97{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot97, .B #dot97, .C #dot97, .D #dot97, .E #dot97, .G #dot97, .H #dot97, .I #dot97, .L #dot97, .M #dot97, .N #dot97, .O #dot97{
+.A .dot97, .B .dot97, .C .dot97, .D .dot97, .E .dot97, .G .dot97, .H .dot97, .I .dot97, .L .dot97, .M .dot97, .N .dot97, .O .dot97{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.Q #dot97, .S #dot97, .T #dot97, .U #dot97, .W #dot97, .X #dot97, .Y #dot97, .Z #dot97{
+.Q .dot97, .S .dot97, .T .dot97, .U .dot97, .W .dot97, .X .dot97, .Y .dot97, .Z .dot97{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.zero #dot97, .one #dot97, .two #dot97, .three #dot97, .four #dot97, .five #dot97, .six #dot97, .eight #dot97{
+.zero .dot97, .one .dot97, .two .dot97, .three .dot97, .four .dot97, .five .dot97, .six .dot97, .eight .dot97{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot98{
+.container .dot98{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot98, .E #dot98, .G #dot98, .H #dot98, .K #dot98, .L #dot98, .M #dot98, .N #dot98, .R #dot98, .W #dot98, .X #dot98, .Z #dot98, .one #dot98{
+.A .dot98, .E .dot98, .G .dot98, .H .dot98, .K .dot98, .L .dot98, .M .dot98, .N .dot98, .R .dot98, .W .dot98, .X .dot98, .Z .dot98, .one .dot98{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 37.5px;
   display: inline-block;
   position: absolute;
 }
-.container #dot99{
+.container .dot99{
   width: 5px;
   height: 5px;
-  background-color: var(--startupblue);
+  background-color: var(--letterback);
   border-radius: 50%;
   top: 42.5px;
   left: 42.5px;
   display: inline-block;
   position: absolute;
 }
-.A #dot99, .K #dot99, .M #dot99, .R #dot99{
+.A .dot99, .K .dot99, .M .dot99, .R .dot99{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 42.5px;
   left: 42.5px;
@@ -1987,10 +1998,10 @@ body{
   position: absolute;
 }
 
-.J .container #dot104, .Q .container #dot104, .nine .container #dot104, .comma .container #dot104, .semi .container #dot104{
+.J .container .dot104, .Q .container .dot104, .nine .container .dot104, .comma .container .dot104, .semi .container .dot104{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 47.5px;
   left: 17.5px;
@@ -1998,90 +2009,90 @@ body{
   position: absolute;
 }
 
-.C .container #dot105, .G .container #dot105, .J .container #dot105, .O .container #dot105, .Q .container #dot105, .S .container #dot105, .U .container #dot105{
+.C .container .dot105, .G .container .dot105, .J .container .dot105, .O .container .dot105, .Q .container .dot105, .S .container .dot105, .U .container .dot105{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 47.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.zero .container #dot105, .three .container #dot105, .eight .container #dot105{
+.zero .container .dot105, .three .container .dot105, .eight .container .dot105{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 47.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.C .container #dot106, .G .container #dot106, .S .container #dot106{
+.C .container .dot106, .G .container .dot106, .S .container .dot106{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 47.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot113, .comma .container #dot113, .semi .container #dot113{
+.Q .container .dot113, .comma .container .dot113, .semi .container .dot113{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 12.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot114{
+.Q .container .dot114{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 17.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot115{
+.Q .container .dot115{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 22.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot116{
+.Q .container .dot116{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 27.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot117{
+.Q .container .dot117{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 32.5px;
   display: inline-block;
   position: absolute;
 }
-.Q .container #dot118{
+.Q .container .dot118{
   width: 5px;
   height: 5px;
-  background-color: var(--cleanwhite);
+  background-color: var(--lettercol);
   border-radius: 50%;
   top: 52.5px;
   left: 37.5px;
