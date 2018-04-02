@@ -49,6 +49,8 @@
       <div class="letters">30313233343536373839</div>
     </div>
 
+    <input type="text" id="fname">
+      <div id="center" class="letters"></div>
 
     <!-- <div id="outer">
       <div class="letters">ABCDEF</div>
@@ -76,11 +78,11 @@
     <!-- <input type="text" id="fname">
       <div id="center" class="letters">TEST1</div> -->
 
-    <input type="text" id="text-input" placeholder="Write your text here">
+    <!-- <input type="text" id="text-input" placeholder="Write your text here"> -->
 
   <!-- Use the letters (visible) -->
 
-    <div id="text-destination"></div>
+    <!-- <div id="text-destination"></div> -->
 
     <!-- <div id="button">Toggle Mode</div> -->
 
@@ -5399,34 +5401,44 @@
       $letterWrapper.html(wordArray.join(getHTMLForCharacter(' ')));
     });
 
+ // Using getHTML and myFunction and onkeyup  to convert <input> to Dani's Character set
+
     function getHTMLForCharacter(character) {
         	var characterDefinition = $('.letter-definition[data-character="' + character + '"]').html();
         	var characterHTML = '<div class="letter" data-character="' + character + '">' + characterDefinition + '</div>';
           return characterHTML;
     }
 
-    function writeText() {
-    var wordArray = [];
-    var words = $input.val().split(' ');
 
+ // input and typing stuff - get input
+
+    document.getElementById("fname").onkeyup=function(){
+      myFunction()
+    };
+
+// Myfunction - convert value to a Character and display it "center"
+
+    function myFunction(){
+      var x = document.getElementById("fname");
+      x.value = x.value.toUpperCase();
+    //  $("div.center").html('<div class="letters"> + x.value + </div>');
+    var wordArray = [];
+    var words = x.value;
+     var str=" ";
     for (var i = 0; i < words.length; i++) {
       var word = words[i];
       var letters = word.split('');
-      var letterElements = letters.map(getHTMLForCharacter);
-      wordArray.push(
-        '<div class="word">' +
-        letterElements.join('') +
-        '</div>'
-      );
+
+      str = str + getHTMLForCharacter(letters) ;
+    }
+     document.getElementById("center").innerHTML=str;
+    //  document.getElementById("center").innerHTML=getHTMLForCharacter(letters) + " ";
+
     }
 
-    $destination.html( wordArray.join(space) );
-  }
+    });
 
-  $input.on('keyup', function() {
-    writeText();
-  });
-});
+
 
     //input and typing stuff
     // document.getElementById("fname").onkeyup=function(){

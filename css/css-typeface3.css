@@ -158,6 +158,16 @@ input{
   display: none;
 }
 
+#centerB{
+  width:70vw;
+  height:1500px;
+  top:0vh;
+  left:30vw;
+  /* border: solid white 1px; */
+  position: absolute;
+  display: none;
+}
+
 /*letter stuff here down*/
 
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O, .P, .Q, .R, .S, .T, .U, .V{
