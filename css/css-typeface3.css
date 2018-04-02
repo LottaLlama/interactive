@@ -58,6 +58,8 @@ input{
   position: fixed;
   left: 0vw;
   top: 0vh;
+  background-color: var(--letterback);
+  z-index: 10;
 }
 
 #col-2{
@@ -66,6 +68,8 @@ input{
   position: fixed;
   left: 10vw;
   top: 0vh;
+  background-color: var(--letterback);
+  z-index: 10;
 }
 
 #grow1{
@@ -121,6 +125,7 @@ input{
   text-align: center;
   border-radius: 5%;
   border: solid var(--lettercol) 1.5px;
+  z-index: 15;
 }
 
 #col-3{
@@ -149,7 +154,7 @@ input{
 }
 
 #centerA{
-  width:70vw;
+  width:3600px;
   height:1500px;
   top:0vh;
   left:30vw;
