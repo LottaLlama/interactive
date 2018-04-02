@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>CSS Typeface 2</title>
-    <link rel="stylesheet" href="../css/css-typeface3.css">
+    <link rel="stylesheet" href="../css/css-typeface2.css">
 
     <!--credits to Laurel Schwulst for letter definition: https://jsfiddle.net/0tu2pxd8/260/ -->
 
@@ -12,45 +12,7 @@
 
   <body>
 
-    <div id="line"></div>
-    <div id="col-1">
-      <div id="grow1"><div class="letters">1</div></div>
-      <div id="grow3"><div class="letters">3</div></div>
-    </div>
-    <div id="col-2">
-      <div class="letters">-A</div>
-      <div class="letters">-B</div>
-      <div id="grow2"><div class="letters">2</div></div>
-      <div id="grow4"><div class="letters">4</div></div>
-    </div>
-
-    <div id="centerA">
-      <div class="letters">l!DOCTYPEsHTMLg</div>
-      <div class="letters">lHTMLg</div>
-      <div class="letters">lHEADg</div>
-      <div class="letters">sslMETAsCHARSET=“UTF-8”g</div>
-      <div class="letters">sslTITLEgCSSsTYPEFACEl/TITLEg</div>
-      <div class="letters">l/HEADg</div>
-      <div class="letters">lBODYg</div>
-      <div class="letters">sslPg</div>
-      <div class="letters">ssssIsAMs15sPT</div>
-      <div class="letters">ssl/Pg</div>
-      <div class="letters">l/BODYg</div>
-    </div>
-
-    <div id="button">
-      <div class="letters">TOG</div>
-    </div>
-
-    <div id="col-3">
-      <div class="letters">s1s2s3s4s5s6s7s8s9</div>
-      <div class="letters">10111213141516171819</div>
-      <div class="letters">20212223242526272829</div>
-      <div class="letters">30313233343536373839</div>
-    </div>
-
-
-    <!-- <div id="outer">
+    <div id="outer">
       <div class="letters">ABCDEF</div>
       <div class="letters">GHIJKL</div>
       <div class="letters">MNOPQR</div>
@@ -58,9 +20,9 @@
       <div class="letters">YZ0123</div>
       <div class="letters">456789</div>
       <div class="letters">?!.;“”</div>
-      <div class="letters">–—/lga</div>
+      <div class="letters">–—/lga</div> <!--wrong ampersand-->
       <div class="letters">()#=</div>
-    </div> -->
+    </div>
 
 
 
@@ -82,7 +44,7 @@
 
     <div id="text-destination"></div>
 
-    <!-- <div id="button">Toggle Mode</div> -->
+    <div id="button">Toggle Mode</div>
 
 
     <!-- Define the letters (invisible) -->
@@ -4215,7 +4177,7 @@
               </div>
             </div>
         </div>
-        <div class="letter-definition" data-character="-">
+        <div class="letter-definition" data-character="–">
             <div class="ndash">
               <div class="container">
                 <div class="dot11"></div>
@@ -5295,78 +5257,6 @@
         }
       })
 
-      $("#grow1").click(function(){
-        $(":root").css("--sizedot", "2px");
-        $(":root").css("--size0", "-1px");
-        $(":root").css("--size1", "1px");
-        $(":root").css("--size2", "3px");
-        $(":root").css("--size3", "5px");
-        $(":root").css("--size4", "7px");
-        $(":root").css("--size5", "9px");
-        $(":root").css("--size6", "11px");
-        $(":root").css("--size7", "13px");
-        $(":root").css("--size8", "15px");
-        $(":root").css("--size9", "17px");
-        $(":root").css("--size10", "19px");
-        $(":root").css("--size11", "21px");
-        $(":root").css("--size45", "18px");
-        $(":root").css("--size60", "24px");
-      })
-
-      $("#grow2").click(function(){
-        console.log("2");
-        $(":root").css("--sizedot", "3px");
-        $(":root").css("--size0", "-1.5px");
-        $(":root").css("--size1", "1.5px");
-        $(":root").css("--size2", "4.5px");
-        $(":root").css("--size3", "7.5px");
-        $(":root").css("--size4", "10.5px");
-        $(":root").css("--size5", "13.5px");
-        $(":root").css("--size6", "16.5px");
-        $(":root").css("--size7", "19.5px");
-        $(":root").css("--size8", "22.5px");
-        $(":root").css("--size9", "25.5px");
-        $(":root").css("--size10", "28.5px");
-        $(":root").css("--size11", "31.5px");
-        $(":root").css("--size45", "27px");
-        $(":root").css("--size60", "36px");
-      })
-
-      $("#grow3").click(function(){
-        $(":root").css("--sizedot", "4px");
-        $(":root").css("--size0", "-2px");
-        $(":root").css("--size1", "2px");
-        $(":root").css("--size2", "6px");
-        $(":root").css("--size3", "10px");
-        $(":root").css("--size4", "14px");
-        $(":root").css("--size5", "18px");
-        $(":root").css("--size6", "22px");
-        $(":root").css("--size7", "26px");
-        $(":root").css("--size8", "30px");
-        $(":root").css("--size9", "34px");
-        $(":root").css("--size10", "38px");
-        $(":root").css("--size11", "42px");
-        $(":root").css("--size45", "36px");
-        $(":root").css("--size60", "48px");
-      })
-
-      $("#grow4").click(function(){
-        $(":root").css("--sizedot", "5px");
-        $(":root").css("--size0", "-2.5px");
-        $(":root").css("--size1", "2.5px");
-        $(":root").css("--size2", "7.5px");
-        $(":root").css("--size3", "12.5px");
-        $(":root").css("--size4", "17.5px");
-        $(":root").css("--size5", "22.5px");
-        $(":root").css("--size6", "27.5px");
-        $(":root").css("--size7", "32.5px");
-        $(":root").css("--size8", "37.5px");
-        $(":root").css("--size9", "42.5px");
-        $(":root").css("--size10", "47.5px");
-        $(":root").css("--size11", "52.5px");
-        $(":root").css("--size45", "45px");
-        $(":root").css("--size60", "60px");
-      })
       //letter definition
 
       $('.letters').each(function() {
