@@ -18,8 +18,8 @@
       <div id="grow3"><div class="letters">3</div></div>
     </div>
     <div id="col-2">
-      <div class="letters">-A</div>
-      <div class="letters">-B</div>
+      <div class="letters" id=butA>-A</div>
+      <div class="letters" id=butB>-B</div>
       <div id="grow2"><div class="letters">2</div></div>
       <div id="grow4"><div class="letters">4</div></div>
     </div>
@@ -5278,6 +5278,7 @@
     $(document).ready(function(){
 
       // changing colors
+      $("#centerA").show();
 
       var status = 'classy';
 
@@ -5293,6 +5294,17 @@
           $(":root").css("--lettercol", "var(--cleanwhite)");
           status='classy';
         }
+      })
+
+      $("#butB").click(function(){
+        console.log("bclick");
+        $("#centerA").hide();
+        $("#centerB").show();
+      })
+
+      $("#butA").click(function(){
+        $("#centerA").show();
+        $("#centerB").hide();
       })
 
       $("#grow1").click(function(){
@@ -5314,7 +5326,6 @@
       })
 
       $("#grow2").click(function(){
-        console.log("2");
         $(":root").css("--sizedot", "3px");
         $(":root").css("--size0", "-1.5px");
         $(":root").css("--size1", "1.5px");
