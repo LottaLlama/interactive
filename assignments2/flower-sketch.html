@@ -12,15 +12,17 @@
     <div id="but1">
       <div class="flower" style="top: 20px; left:20px">
         <div class="center"></div>
-        <div class="petal1"></div>
-        <div class="petal2"></div>
-        <div class="petal3"></div>
-        <div class="petal4"></div>
-        <div class="petal5"></div>
+        <div class="orange">
+          <div class="petal1"></div>
+          <div class="petal2"></div>
+          <div class="petal3"></div>
+          <div class="petal4"></div>
+          <div class="petal5"></div>
+        </div>
       </div>
     </div>
     <div id="but2">
-      <div class="flower" style="top: 50px; left: 40px">
+      <div class="flower" style="top: 55px; left: 50px">
         <div class="center"></div>
         <div class="petal1"></div>
         <div class="petal2"></div>
@@ -42,11 +44,13 @@
     <div id="but4">
       <div class="flower" style="top: 60px; left: 120px">
         <div class="center"></div>
-        <div class="petal1"></div>
-        <div class="petal2"></div>
-        <div class="petal3"></div>
-        <div class="petal4"></div>
-        <div class="petal5"></div>
+        <div class="orange">
+          <div class="petal1"></div>
+          <div class="petal2"></div>
+          <div class="petal3"></div>
+          <div class="petal4"></div>
+          <div class="petal5"></div>
+        </div>
       </div>
     </div>
     <div id="but5">
@@ -95,24 +99,22 @@
 
     $(document).ready(function(){
 
-      $("#but1").click(function(){
-        alert("click1");
-      })
-      $("#but2").click(function(){
-        alert("click2");
-      })
-      $("#but3").click(function(){
-        alert("click3");
-      })
-      $("#but4").click(function(){
-        alert("click4");
-      })
-      $("#but5").click(function(){
-        alert("click5");
-      })
-      $("#but6").click(function(){
-        alert("click6");
-      })
+      for (k=1; k<9; k++){
+        $("#but"+k).click(function(){
+          console.log("click"+k);
+        })
+      }
+
+
+      for(j=0; j<2; j++){
+        for(i=1; i<6; i++){
+          var targetDiv = document.getElementsByClassName("orange")[j].getElementsByClassName("petal"+i);
+          console.log(targetDiv);
+           $(targetDiv).css("border-left", "solid orange 1px");
+           $(targetDiv).css("border-top", "solid orange 1px");
+        }
+      }
+
 
     });
 
