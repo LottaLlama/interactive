@@ -66,6 +66,8 @@
 
     $(document).ready(function(){
 
+      var change;
+
       var names=['redpink', 'red', 'orange','lightorange','golden','yellow','lime','green','mint','seablue','skyblue','indigo','purple', 'magenta','hotpink','gray'];
       var colors=['#ff5050', '#ff0000', '#ff6600', '#ff9933', '#ffcc00', '#ffff00', '#99ff33', '#33cc33', '#00ff99', '#33cccc', '#0099ff', '#3366ff', '#9966ff', '#ff00ff', '#ff3399', '#555555'];
       var tints=['#ff9999','#ff6666','#ffb380','#ffbf80','#ffe680','#ffff80','#bfff80','#99e699','#99ffd6','#98e6e6','#80ccff','#809fff','#bb99ff','#ff99ff','#ff99cc','#ffffff'];
@@ -110,6 +112,54 @@
         $('#shade').css('font-style', 'italic');
       })
 
+      //start new stuff here
+
+      //make this into an array!
+
+      $('#redpink').click(function(){
+        var element = document.getElementById('redpink');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+      })
+      $('#red').click(function(){
+        var element = document.getElementById('red');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+      })
+      $('#orange').click(function(){
+        var element = document.getElementById('orange');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+      })
+      $('#lightorange').click(function(){
+        var element = document.getElementById('lightorange');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+      })
+
+      //also make this into an array!!!
+
+      $('#square1').click(function(){
+        $('#square1').css('background-color', change);
+      })
+      $('#square2').click(function(){
+        $('#square2').css('background-color', change);
+      })
+      $('#square3').click(function(){
+        $('#square3').css('background-color', change);
+      })
+      $('#square4').click(function(){
+        $('#square4').css('background-color', change);
+      })
+      $('#square5').click(function(){
+        $('#square5').css('background-color', change);
+      })
+
+    // Reference: https://stackoverflow.com/questions/6338217/get-a-css-value-with-javascript
 
     });
 
