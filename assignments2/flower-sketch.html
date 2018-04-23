@@ -94,6 +94,8 @@
       </div>
     </div>
 
+    <div id="new">New Flower</div>
+
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
 
@@ -105,7 +107,6 @@
         })
       }
 
-
       for(j=0; j<2; j++){
         for(i=1; i<6; i++){
           var targetDiv = document.getElementsByClassName("orange")[j].getElementsByClassName("petal"+i);
@@ -115,6 +116,39 @@
         }
       }
 
+      function randomLeft(){
+        var left=Math.floor(Math.random()*100);
+        left += " vw";
+        console.log(left);
+        return left;
+      }
+
+      function randomTop(){
+        var top=Math.floor(Math.random()*100);
+        top += " vh";
+        console.log(top);
+        return top;
+      }
+
+      $("#new").click(function(){
+        var div = document.createElement('div');
+        console.log("created");
+        document.body.appendChild(div);
+        console.log("added");
+        div.id="but"+k+1;
+        k++;
+        console.log("added next button feature");
+        div.style.left =randomLeft();
+        div.style.top=randomTop();
+        console.log("topped and lefted");
+
+        div.innerHTML = "<div class='flower' style='top:'"+;
+      })
+
+      // References:
+      // https://stackoverflow.com/questions/14094697/how-to-create-new-div-dynamically-change-it-move-it-modify-it-in-every-way-po
+
+      div.innerHTML = '<span class="msg">Hello world.</span>';
 
     });
 

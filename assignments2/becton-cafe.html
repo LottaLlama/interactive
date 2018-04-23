@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Becton Café</title>
+    <link rel="stylesheet" href="../css/becton-cafe.css">
+
+  </head>
+
+  <body>
+    <div id="title">BECTON CAFÉ LED WALL</div>
+
+    <div id="panel">Select a
+      <div id="color">Color</div>
+      <div id="tint">Tint</div>
+      <div id="shade">Shade</div>
+      <div id="redpink"></div>
+      <div id="red"></div>
+      <div id="orange"></div>
+      <div id="lightorange"></div>
+      <div id="golden"></div>
+      <div id="yellow"></div>
+      <div id="lime"></div>
+      <div id="green"></div>
+      <div id="mint"></div>
+      <div id="seablue"></div>
+      <div id="skyblue"></div>
+      <div id="indigo"></div>
+      <div id="purple"></div>
+      <div id="magenta"></div>
+      <div id="hotpink"></div>
+      <div id="gray"></div>
+    </div>
+
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+    <div id="square6"></div>
+    <div id="square7"></div>
+    <div id="square8"></div>
+    <div id="square9"></div>
+    <div id="square10"></div>
+    <div id="square11"></div>
+    <div id="square12"></div>
+    <div id="square13"></div>
+    <div id="square14"></div>
+    <div id="square15"></div>
+    <div id="square16"></div>
+    <div id="square17"></div>
+    <div id="square18"></div>
+    <div id="square19"></div>
+    <div id="square20"></div>
+    <div id="square21"></div>
+    <div id="square22"></div>
+    <div id="square23"></div>
+    <div id="square24"></div>
+    <div id="square25"></div>
+    <div id="square26"></div>
+    <div id="square27"></div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      var names=['redpink', 'red', 'orange','lightorange','golden','yellow','lime','green','mint','seablue','skyblue','indigo','purple', 'magenta','hotpink','gray'];
+      var colors=['#ff5050', '#ff0000', '#ff6600', '#ff9933', '#ffcc00', '#ffff00', '#99ff33', '#33cc33', '#00ff99', '#33cccc', '#0099ff', '#3366ff', '#9966ff', '#ff00ff', '#ff3399', '#555555'];
+      var tints=['#ff9999','#ff6666','#ffb380','#ffbf80','#ffe680','#ffff80','#bfff80','#99e699','#99ffd6','#98e6e6','#80ccff','#809fff','#bb99ff','#ff99ff','#ff99cc','#ffffff'];
+      var shades=['#b30000','#800000','#993d00','#b35900','#b38f00','#999900','#4d9900','#1f7a1f','#00995c','#1f7a7a','#005c99','#002db3','#3b00b3','#990099','#b30059', '#000000'];
+
+      $('#color').click(function(){
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',colors[i]);
+        }
+        $('#color').css('font-weight', 'bolder');
+        $('#color').css('font-style', 'italic');
+        $('#tint').css('font-weight', 'normal');
+        $('#tint').css('font-style', 'normal');
+        $('#shade').css('font-weight', 'normal');
+        $('#shade').css('font-style', 'normal');
+      })
+
+      $('#tint').click(function(){
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',tints[i]);
+        }
+        $('#color').css('font-weight', 'normal');
+        $('#color').css('font-style', 'normal');
+        $('#tint').css('font-weight', 'bolder');
+        $('#tint').css('font-style', 'italic');
+        $('#shade').css('font-weight', 'normal');
+        $('#shade').css('font-style', 'normal');
+      })
+
+      $('#shade').click(function(){
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',shades[i]);
+        }
+        $('#color').css('font-weight', 'normal');
+        $('#color').css('font-style', 'normal');
+        $('#tint').css('font-weight', 'normal');
+        $('#tint').css('font-style', 'normal');
+        $('#shade').css('font-weight', 'bolder');
+        $('#shade').css('font-style', 'italic');
+      })
+
+
+    });
+
+    </script>
+
+  </body>
+
+</html>

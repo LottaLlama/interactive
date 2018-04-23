@@ -7,6 +7,18 @@ body{
   background: #eedddd;
 }
 
+#new{
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  font-family: sans-serif;
+  background: lavender;
+  border-radius: 10%;
+  position: fixed;
+  top: 90vh;
+  right: 5vw;
+}
+
 .flower{
   height: 24px;
   width: 24px;
