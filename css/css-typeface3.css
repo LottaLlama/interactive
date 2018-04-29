@@ -251,10 +251,34 @@ input{
   position: fixed;
 }
 
-#center{
+#center1{
   margin-left: 30vw;
   margin-top: -1vh;
+  width: 3600px;
   position: absolute;
+  display: none;
+}
+#center2{
+  margin-left: 30vw;
+  margin-top: calc(var(--size60) - 1vh);
+  width: 3600px;
+  position: absolute;
+  display: none;
+}
+#center3{
+  margin-left: 30vw;
+  margin-top: calc(2 * var(--size60) - 1vh);
+  width: 3600px;
+  position: absolute;
+  display: none;
+}
+
+#center4{
+  margin-left: 30vw;
+  margin-top: calc(3 * var(--size60) - 1vh);
+  width: 3600px;
+  position: absolute;
+  display: none;
 }
 
 #center:hover{
@@ -1636,7 +1660,7 @@ input{
   display: inline-block;
   position: absolute;
 }
-.B .dot68, .G .dot68, .M .dot68, .N .dot68, .O .dot68, .Q .dot68, .U .dot68, .W .dot68, .zero .dot68, .five .dot68, .six .dot68, .nine .dot68, .and .dot68, .equals .dot69{
+.B .dot68, .G .dot68, .M .dot68, .N .dot68, .O .dot68, .Q .dot68, .U .dot68, .W .dot68, .zero .dot68, .five .dot68, .six .dot68, .nine .dot68, .and .dot68, .equals .dot68{
   width: var(--sizedot);
   height: var(--sizedot);
   background-color: var(--lettercol);

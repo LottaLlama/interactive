@@ -61,7 +61,16 @@
     <!-- this is where the typing appears -->
 
     <input type="text" id="fname">
-      <div id="center" class="letters"></div>
+    <div id="center1" class="letters"></div>
+
+    <input type="text" id="gname">
+    <div id="center2" class="letters"></div>
+
+    <input type="text" id="hname">
+    <div id="center3" class="letters"></div>
+
+    <input type="text" id="iname">
+    <div id="center4" class="letters"></div>
 
 
     <!-- Define the letters (invisible) -->
@@ -4098,6 +4107,102 @@
               </div>
             </div>
         </div>
+        <div class="letter-definition" data-character='"'>
+            <div class="rightquo">
+              <div class="container">
+                <div class="dot11"></div>
+                <div class="dot12"></div>
+                <div class="dot13"></div>
+                <div class="dot14"></div>
+                <div class="dot15"></div>
+                <div class="dot16"></div>
+                <div class="dot17"></div>
+                <div class="dot18"></div>
+                <div class="dot19"></div>
+                <div class="dot21"></div>
+                <div class="dot22"></div>
+                <div class="dot23"></div>
+                <div class="dot24"></div>
+                <div class="dot25"></div>
+                <div class="dot26"></div>
+                <div class="dot27"></div>
+                <div class="dot28"></div>
+                <div class="dot29"></div>
+                <div class="dot31"></div>
+                <div class="dot32"></div>
+                <div class="dot33"></div>
+                <div class="dot34"></div>
+                <div class="dot35"></div>
+                <div class="dot36"></div>
+                <div class="dot37"></div>
+                <div class="dot38"></div>
+                <div class="dot39"></div>
+                <div class="dot41"></div>
+                <div class="dot42"></div>
+                <div class="dot43"></div>
+                <div class="dot44"></div>
+                <div class="dot45"></div>
+                <div class="dot46"></div>
+                <div class="dot47"></div>
+                <div class="dot48"></div>
+                <div class="dot49"></div>
+                <div class="dot51"></div>
+                <div class="dot52"></div>
+                <div class="dot53"></div>
+                <div class="dot54"></div>
+                <div class="dot55"></div>
+                <div class="dot56"></div>
+                <div class="dot57"></div>
+                <div class="dot58"></div>
+                <div class="dot59"></div>
+                <div class="dot61"></div>
+                <div class="dot62"></div>
+                <div class="dot63"></div>
+                <div class="dot64"></div>
+                <div class="dot65"></div>
+                <div class="dot66"></div>
+                <div class="dot67"></div>
+                <div class="dot68"></div>
+                <div class="dot69"></div>
+                <div class="dot71"></div>
+                <div class="dot72"></div>
+                <div class="dot73"></div>
+                <div class="dot74"></div>
+                <div class="dot75"></div>
+                <div class="dot76"></div>
+                <div class="dot77"></div>
+                <div class="dot78"></div>
+                <div class="dot79"></div>
+                <div class="dot81"></div>
+                <div class="dot82"></div>
+                <div class="dot83"></div>
+                <div class="dot84"></div>
+                <div class="dot85"></div>
+                <div class="dot86"></div>
+                <div class="dot87"></div>
+                <div class="dot88"></div>
+                <div class="dot89"></div>
+                <div class="dot91"></div>
+                <div class="dot92"></div>
+                <div class="dot93"></div>
+                <div class="dot94"></div>
+                <div class="dot95"></div>
+                <div class="dot96"></div>
+                <div class="dot97"></div>
+                <div class="dot98"></div>
+                <div class="dot99"></div>
+                <div class="dot104"></div>
+                <div class="dot105"></div>
+                <div class="dot106"></div>
+                <div class="dot113"></div>
+                <div class="dot114"></div>
+                <div class="dot115"></div>
+                <div class="dot116"></div>
+                <div class="dot117"></div>
+                <div class="dot118"></div>
+              </div>
+            </div>
+        </div>
         <div class="letter-definition" data-character="“">
             <div class="leftquo">
               <div class="container">
@@ -5666,11 +5771,19 @@
       $("#butB").click(function(){
         $("#centerA").hide();
         $("#centerB").show();
+        $("#center1").show();
+        $("#center2").show();
+        $("#center3").show();
+        $("#center4").show();
       })
 
       $("#butA").click(function(){
         $("#centerA").show();
         $("#centerB").hide();
+        $("#center1").hide();
+        $("#center2").hide();
+        $("#center3").hide();
+        $("#center4").hide();
       })
 
       $("#grow1").click(function(){
@@ -5777,14 +5890,19 @@
 
  // input and typing stuff - get input
 
-    document.getElementById("fname").onkeyup=function(){
+    var names = ["fname","gname","hname"];
+    var centers = ["center1", "center2","center3"]
+
+
+
+    document.getElementById(names[0]).onkeyup=function(){
       myFunction()
     };
 
 // Myfunction - convert value to a Character and display it "center"
 
     function myFunction(){
-      var x = document.getElementById("fname");
+      var x = document.getElementById(names[0]);
       x.value = x.value.toUpperCase();
     //  $("div.center").html('<div class="letters"> + x.value + </div>');
     var wordArray = [];
@@ -5796,28 +5914,94 @@
 
       str = str + getHTMLForCharacter(letters) ;
     }
-     document.getElementById("center").innerHTML=str;
-    //  document.getElementById("center").innerHTML=getHTMLForCharacter(letters) + " ";
+     document.getElementById(centers[0]).innerHTML=str;
 
     }
 
+    // input and typing stuff - get input
+
+      $("#gname").css("top","calc(var(--size60) - 1vh)");
+
+       document.getElementById("gname").onkeyup=function(){
+         myFunction2()
+       };
+
+   // Myfunction - convert value to a Character and display it "center"
+
+       function myFunction2(){
+         var x = document.getElementById("gname");
+         x.value = x.value.toUpperCase();
+       //  $("div.center").html('<div class="letters"> + x.value + </div>');
+       var wordArray = [];
+       var words = x.value;
+        var str=" ";
+       for (var i = 0; i < words.length; i++) {
+         var word = words[i];
+         var letters = word.split('');
+
+         str = str + getHTMLForCharacter(letters) ;
+       }
+        document.getElementById("center2").innerHTML=str;
+
+       }
+
+       // input and typing stuff - get input
+
+         $("#hname").css("top","calc(2 * (var(--size60)) - 1vh)");
+
+          document.getElementById("hname").onkeyup=function(){
+            myFunction3()
+          };
+
+      // Myfunction - convert value to a Character and display it "center"
+
+          function myFunction3(){
+            var x = document.getElementById("hname");
+            x.value = x.value.toUpperCase();
+          //  $("div.center").html('<div class="letters"> + x.value + </div>');
+          var wordArray = [];
+          var words = x.value;
+           var str=" ";
+          for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            var letters = word.split('');
+
+            str = str + getHTMLForCharacter(letters) ;
+          }
+           document.getElementById("center3").innerHTML=str;
+
+          }
+
+          // input and typing stuff - get input
+
+            $("#iname").css("top","calc(3 * (var(--size60)) - 1vh)");
+
+             document.getElementById("iname").onkeyup=function(){
+               myFunction4()
+             };
+
+         // Myfunction - convert value to a Character and display it "center"
+
+             function myFunction4(){
+               var x = document.getElementById("iname");
+               x.value = x.value.toUpperCase();
+             //  $("div.center").html('<div class="letters"> + x.value + </div>');
+             var wordArray = [];
+             var words = x.value;
+              var str=" ";
+             for (var i = 0; i < words.length; i++) {
+               var word = words[i];
+               var letters = word.split('');
+
+               str = str + getHTMLForCharacter(letters) ;
+             }
+              document.getElementById("center4").innerHTML=str;
+
+             }
+
+
     });
 
-
-
-    //input and typing stuff
-    // document.getElementById("fname").onkeyup=function(){
-    //   myFunction()
-    // };
-    //
-    // function myFunction(){
-    //   var x = document.getElementById("fname");
-    //   x.value = x.value.toUpperCase();
-    // //  $("div.center").html('<div class="letters"> + x.value + </div>');
-    // document.getElementById("center").innerHTML=x.value;
-    // }
-    //
-    // });
 
     </script>
 
