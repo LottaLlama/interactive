@@ -36,19 +36,32 @@
 body{
   background: var(--startupblue);
   height: 1500px;
+  width: 100vw;
 }
 
-input{
-  position: absolute;
-  top: 0vh;
-  left: 30vw;
-  width: 70%;
+/* input{
+  position: fixed;
+  bottom: 10px;
+  right: 10px; */
+  /* width: 100%;
   height: var(--size60);
-  background-color: transparent;
-  color: transparent;
-  border: none;
-  outline: none;
+  background-color: var(--letterback);
+  color: var(--lettercol);
+  border: solid 1px white;
+  z-index: 2; */
+}
+
+/* #inputA input{
+  top: 30vh;
+  left: 30vw;
   z-index: 2;
+} */
+
+input{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
 }
 
 #line{
@@ -66,7 +79,8 @@ input{
   height: 100vh;
   position: fixed;
   left: 0vw;
-  top: 9vh;
+  top: 0vh;
+  /* background-color: var(--letterback); */
   background: var(--gradient);
   z-index: 10;
 }
@@ -76,7 +90,8 @@ input{
   height: 100vh;
   position: fixed;
   left: 10vw;
-  top: 9vh;
+  top: 0vh;
+  /* background-color: var(--letterback); */
   background: var(--gradient);
   z-index: 10;
 }
@@ -104,26 +119,27 @@ input{
 #grow3{
   width: 9vw;
   height: 9vh;
+  background: var(--letterback);
   position: fixed;
   top: 80vh;
   left: .5vw;
   border: solid var(--lettercol) 1px;
-  background: var(--letterback);
   text-align: center;
   border-radius: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Credits for vertical centering: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
 }
 
 #grow4{
   width: 9vw;
+  background: var(--letterback);
   height: 9vh;
   position: fixed;
   top: 80vh;
   left: 10vw;
   border: solid var(--lettercol) 1px;
-  background: var(--letterback);
   text-align: center;
   border-radius: 5%;
   display: flex;
@@ -134,7 +150,7 @@ input{
 #files{
   color: var(--lettercol);
   background: var(--letterback);
-  width: 20vw;
+  width: 20.5vw;
   height: 9vh;
   position: fixed;
   top: 0vh;
@@ -158,9 +174,10 @@ input{
 
   /* border-radius: 5%;
   border: solid var(--lettercol) 1px; */
-  z-index: 6;
+  z-index: 5;
 
 }
+
 #tabA{
   color: var(--lettercol);
   background: var(--letterback);
@@ -222,7 +239,7 @@ input{
 #button{
   color: var(--lettercol);
   background: var(--letterback);
-  width: 18.5vw;
+  width: 19vw;
   height: 9vh;
   position: fixed;
   top: 90vh;
@@ -241,7 +258,7 @@ input{
   height: 1500px;
   position: absolute;
   left: 21vw;
-  top: 0vh;
+  top: 10vh;
   /* border: solid white 1px; */
 }
 
@@ -264,28 +281,25 @@ input{
 #centerA{
   width:3600px;
   height:1500px;
-  top:0vh;
+  top:10vh;
   left:30vw;
   /* border: solid white 1px; */
   position: absolute;
   display: none;
-  z-index: 5;
-  pointer-events: none;
+
 }
 
 #centerB{
   width:70vw;
   height:1500px;
-  top:0vh;
+  top:10vh;
   left:30vw;
   /* border: solid white 1px; */
   position: absolute;
   display: none;
-  z-index: 10;
-  pointer-events: none;
+  pointer-events: none; /*allows stuff to be clicked underneath*/
+
 }
-
-
 
 /*letter stuff here down*/
 

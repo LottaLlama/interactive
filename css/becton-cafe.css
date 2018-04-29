@@ -24,6 +24,27 @@ body{
   left: 58vw;
 }
 
+#panel #selector{
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  border: solid yellow 2px;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  display: none;
+}
+
+#box1{
+  width: 20.4em;
+  height: 15.7em;
+  background: gray;
+  position: absolute;
+  right: 35vw;
+  top: 30vh;
+  z-index: 5;
+}
+
 #panel{
   width: 30vw;
   height: 90vh;

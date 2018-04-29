@@ -12,25 +12,26 @@
 
   <body>
 
-
+    <div id="topLine"></div>
     <div id="files"><div class="letters">FILES</div></div>
-    <!-- <div id="tabA"><div class="letters" id="butA">-A</div></div>
+    <div id="tabA"><div class="letters" id="butA">-A</div></div>
     <div id="tabB"><div class="letters" id="butB">-B</div></div>
-    <div id="tabC"><div class="letters" id="butC">-C</div></div> -->
+    <div id="tabC"><div class="letters" id="butC">-C</div></div>
     <div id="line"></div>
     <div id="col-1">
-      <!-- <div id="grow1"><div class="letters">1</div></div> change these to + and --->
+
+      <!-- <div id="grow1"><div class="letters">1</div></div> change these to + and -  -->
       <div id="grow3"><div class="letters">-</div></div>
     </div>
     <div id="col-2">
-      <div class="letters" id=butA>-A</div>
-      <div class="letters" id=butB>-B</div>
+      <!-- <div class="letters" id=butA>-A</div> -->
+      <!-- <div class="letters" id=butB>-B</div> -->
       <!-- <div id="grow2"><div class="letters">2</div></div> -->
       <div id="grow4"><div class="letters">+</div></div>
     </div>
 
     <div id="centerA">
-      <div class="letters"><!DOCTYPEsHTML></div>
+      <div class="letters">l!DOCTYPEsHTMLg</div>
       <div class="letters">lHTMLg</div>
       <div class="letters">lHEADg</div>
       <div class="letters">sslMETAsCHARSET=“UTF-8”g</div>
@@ -60,8 +61,10 @@
 
     <!-- this is where the typing appears -->
 
+    <!-- <div id="inputA"> -->
     <input type="text" id="fname">
       <div id="center" class="letters"></div>
+    <!-- </div> -->
 
 
     <!-- Define the letters (invisible) -->
@@ -5663,6 +5666,11 @@
         }
       })
 
+      $("#butC").click(function(){
+        $("#centerA").hide();
+        $("#centerB").show();
+      })
+
       $("#butB").click(function(){
         $("#centerA").hide();
         $("#centerB").show();
@@ -5672,6 +5680,8 @@
         $("#centerA").show();
         $("#centerB").hide();
       })
+
+
 
       $("#grow1").click(function(){
         $(":root").css("--sizedot", "2px");

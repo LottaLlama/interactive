@@ -11,10 +11,13 @@
   <body>
     <div id="title">BECTON CAFÉ LED WALL</div>
 
+    <div id="box"></div>
+
     <div id="panel">Select a
       <div id="color">Color</div>
       <div id="tint">Tint</div>
       <div id="shade">Shade</div>
+      <div id="selector"></div>
       <div id="redpink"></div>
       <div id="red"></div>
       <div id="orange"></div>
@@ -67,11 +70,15 @@
     $(document).ready(function(){
 
       var change;
+      var locationTop;
+      var locationLeft;
+      var shift = .5 + 'em';
 
       var names=['redpink', 'red', 'orange','lightorange','golden','yellow','lime','green','mint','seablue','skyblue','indigo','purple', 'magenta','hotpink','gray'];
       var colors=['#ff5050', '#ff0000', '#ff6600', '#ff9933', '#ffcc00', '#ffff00', '#99ff33', '#33cc33', '#00ff99', '#33cccc', '#0099ff', '#3366ff', '#9966ff', '#ff00ff', '#ff3399', '#555555'];
       var tints=['#ff9999','#ff6666','#ffb380','#ffbf80','#ffe680','#ffff80','#bfff80','#99e699','#99ffd6','#98e6e6','#80ccff','#809fff','#bb99ff','#ff99ff','#ff99cc','#ffffff'];
       var shades=['#b30000','#800000','#993d00','#b35900','#b38f00','#999900','#4d9900','#1f7a1f','#00995c','#1f7a7a','#005c99','#002db3','#3b00b3','#990099','#b30059', '#000000'];
+
 
       $('#color').click(function(){
         for (i=0; i<16; i++){
@@ -84,6 +91,8 @@
         $('#tint').css('font-style', 'normal');
         $('#shade').css('font-weight', 'normal');
         $('#shade').css('font-style', 'normal');
+
+        $('#selector').css('display', 'none');
       })
 
       $('#tint').click(function(){
@@ -97,6 +106,8 @@
         $('#tint').css('font-style', 'italic');
         $('#shade').css('font-weight', 'normal');
         $('#shade').css('font-style', 'normal');
+
+        $('#selector').css('display', 'none');
       })
 
       $('#shade').click(function(){
@@ -110,35 +121,207 @@
         $('#tint').css('font-style', 'normal');
         $('#shade').css('font-weight', 'bolder');
         $('#shade').css('font-style', 'italic');
+
+        $('#selector').css('display', 'none');
       })
 
       //start new stuff here
 
       //make this into an array!
 
+
+
       $('#redpink').click(function(){
         var element = document.getElementById('redpink');
         var style = window.getComputedStyle(element);
         change = style.getPropertyValue('background-color');
         console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
       })
       $('#red').click(function(){
         var element = document.getElementById('red');
         var style = window.getComputedStyle(element);
         change = style.getPropertyValue('background-color');
         console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
       })
       $('#orange').click(function(){
         var element = document.getElementById('orange');
         var style = window.getComputedStyle(element);
         change = style.getPropertyValue('background-color');
         console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
       })
       $('#lightorange').click(function(){
         var element = document.getElementById('lightorange');
         var style = window.getComputedStyle(element);
         change = style.getPropertyValue('background-color');
         console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#golden').click(function(){
+        var element = document.getElementById('golden');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#yellow').click(function(){
+        var element = document.getElementById('yellow');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#lime').click(function(){
+        var element = document.getElementById('lime');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#green').click(function(){
+        var element = document.getElementById('green');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#mint').click(function(){
+        var element = document.getElementById('mint');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#seablue').click(function(){
+        var element = document.getElementById('seablue');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#skyblue').click(function(){
+        var element = document.getElementById('skyblue');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#indigo').click(function(){
+        var element = document.getElementById('indigo');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#purple').click(function(){
+        var element = document.getElementById('purple');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#magenta').click(function(){
+        var element = document.getElementById('magenta');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#hotpink').click(function(){
+        var element = document.getElementById('hotpink');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
+      })
+      $('#gray').click(function(){
+        var element = document.getElementById('gray');
+        var style = window.getComputedStyle(element);
+        change = style.getPropertyValue('background-color');
+        console.log(change);
+
+        locationTop = style.getPropertyValue('top') + ' - .27em';
+        locationLeft = style.getPropertyValue('left') + ' - .28em';
+        $('#selector').css('top', 'calc('+locationTop+')');
+        $('#selector').css('left', 'calc('+locationLeft+')');
+        $('#selector').css('display', 'block');
       })
 
       //also make this into an array!!!
@@ -157,6 +340,72 @@
       })
       $('#square5').click(function(){
         $('#square5').css('background-color', change);
+      })
+      $('#square6').click(function(){
+        $('#square6').css('background-color', change);
+      })
+      $('#square7').click(function(){
+        $('#square7').css('background-color', change);
+      })
+      $('#square8').click(function(){
+        $('#square8').css('background-color', change);
+      })
+      $('#square9').click(function(){
+        $('#square9').css('background-color', change);
+      })
+      $('#square10').click(function(){
+        $('#square10').css('background-color', change);
+      })
+      $('#square11').click(function(){
+        $('#square11').css('background-color', change);
+      })
+      $('#square12').click(function(){
+        $('#square12').css('background-color', change);
+      })
+      $('#square13').click(function(){
+        $('#square13').css('background-color', change);
+      })
+      $('#square14').click(function(){
+        $('#square14').css('background-color', change);
+      })
+      $('#square15').click(function(){
+        $('#square15').css('background-color', change);
+      })
+      $('#square16').click(function(){
+        $('#square16').css('background-color', change);
+      })
+      $('#square17').click(function(){
+        $('#square17').css('background-color', change);
+      })
+      $('#square18').click(function(){
+        $('#square18').css('background-color', change);
+      })
+      $('#square19').click(function(){
+        $('#square19').css('background-color', change);
+      })
+      $('#square20').click(function(){
+        $('#square20').css('background-color', change);
+      })
+      $('#square21').click(function(){
+        $('#square21').css('background-color', change);
+      })
+      $('#square22').click(function(){
+        $('#square22').css('background-color', change);
+      })
+      $('#square23').click(function(){
+        $('#square23').css('background-color', change);
+      })
+      $('#square24').click(function(){
+        $('#square24').css('background-color', change);
+      })
+      $('#square25').click(function(){
+        $('#square25').css('background-color', change);
+      })
+      $('#square26').click(function(){
+        $('#square26').css('background-color', change);
+      })
+      $('#square27').click(function(){
+        $('#square27').css('background-color', change);
       })
 
     // Reference: https://stackoverflow.com/questions/6338217/get-a-css-value-with-javascript
