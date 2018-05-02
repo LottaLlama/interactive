@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Danielle’s Class Webpage</title>
+    <link rel="stylesheet" href="../css/index-old.css">
+
+  </head>
+
+  <body>
+    <h1>Danielle’s Class Webpage</h1>
+    <a href="about.html"><div style="margin-left:13pt">About</div></a>
+    <hr>
+    <h2>Weekly projects</h2>
+    <ul>
+      <!--unordered list-->
+      <li>Liberry of Wonders <a href="library-html.html">HTML</a>&nbsp;<a href="library.html">+CSS</a></li>
+      <li><a href="assignments2/text-landscape.html">Text Spacescape</a></li>
+      <li><a href="assignments2/room.html">Please Enter</a></li>
+      <li><pre>
+              ()___
+        ()//__/)_________________()
+        ||(___)//#/_/#/_/#/_/#()/||
+        ||----|#| |#|_|#|_|#|_|| ||
+        ||____|_|#|_|#|_|#|_|#||/||
+    jgs ||    |#|_|#|_|#|_|#|_|| </pre></li>
+      <li><a href="https://github.com/LottaLlama/interactive/blob/master/assignments2/interview.md">Interview</a></li>
+      <li><a href="assignments2/phrase-machine.html">Be A Poet</a></li>
+      <li><a href="assignments2/jackalope.html">The Black Forest</a></li>
+    </ul>
+    <a href="assignments2/dust-bunnies.html"><div id="underbed"></div></a>
+    <h2>Reading responses</h2>
+    <ul>
+      <li><a href="assignments2/reading-response-a.html">Reading response A</a></li>
+      <li><a href="assignments2/reading-response-b.html">Reading response B</a></li>
+      <li><a href="assignments2/reading-response-c.html">Reading response C</a></li>
+      <li><a href="assignments2/reading-response-d.html">Reading response D</a></li>
+      <li>Reading response E</li>
+    </ul>
+    <h2>Projects</h2>
+    <ol>
+      <!--ordered list-->
+      <li><a href="assignments2/css-typeface2.html">CSS Typeface</a></li>
+      <li><a href="assignments2/becton-cafe.html">Local Website</a></li>
+    </ol>
+    <h2>Exercises</h2>
+    <!--testing-->
+    <!--second heading; total of 6 headings-->
+    <ul>
+      <li><a href="assignments2/exercise-hello-world.html">Hello world</a></li>
+      <li><a href="assignments2/exercise-interview-html.html">HTML Interview</a>&emsp;
+        <a href="assignments2/exercise-interview-css1.html">CSS1</a>&emsp;
+        <a href="assignments2/exercise-interview-css2.html">CSS2</a>
+      </li>
+      <li><a href="assignments2/codingfromlife-template/index.html">Coding From Life</a>
+      <a href="assignments2/codingfromlife-template/still-life2.html">Still Life 2</a></li>
+      <li><a href="assignments2/slot-machine.html">Slot Machine</a></li>
+    </ul>
+
+
+<table border="1" class="webring">
+    <tr>
+      <td colspan="2">
+        <a href="http://spring2018-yale.veryinteractive.net">
+          <img src="http://www.spring2018-yale.veryinteractive.net/content/house-field-tall.png" width="200"><br>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://zackrobbins.github.io/interactive/">Previous</a>
+        </td>
+      <td align="center" width="50%">
+        <a href="https://dkjl9823.github.io/interactive/">Next</a>
+        </td>
+    </tr>
+  </table>
+
+  <!-- <div id="button">
+    Random
+  </div> -->
+
+  <script src="../js/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $("#button").click(function(){
+      console.log("you clicked the button");
+
+      var red=Math.floor(Math.random()*255);
+      var green=Math.floor(Math.random()*255);
+      var blue=Math.floor(Math.random()*255);
+
+      var rgb="rgb(" + red+","+green+","+blue+")";
+
+      console.log(rgb);
+      $("body").css("background", rgb);
+      $("#underbed").css("background", rgb);
+    })
+  });
+
+  </script>
+
+  </body>
+
+</html>
