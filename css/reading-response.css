@@ -22,6 +22,14 @@ h1{
   margin-left: 10px;
 }
 
+#re {
+  font-family: 'DINPro';
+  font-size: 11pt;
+  color: #38cb32;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 p{
   font-family: 'DINPro';
   font-size: 11pt;
