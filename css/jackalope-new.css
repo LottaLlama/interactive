@@ -4,7 +4,10 @@
 }
 
 body{
-  background: #001100;
+  background: linear-gradient(180deg, rgba(2,34,0,1) 17%, rgba(2,18,0,1) 100%);
+  /* Credit: https://cssgradient.io/ */
+  width: 100vw;
+  height: 100vh;
 }
 
 .object{
@@ -168,16 +171,6 @@ body{
 }
 
 .bunnybody #antlermainR{
-  /* width: 3em;
-  height: 6em;
-  transform: rotate(40deg);
-  border-radius: 50%;
-  border-bottom: #86592d solid 3px;
-  border-right: #86592d solid 3px;
-  position: absolute;
-  top: -4.5em;
-  left: 5.7em; */
-
   width: 5em;
   height: 5em;
   position: absolute;
@@ -199,15 +192,6 @@ body{
 }
 
 .bunnybody #antlermainL{
-  /* width: 3em;
-  height: 6em;
-  transform: rotate(-40deg);
-  border-radius: 50%;
-  border-bottom: #86592d solid 3px;
-  border-left: #86592d solid 3px;
-  position: absolute;
-  top: -4.3em;
-  left: -2.1em; */
   width: 5em;
   height: 5em;
   position: absolute;
@@ -228,75 +212,78 @@ body{
   left: 2.2em;
 }
 
-#bush1{
-  width: 30em;
-  height: 17em;
-  background: green;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+.bushnew{
+  width: 1em;
+  height: 1em;
   position: absolute;
-  top: 42%;
-  left: 14em;
-  border: green solid 2px;
+}
+.bushnew .bump1{
+  width: 8em;
+  height: 8em;
+  background: green;
+  border-radius: 50%;
+  border-top: solid lime 1px;
+  border-left: solid lime 1px;
+  top: 7em;
+  left: -1em;
+  position: absolute;
+  z-index: 1;
+}
+.bushnew .bump2{
+  width: 14em;
+  height: 14em;
+  background: green;
+  border-radius: 50%;
+  border-top: solid lime 1px;
+  top: 2em;
+  left: 2em;
+  position: absolute;
+  z-index: 1;
+}
+.bushnew .bump3{
+  width: 10em;
+  height: 10em;
+  background: green;
+  border-radius: 50%;
+  border-top: solid lime 1px;
+  top: 0em;
+  left: 8em;
+  position: absolute;
+  z-index: 1;
+}
+.bushnew .bump4{
+  width: 12em;
+  height: 12em;
+  background: green;
+  border-radius: 50%;
+  border-top: solid lime 1px;
+  top: 3em;
+  left: 13em;
+  position: absolute;
+  z-index: 1;
+}
+.bushnew .bump5{
+  width: 7em;
+  height: 7em;
+  background: green;
+  border-radius: 50%;
+  border-right: solid lime 1px;
+  top: 8em;
+  left: 21em;
+  position: absolute;
+  z-index: 1;
+}
+.bushnew .bottombush{
+  width: 27em;
+  height: 3em;
+  background: green;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  top: 13.1em;
+  left: 0em;
+  position: absolute;
 }
 
-#bush2{
-  width: 30em;
-  height: 17em;
-  background: green;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  position: absolute;
-  top: 42%;
-  left: 14em;
-  border: green solid 2px;
-}
-
-#bush3{
-  width: 30em;
-  height: 17em;
-  background: green;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  position: absolute;
-  top: 42%;
-  left: 14em;
-  border: green solid 2px;
-}
-
-#bush4{
-  width: 30em;
-  height: 17em;
-  background: green;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  position: absolute;
-  top: 42%;
-  left: 14em;
-  border: green solid 2px;
-}
-
-#bush5{
-  width: 30em;
-  height: 17em;
-  background: green;
-  border-top-right-radius: 45%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  position: absolute;
-  top: 42%;
-  left: 14em;
-  border: green solid 2px;
-}
 
 #text{
   font-size: 22pt;
@@ -348,6 +335,31 @@ body{
 	transform: rotate(-5deg);
 	z-index: -4;
   display: none;
+}
+
+.carrotTop{
+	border-top: .6em solid green;
+	border-left: .3em solid transparent;
+	border-right: .3em solid transparent;
+	height: 0;
+	width: .8em;
+  position: absolute;
+}
+
+#carrot .carrotTop{
+  top: 2em;
+  right: 5em;
+  transform: rotate(-126deg);
+}
+#carrot2 .carrotTop{
+  top: -2.4em;
+  right: 6.8em;
+  transform: rotate(-52deg);
+}
+#carrot3 .carrotTop{
+  top: 0.1em;
+  right: 6.6em;
+  transform: rotate(-92deg);
 }
 
 #yuck{

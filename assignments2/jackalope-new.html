@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Meet A Jackalope</title>
-    <link rel="stylesheet" href="../css/jackalope.css">
+    <link rel="stylesheet" href="../css/jackalope-new.css">
   </head>
 
   <body>
@@ -45,15 +45,58 @@
       </div>
     </div>
 
-    <div id="carrot"></div>
-    <div id="carrot2"></div>
-    <div id="carrot3"></div>
+    <div id="carrot">
+      <div class="carrotTop"></div>
+    </div>
+    <div id="carrot2">
+      <div class="carrotTop"></div>
+    </div>
+    <div id="carrot3">
+      <div class="carrotTop"></div>
+    </div>
 
-    <div id="bush1"></div>
-    <div id="bush2"></div>
-    <div id="bush3"></div>
-    <div id="bush4"></div>
-    <div id="bush5"></div>
+
+
+    <div class="bushnew" id="bush1">
+      <div class="bump1"></div>
+      <div class="bump2"></div>
+      <div class="bump3"></div>
+      <div class="bump4"></div>
+      <div class="bump5"></div>
+      <div class="bottombush"></div>
+    </div>
+    <div class="bushnew" id="bush2">
+      <div class="bump1"></div>
+      <div class="bump2"></div>
+      <div class="bump3"></div>
+      <div class="bump4"></div>
+      <div class="bump5"></div>
+      <div class="bottombush"></div>
+    </div>
+    <div class="bushnew" id="bush3">
+      <div class="bump1"></div>
+      <div class="bump2"></div>
+      <div class="bump3"></div>
+      <div class="bump4"></div>
+      <div class="bump5"></div>
+      <div class="bottombush"></div>
+    </div>
+    <div class="bushnew" id="bush4">
+      <div class="bump1"></div>
+      <div class="bump2"></div>
+      <div class="bump3"></div>
+      <div class="bump4"></div>
+      <div class="bump5"></div>
+      <div class="bottombush"></div>
+    </div>
+    <div class="bushnew" id="bush5">
+      <div class="bump1"></div>
+      <div class="bump2"></div>
+      <div class="bump3"></div>
+      <div class="bump4"></div>
+      <div class="bump5"></div>
+      <div class="bottombush"></div>
+    </div>
 
     <div id="yuck">*pleh*</div>
     <div id="yum">*nomnomnom*<br>*buuuuurp*</div>
@@ -64,6 +107,7 @@
     </div>
 
     <div id="back"><a href=../index.html#weekly>Back</a></div>
+    <!-- link to a place on another page: https://www.w3schools.com/html/html_links.asp -->
 
 
 
@@ -73,12 +117,13 @@
   $(document).ready(function(){
 
 
-    var greens=[ 'forestgreen', 'darkgreen','darkolivegreen','limegreen', 'mediumseagreen','olivedrab'];
-    var c= 38; //height of bush ranges
-    var d= 42;
+    var greens=[ '#0a8605', '#008000','#098310','#08860e', '#068502','#098101', '#068006'];
+    var c= 42; //height of bush ranges
+    var d= 46;
     var e= 20;
     var f= 30;
     var x=0;
+    var Rgreens;
 
     function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -92,8 +137,12 @@
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    function getRandomGreen(){ //changes green color
+      Rgreens=greens[Math.floor(Math.random()*greens.length)];
+    }
+
     for (i=1; i<6; i++){
-      var Rgreens=greens[Math.floor(Math.random()*greens.length)];
+      // var Rgreens=greens[Math.floor(Math.random()*greens.length)];
       var bushy='#bush'+i;
 
       var a=20*(i-1)-20;
@@ -105,10 +154,19 @@
       var percent2 = thing2+'%';
       var thing3= getRandomIndex(e,f);
 
-      $(bushy).css('background',Rgreens);
       $(bushy).css('left', percent);
       $(bushy).css('top', percent2);
       $(bushy).css('z-index',thing3);
+
+      for (k=1; k<6; k++){
+        var p=document.getElementById('bush'+i).getElementsByClassName('bump'+k);
+        console.log(p);
+        for(j=0; j<5; j++){
+          getRandomGreen();
+          $(p[j]).css('background',Rgreens);
+        }
+      }
+      // credit for get id + class: https://stackoverflow.com/questions/7815374/get-element-inside-element-by-class-and-id-javascript
     }
 
     $("#bush1").click(function(){
@@ -177,14 +235,7 @@
         $('#poopmedium').fadeIn(2000);
         $('#pooptop').fadeIn(2000);
       });
-      // $('.hiddenFormMouseover').mouseenter(function() {
-      //   $(this).children('.hiddenFormMouseoverButton').stop();
-      //   $(this).children('.hiddenFormMouseoverButton').fadeOut(0);
-      //   $(this).children('.hiddenFormMouseoverButton').fadeIn();
-      // });
-      // $('#carrot').mouseover(function(){
-      //   $('#carrot').fadeIn(3000);
-      // });
+
 
   });
 
