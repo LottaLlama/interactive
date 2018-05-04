@@ -3,24 +3,6 @@
   src: url("fonts/Montserrat-Medium.ttf");
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-.col-1 {width: 30%;}
-.col-2 {width: 66.66%;}
-.col-3 {width: 100%;}
-
-@media only screen and (max-width: 650px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 95%;
-    }
-    .box{
-      height: 200px;
-    }
-}
 
 .object{
   position: absolute;
@@ -75,9 +57,18 @@ p{
   padding-right: 28%
 }
 
+.other p{
+  text-align: justify;
+  padding-top: 50px;
+}
+
 hr{
   border-style: dashed;
   width: 60%
+}
+
+a{
+  text-decoration: none;
 }
 
 a:visited{
@@ -111,11 +102,19 @@ a:visited{
 }
 
 .box .text{
-  position: relative;
-  /* text-align: center; */
-  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
   font-family: 'Montserrat';
   font-size: 46pt;
+
+  /* position: relative;
+  text-align: center;
+  top: 10%;
+  font-family: 'Montserrat';
+  font-size: 46pt; */
 }
 
 pre{
@@ -137,8 +136,8 @@ li{
 
 #back{
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 210px;
+  left: 100px;
   text-decoration: none;
   font-size: 10pt;
   font-family: 'Montserrat';
@@ -148,12 +147,54 @@ cursor{
   url: (img)
 }
 
-img{
+.box img{
   opacity: 0.0;
   padding: 30%;
   position: relative;
+  top: -400px;
 }
 
-img:hover{
+.box img:hover{
   opacity: 0.6;
+}
+
+#logo{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  font-size: 60pt;
+  top: 10px;
+  left: 10px;
+  border-top: solid #eee 3px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 30%;}
+.col-2 {width: 66.66%;}
+.col-3 {width: 100%;}
+
+@media only screen and (max-width: 1200px){
+  .grid-container{
+    grid-template-columns: 400px 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .grid-container{
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 95%;
+    }
+    .box{
+      height: 200px;
+    }
 }
