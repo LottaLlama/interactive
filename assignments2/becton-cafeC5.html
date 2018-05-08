@@ -36,7 +36,7 @@
     </div>
 
   <div id="panelBegin">
-    Click on a rectangle, after selecting a color, to change it. Double-click on a rectangle for finer resolution. Click twice on "Color", "Tint", or "Shade" to begin.
+    Click on a rectangle, after double-clicking a color, to change it. Double-click on a rectangle for finer resolution. Click twice on "Color", "Tint", or "Shade" to begin.
   </div>
 
  <div id="grid">
@@ -136,55 +136,30 @@
         var colorNameId = "#" + colorName;
         console.log(index);
 
-        // $(colorNameId).click(function() {
-        //     var element = document.getElementById(names[index-4]);
-        //      var style = window.getComputedStyle(element);
-        //
-        //
-        //      locationTop = style.getPropertyValue('top') + ' - .27em';
-        //      locationLeft = style.getPropertyValue('left') + ' - .28em';
-        //      $('#selector').css('top', 'calc('+locationTop+')');
-        //      $('#selector').css('left', 'calc('+locationLeft+')');
-        //      $('#selector').css('display', 'block');
-        //   })
+
+
+          $(colorNameId).click(function() {
+              var element = document.getElementById(names[index-4]);
+              var style = window.getComputedStyle(element);
+              locationTop = style.getPropertyValue('top') + ' - .27em';
+              locationLeft = style.getPropertyValue('left') + ' - .28em';
+              $('#selector').css('top', 'calc('+locationTop+')');
+              $('#selector').css('left', 'calc('+locationLeft+')');
+              $('#selector').css('display', 'block');
+          })
+
 
 //  indexes for Color-Tint-Shade - get color
         if (selection=='color'){
           clr = colors[index-4]; //because color, tint, shade are the first three indices
-          var element = document.getElementById(names[index-4]);
-           var style = window.getComputedStyle(element);
 
-
-           locationTop = style.getPropertyValue('top') + ' - .27em';
-           locationLeft = style.getPropertyValue('left') + ' - .28em';
-           $('#selector').css('top', 'calc('+locationTop+')');
-           $('#selector').css('left', 'calc('+locationLeft+')');
-           $('#selector').css('display', 'block');
         }
         if (selection=='tint'){
           clr = tints[index-4];
-          var element = document.getElementById(names[index-4]);
-           var style = window.getComputedStyle(element);
-
-
-           locationTop = style.getPropertyValue('top') + ' - .27em';
-           locationLeft = style.getPropertyValue('left') + ' - .28em';
-           $('#selector').css('top', 'calc('+locationTop+')');
-           $('#selector').css('left', 'calc('+locationLeft+')');
-           $('#selector').css('display', 'block');
 
         }
         if (selection=='shade'){
           clr = shades[index-4];
-          var element = document.getElementById(names[index-4]);
-           var style = window.getComputedStyle(element);
-
-
-           locationTop = style.getPropertyValue('top') + ' - .27em';
-           locationLeft = style.getPropertyValue('left') + ' - .28em';
-           $('#selector').css('top', 'calc('+locationTop+')');
-           $('#selector').css('left', 'calc('+locationLeft+')');
-           $('#selector').css('display', 'block');
 
         }
 
