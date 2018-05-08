@@ -24,7 +24,7 @@ body{
   border-bottom-right-radius: 10%;
   top: 60vh;
   left: 50%;
-  z-index: -5;
+  z-index: 5;
 }
 
 .bunnybody .bunnypaw{
@@ -303,11 +303,11 @@ body{
 	top: 80%;
 	left: 16em;
 	transform: rotate(16deg);
-	z-index: -3;
+	z-index: 4;
   display: none;
 }
 
-#carrot2 {
+#carrot2 {   /* the one that looks orange */
 	width: 3em;
 	height: 1em;
 	border-top: .5em solid transparent;
@@ -318,7 +318,7 @@ body{
 	top: 80%;
 	left: 17em;
 	transform: rotate(-20deg);
-	z-index: -3;
+	z-index: 8;
   display: none;
 }
 
@@ -333,7 +333,7 @@ body{
 	top: 80%;
 	left: 14.5em;
 	transform: rotate(-5deg);
-	z-index: -4;
+	z-index: 3;
   display: none;
 }
 
@@ -347,19 +347,23 @@ body{
 }
 
 #carrot .carrotTop{
-  top: 2em;
-  right: 5em;
-  transform: rotate(-126deg);
-}
-#carrot2 .carrotTop{
-  top: -2.4em;
-  right: 6.8em;
-  transform: rotate(-52deg);
-}
-#carrot3 .carrotTop{
-  top: 0.1em;
+  top: .2em;
   right: 6.6em;
   transform: rotate(-92deg);
+
+}
+#carrot2 .carrotTop{
+  top: .2em;
+  right: 6.6em;
+  transform: rotate(-92deg);
+
+
+}
+#carrot3 .carrotTop{
+  top: 0.2em;
+  right: 6.6em;
+  transform: rotate(-92deg);
+
 }
 
 #yuck{

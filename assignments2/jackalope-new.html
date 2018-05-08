@@ -160,7 +160,7 @@
 
       for (k=1; k<6; k++){
         var p=document.getElementById('bush'+i).getElementsByClassName('bump'+k);
-        console.log(p);
+        // console.log(p);
         for(j=0; j<5; j++){
           getRandomGreen();
           $(p[j]).css('background',Rgreens);
@@ -228,6 +228,7 @@
       });
 
       $('.bunnybody').click(function(){
+        console.log("click");
         $('#yum').hide();
         $("#text").html("Aww, bye bye jackalope! But look! He gave us a present.")
         $('.bunnybody').fadeOut(1000);
