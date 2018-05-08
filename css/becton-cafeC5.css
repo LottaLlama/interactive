@@ -1,0 +1,527 @@
+:root{
+  --something: #555555;
+}
+
+@font-face{
+  font-family: "Letter Gothic";
+  src: url("fonts/LetterGothicStd.otf");
+}
+
+body {
+  background: #222222;
+}
+
+#title{
+  font-family: "Letter Gothic", sans-serif;
+  color: white;
+  width: 99vh;
+  height: 18vw;
+  font-size: 15vh;
+  transform: rotate(90deg);
+  text-align: center;
+  position: absolute;
+  top: 32vh;
+  left: 58vw;
+}
+
+#panel{
+  width: 30vw;
+  height: 90vh;
+  position: fixed;
+  top: 3vh;
+  left: 1em;
+  text-align: center;
+  color: white;
+  font-size: 16pt;
+  line-height: 4em;
+  font-family: "Letter Gothic", sans-serif;
+}
+
+#panelBegin{
+  width: 32vw;
+  height: 85vh;
+  position: fixed;
+  top: 13vh;
+  left: 1.3em;
+  text-align: center;
+  background: #222222;
+  color: white;
+  font-size: 12pt;
+  /* line-height: 4em; */
+  font-family: "Letter Gothic", sans-serif;
+}
+
+#panel #selector{
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  border: solid yellow 2px;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  display: none;
+}
+
+#panel #color{
+  font-weight: bolder;
+  display: inline;
+  font-style: normal;
+  cursor: pointer;
+}
+#panel #tint{
+  font-weight: normal;
+  display: inline;
+  font-style: normal;
+  cursor: pointer;
+}
+#panel #shade{
+  font-weight: normal;
+  display: inline;
+  font-style: normal;
+  cursor: pointer;
+}
+
+/* Colored Dots */
+
+#panel #redpink{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  background: #ff5050;
+  cursor: pointer;
+}
+
+#panel #red{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  background: #ff0000;
+  cursor: pointer;
+}
+
+#panel #orange{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  background: #ff6600;
+  cursor: pointer;
+}
+
+#panel #lightorange{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  background: #ff9933;
+  cursor: pointer;
+}
+#panel #golden{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  background: #ffcc00;
+  cursor: pointer;
+}
+
+#panel #yellow{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 70%;
+   top: 30%;
+   background: #ffff00;
+   cursor: pointer;
+ }
+ #panel #lime{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 10%;
+   top: 45%;
+   background: #99ff33;
+   cursor: pointer;
+ }
+ #panel #green{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 40%;
+   top: 45%;
+   background: #33cc33;
+   cursor: pointer;
+ }
+ #panel #mint{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 70%;
+   top: 45%;
+   background: #00ff99;
+   cursor: pointer;
+ }
+ #panel #seablue{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 10%;
+   top: 60%;
+   background: #33cccc;
+   cursor: pointer;
+ }
+ #panel #skyblue{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 40%;
+   top: 60%;
+   background: #0099ff;
+   cursor: pointer;
+ }
+ #panel #indigo{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 70%;
+   top: 60%;
+   background: #3366ff;
+   cursor: pointer;
+ }
+ #panel #purple{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 10%;
+   top: 75%;
+   background: #9966ff;
+   cursor: pointer;
+ }
+ #panel #magenta{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 40%;
+   top: 75%;
+   background: #ff00ff;
+   cursor: pointer;
+ }
+ #panel #hotpink{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 70%;
+   top: 75%;
+   background: #ff3399;
+   cursor: pointer;
+ }
+ #panel #gray{
+   width: 3em;
+   height: 3em;
+   border-radius: 50%;
+   position: absolute;
+   left: 40%;
+   top: 90%;
+   background: #777777;
+   cursor: pointer;
+ }
+
+/* LED Wall Rectangles */
+
+#square1{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+
+  position: absolute;
+  top: 1em;
+  right: calc(35vw + 1em);
+}
+#square2{
+  width:6em;
+  height: 4.5em;
+    background: var(--something);
+
+  position: absolute;
+  top: 1em;
+  right: calc(35vw + 7.2em);
+}
+#square3{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 1em;
+  right: calc(35vw + 13.4em);
+}
+#square4{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 5.7em;
+  right: calc(35vw + 1em);
+}
+#square5{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 5.7em;
+  right: calc(35vw + 7.2em);
+}
+#square6{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 5.7em;
+  right: calc(35vw + 13.4em);
+}
+#square7{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 10.4em;
+  right: calc(35vw + 1em);
+}
+#square8{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 10.4em;
+  right: calc(35vw + 7.2em);
+}
+#square9{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 10.4em;
+  right: calc(35vw + 13.4em);
+}
+#square10{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 15.1em;
+  right: calc(35vw + 1em);
+}
+#square11{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 15.1em;
+  right: calc(35vw + 7.2em);
+}
+#square12{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 15.1em;
+  right: calc(35vw + 13.4em);
+}
+#square13{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 19.8em;
+  right: calc(35vw + 1em);
+}
+#square14{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 19.8em;
+  right: calc(35vw + 7.2em);
+}
+#square15{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 19.8em;
+  right: calc(35vw + 13.4em);
+}
+#square16{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 24.5em;
+  right: calc(35vw + 1em);
+}
+#square17{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 24.5em;
+  right: calc(35vw + 7.2em);
+}
+#square18{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 24.5em;
+  right: calc(35vw + 13.4em);
+}
+#square19{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 29.2em;
+  right: calc(35vw + 1em);
+}
+#square20{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 29.2em;
+  right: calc(35vw + 7.2em);
+}
+#square21{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 29.2em;
+  right: calc(35vw + 13.4em);
+}
+#square22{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 33.9em;
+  right: calc(35vw + 1em);
+}
+#square23{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 33.9em;
+  right: calc(35vw + 7.2em);
+}
+#square24{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 33.9em;
+  right: calc(35vw + 13.4em);
+}
+#square25{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 38.6em;
+  right: calc(35vw + 1em);
+}
+#square26{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 38.6em;
+  right: calc(35vw + 7.2em);
+}
+#square27{
+  width:6em;
+  height: 4.5em;
+  background: var(--something);
+  position: absolute;
+  top: 38.6em;
+  right: calc(35vw + 13.4em);
+}
+
+#popup {
+     background-color:transparent;
+}
+
+p{
+  font-family: "Letter Gothic", sans-serif;
+}
+
+#clear, #save, #exit{
+  font-family: "Letter Gothic", sans-serif;
+  font-weight: bold;
+}
+
+#ledWall {
+   padding:18px;
+   background-color: lightgray;
+   position:absolute;
+   top:20vh;
+   right:60px;
+   width:325px;
+   height:350px;
+   display:none;
+}
+
+.grid-container {
+  display: grid;
+  left: 15px;
+  grid: 2.25em / auto auto auto auto;
+  grid-gap:3px;
+  background-color:lightgray;
+  padding:3px;
+}
+
+
+.grid-container >div {
+  width:5em;
+  border:0px
+  solid white;
+}
+
+
+#led1, #led2, #led3, #led4, #led5, #led6, #led7, #led8, #led9, #led10, #led11, #led12, #led13, #led14 {
+  display:inline-block;
+  width:2.5em;
+  height: 2.25em;
+  background:
+  var(--something);
+}
+
+#led15, #led16, #led17, #led18, #led19, #led20, #led21, #led22, #led23, #led24, #led25, #led26, #led27, #led28{
+  display:inline-block;
+  width:2.5em;
+  height: 2.25em;
+  background:
+  var(--something);
+}

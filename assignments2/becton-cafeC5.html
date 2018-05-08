@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Becton Café</title>
+
+    <link rel="stylesheet" href="../css/becton-cafeC5.css">
+
+  </head>
+
+  <body>
+    <div id="title">BECTON CAFÉ LED WALL</div>
+
+    <div id="panel">Select a
+      <div id="color">Color</div>
+      <div id="tint">Tint</div>
+      <div id="shade">Shade</div>
+      <div id="selector"></div>
+      <div id="redpink"></div>
+      <div id="red"></div>
+      <div id="orange"></div>
+      <div id="lightorange"></div>
+      <div id="golden"></div>
+      <div id="yellow"></div>
+      <div id="lime"></div>
+      <div id="green"></div>
+      <div id="mint"></div>
+      <div id="seablue"></div>
+      <div id="skyblue"></div>
+      <div id="indigo"></div>
+      <div id="purple"></div>
+      <div id="magenta"></div>
+      <div id="hotpink"></div>
+      <div id="gray"></div>
+    </div>
+
+  <div id="panelBegin">
+    Click on a rectangle, after selecting a color, to change it. Double-click on a rectangle for finer resolution. Click twice on "Color", "Tint", or "Shade" to begin.
+  </div>
+
+ <div id="grid">
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+    <div id="square6"></div>
+    <div id="square7"></div>
+    <div id="square8"></div>
+    <div id="square9"></div>
+    <div id="square10"></div>
+    <div id="square11"></div>
+    <div id="square12"></div>
+    <div id="square13"></div>
+    <div id="square14"></div>
+    <div id="square15"></div>
+    <div id="square16"></div>
+    <div id="square17"></div>
+    <div id="square18"></div>
+    <div id="square19"></div>
+    <div id="square20"></div>
+    <div id="square21"></div>
+    <div id="square22"></div>
+    <div id="square23"></div>
+    <div id="square24"></div>
+    <div id="square25"></div>
+    <div id="square26"></div>
+    <div id="square27"></div>
+    </div>
+
+
+
+<div id="ledWall">
+ <p>Select a color in the previous window, then click the small panel below to set a color. Press SAVE when complete. </p>
+
+ <div id="ledgrid">
+    <div id="led1"></div>
+    <div id="led2"></div>
+    <div id="led3"></div>
+    <div id="led4"></div>
+    <div id="led5"></div>
+    <div id="led6"></div>
+    <div id="led7"></div>
+    <div id="led8"></div>
+    <div id="led9"></div>
+    <div id="led10"></div>
+    <div id="led11"></div>
+    <div id="led12"></div>
+    <div id="led13"></div>
+    <div id="led14"></div>
+    <div id="led15"></div>
+    <div id="led16"></div>
+    <div id="led17"></div>
+    <div id="led18"></div>
+    <div id="led19"></div>
+    <div id="led20"></div>
+    <div id="led21"></div>
+    <div id="led22"></div>
+    <div id="led23"></div>
+    <div id="led24"></div>
+    <div id="led25"></div>
+    <div id="led26"></div>
+    <div id="led27"></div>
+    <div id="led28"></div>
+ </div>
+ <br><br><br>
+ <div id="popUpbtn">
+   <button type="button" id="clear">CLEAR</button>
+   <button type="button" id="save">SAVE</button>
+   <button type="button" id="exit">EXIT</button>
+ </div>
+</div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script type="text/javascript">
+
+
+
+
+    $(document).ready(function(){
+
+      var names=['redpink', 'red', 'orange','lightorange','golden','yellow','lime','green','mint','seablue','skyblue','indigo','purple', 'magenta','hotpink','gray'];
+      var colors=['#ff5050', '#ff0000', '#ff6600', '#ff9933', '#ffcc00', '#ffff00', '#99ff33', '#33cc33', '#00ff99', '#33cccc', '#0099ff', '#3366ff', '#9966ff', '#ff00ff', '#ff3399', '#555555'];
+      var tints=['#ff9999','#ff6666','#ffb380','#ffbf80','#ffe680','#ffff80','#bfff80','#99e699','#99ffd6','#98e6e6','#80ccff','#809fff','#bb99ff','#ff99ff','#ff99cc','#ffffff'];
+      var shades=['#b30000','#800000','#993d00','#b35900','#b38f00','#999900','#4d9900','#1f7a1f','#00995c','#1f7a7a','#005c99','#002db3','#3b00b3','#990099','#b30059', '#000000'];
+      var clr="";
+      var selection="";
+
+
+// Find the div in #panel that has been clicked
+	$('#panel div').click(function() {
+
+        var index = $("#panel div").index(this);
+        var colorName = names[index-4];
+        var colorNameId = "#" + colorName;
+        console.log(index);
+
+        // $(colorNameId).click(function() {
+        //     var element = document.getElementById(names[index-4]);
+        //      var style = window.getComputedStyle(element);
+        //
+        //
+        //      locationTop = style.getPropertyValue('top') + ' - .27em';
+        //      locationLeft = style.getPropertyValue('left') + ' - .28em';
+        //      $('#selector').css('top', 'calc('+locationTop+')');
+        //      $('#selector').css('left', 'calc('+locationLeft+')');
+        //      $('#selector').css('display', 'block');
+        //   })
+
+//  indexes for Color-Tint-Shade - get color
+        if (selection=='color'){
+          clr = colors[index-4]; //because color, tint, shade are the first three indices
+          var element = document.getElementById(names[index-4]);
+           var style = window.getComputedStyle(element);
+
+
+           locationTop = style.getPropertyValue('top') + ' - .27em';
+           locationLeft = style.getPropertyValue('left') + ' - .28em';
+           $('#selector').css('top', 'calc('+locationTop+')');
+           $('#selector').css('left', 'calc('+locationLeft+')');
+           $('#selector').css('display', 'block');
+        }
+        if (selection=='tint'){
+          clr = tints[index-4];
+          var element = document.getElementById(names[index-4]);
+           var style = window.getComputedStyle(element);
+
+
+           locationTop = style.getPropertyValue('top') + ' - .27em';
+           locationLeft = style.getPropertyValue('left') + ' - .28em';
+           $('#selector').css('top', 'calc('+locationTop+')');
+           $('#selector').css('left', 'calc('+locationLeft+')');
+           $('#selector').css('display', 'block');
+
+        }
+        if (selection=='shade'){
+          clr = shades[index-4];
+          var element = document.getElementById(names[index-4]);
+           var style = window.getComputedStyle(element);
+
+
+           locationTop = style.getPropertyValue('top') + ' - .27em';
+           locationLeft = style.getPropertyValue('left') + ' - .28em';
+           $('#selector').css('top', 'calc('+locationTop+')');
+           $('#selector').css('left', 'calc('+locationLeft+')');
+           $('#selector').css('display', 'block');
+
+        }
+
+
+// Now check for a click on the square, added a parent div called grid  creating child div square
+        $('#grid div').click(function() {
+           var gridindex = $(this).index() + 1;
+           squareId = "#square"+gridindex;
+          $(squareId).html(""); // remove individual led <div>
+          $(squareId).css('background', clr);
+        });
+
+
+// Now check for a double click on the square
+       $('#grid div').dblclick(function() {
+          var gridindex = $(this).index() + 1;
+          squareId = "#square"+gridindex;
+          clr = $(squareId).css('background-color');
+
+          for (i=1; i<29; i++){
+            var ledId='#led'+ i;
+            $(ledId).css('background',clr);
+          }
+         $('#ledWall').fadeTo(1000,0.98);
+//           $('#ledWall').show();
+         });
+
+
+ // Now check for a click on the led square, added a parent div called ledgrid creating child div led
+
+       $('#ledgrid div').click(function() {
+         var str;
+	       var gridindex = $(this).index() + 1;
+         var ledId = "#led"+gridindex;
+
+         console.log(clr + "and" + ledId);
+         $(ledId).css('background', clr);
+       });
+
+//clear ledWall
+
+    $('#clear').click(function() {
+         $(squareId).css('background', 'rgb(85, 85, 85)');
+         for (i=1; i<29; i++){
+         var ledId='#led'+ i;
+         $(ledId).css('background','rgb(85, 85, 85)');
+         }
+     });
+
+  $('#color').click(function(){
+
+        selection="color";
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',colors[i]);
+        }
+        $('#color').css('font-weight', 'bolder');
+        $('#color').css('font-style', 'italic');
+        $('#tint').css('font-weight', 'normal');
+        $('#tint').css('font-style', 'normal');
+        $('#shade').css('font-weight', 'normal');
+        $('#shade').css('font-style', 'normal');
+        $('#panelBegin').fadeOut(1000);
+        $('#selector').css('display', 'none');
+
+      })
+
+      $('#tint').click(function(){
+        selection="tint";
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',tints[i]);
+        }
+        $('#color').css('font-weight', 'normal');
+        $('#color').css('font-style', 'normal');
+        $('#tint').css('font-weight', 'bolder');
+        $('#tint').css('font-style', 'italic');
+        $('#shade').css('font-weight', 'normal');
+        $('#shade').css('font-style', 'normal');
+        $('#panelBegin').fadeOut(1000);
+        $('#selector').css('display', 'none');
+
+      })
+
+      $('#shade').click(function(){
+        selection="shade";
+        for (i=0; i<16; i++){
+          var nameId='#'+names[i];
+          $(nameId).css('background',shades[i]);
+        }
+        $('#color').css('font-weight', 'normal');
+        $('#color').css('font-style', 'normal');
+        $('#tint').css('font-weight', 'normal');
+        $('#tint').css('font-style', 'normal');
+        $('#shade').css('font-weight', 'bolder');
+        $('#shade').css('font-style', 'italic');
+        $('#panelBegin').fadeOut(1000);
+        $('#selector').css('display', 'none');
+
+      })
+
+
+// save individual led colors to the main square
+
+      $('#save').click(function(){
+       var str ="";
+       var setbackground=null;
+       for (i=1; i<29; i++) {
+         var led="led"+i;
+         var ledId = "#" + led;
+         var x = $(ledId).css("background-color");
+         str = str + '<div id=' + i +' style="width:0.85em; height:0.95em;  background-color: ' + x +'; display:inline-block;"></div>';
+        }
+        $(squareId).html(str);   // display all led colors in square
+      });
+
+      // exit LED Wall - hide it
+        $('#exit').click(function() {
+           $('#ledWall').hide();
+        });
+
+
+
+   });
+
+});
+
+
+
+    </script>
+
+  </body>
+
+</html>
